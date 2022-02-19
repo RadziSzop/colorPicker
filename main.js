@@ -8,8 +8,14 @@ let valueEl2 = document.querySelector("#value2")
 let valueEl3 = document.querySelector("#value3")
 let valueEl4 = document.querySelector("#value4")
 let valueEl5 = document.querySelector("#value5")
-let apiData 
-fetch("https://www.thecolorapi.com/scheme?hex=0047AB")
+let submitBtnEl = document.querySelector("#submit-button")
+let colorPicerEl = document.querySelector("#color-picker")
+let apiData
+submitBtnEl.addEventListener("click", getingColors)
+function getingColors(){
+    let color = colorPicerEl.value.slice(1)
+
+    fetch(`https://www.thecolorapi.com/scheme?hex=${color}`)
     .then(response => response.json())
     .then(json => {
         apiData = json
@@ -26,6 +32,8 @@ fetch("https://www.thecolorapi.com/scheme?hex=0047AB")
         valueEl4.textContent = apiData.colors[3].hex.clean
         valueEl5.textContent = apiData.colors[4].hex.clean
     })
+} 
+
     // {
     //     "mode": "monochrome",
     //     "count": 5,

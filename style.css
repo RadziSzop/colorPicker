@@ -53,7 +53,7 @@ option {
   width: 20%;
   height: 100%;
   background-color: bisque;
-  border: 1px black solid;
+  /* border: 1px black solid; */
 }
 .color_values {
   height: 45px;
@@ -63,7 +63,7 @@ option {
 .valueBox {
   height: 100%;
   width: 20%;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   display: flex;
   justify-content: center;
   align-items: center;
