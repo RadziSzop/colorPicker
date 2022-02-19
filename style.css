@@ -1,11 +1,9 @@
 * {
   box-sizing: border-box;
 }
-:root {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+
 html {
-  /* background-color: darkgray; */
+  font-family: "Roboto", sans-serif;
 }
 html,
 body {
@@ -37,7 +35,6 @@ option {
   height: 550px;
   display: flex;
   flex-direction: column;
-  background-color: aquamarine;
 }
 .main {
   height: 90px;
@@ -67,6 +64,10 @@ option {
   height: 100%;
   width: 20%;
   border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
 }
 #color-picker {
   padding: 0;
