@@ -1,0 +1,14 @@
+{
+
+    "manifest_version": 3,
+    "name": "Color Scheme",
+    "version": "1.0",
+  
+    
+    "description": "Simple color scheme creator with color picker.",
+  
+    "author": "Radosław Krochmal",
+    "action": {
+        "default_popup": "index.html"
+    }
+}
