@@ -1,2 +1,4 @@
-<h3><strike> It's simple color scheme extension.</strike></h3>
-<h3> Work in Progress </h3>
+<h3>Color Scheme extension</h3>
+<p> It's simple Color Scheme extension for google chrome browser. You can choose one from 7 types of scheme.
+<h2>How to install</h2>
+<p> Upload directory with files into chrome://extensions/ </p>
