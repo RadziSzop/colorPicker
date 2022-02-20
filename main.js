@@ -10,12 +10,14 @@ let valueEl4 = document.querySelector("#value4")
 let valueEl5 = document.querySelector("#value5")
 let submitBtnEl = document.querySelector("#submit-button")
 let colorPicerEl = document.querySelector("#color-picker")
+let menuEl = document.querySelector("#menu")
 let apiData
 submitBtnEl.addEventListener("click", getingColors)
 function getingColors(){
     let color = colorPicerEl.value.slice(1)
-
-    fetch(`https://www.thecolorapi.com/scheme?hex=${color}`)
+    let type = menuEl.value.toLowerCase()
+    
+    fetch(`https://www.thecolorapi.com/scheme?hex=${color}&mode=${type}`)
     .then(response => response.json())
     .then(json => {
         apiData = json
