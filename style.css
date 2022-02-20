@@ -26,6 +26,10 @@ button {
   border-radius: 4px;
   font-weight: 700;
   cursor: pointer;
+  transition: transform 0.2s;
+}
+.buttonClick {
+  transform: scale(1.1);
 }
 option {
   padding-top: 5px;
@@ -53,6 +57,7 @@ option {
   width: 20%;
   height: 100%;
   background-color: rgb(255, 255, 255);
+  transition: background 1s;
   /* border: 1px black solid; */
 }
 .color_values {
