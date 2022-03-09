@@ -15,6 +15,83 @@
   </head>
   <body>
     <div class="container">
+      <div class="modal">
+        <div class="closeBtn">
+          <img class="exitSvg" src="svg/close-button.svg" />
+        </div>
+        <div class="settings">
+          <div class="settings-color-count">
+            <p>Color count</p>
+            <input
+              id="color-count"
+              type="range"
+              min="3"
+              max="10"
+              value="5"
+              step="1"
+            />
+            <p class="abs"><span id="color-count-text"></span></p>
+          </div>
+          <div class="settings-option">
+            <div>
+              <input
+                type="checkbox"
+                name="rgb"
+                class="checkbox"
+                id="show-rgb"
+              />
+              <label for="rgb">show rgb</label>
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                name="hex"
+                class="checkbox"
+                id="show-hex"
+              />
+              <label for="hex">show hex</label>
+            </div>
+            <div id="theme-selector">
+              <label for="themeMenu">Theme</label>
+              <select name="themeMenu" id="theme-menu">
+                <option value="lightTheme">Light</option>
+                <option value="darkTheme">Dark</option>
+                <option value="kocperTheme">Kocper</option>
+              </select>
+            </div>
+          </div>
+          <div class="settings-option">
+            <div id="ctpDiv">
+              <label for="ctc">
+                <input
+                  type="checkbox"
+                  name="ctc"
+                  class="checkbox"
+                  id="ctc"
+                />Click to copy (nie działa)</label
+              >
+              <div>
+                <input
+                  type="radio"
+                  name="ctcRadio"
+                  class="checkbox"
+                  id="toRGB"
+                />
+                <label for="toRGB">to RGB</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  name="ctcRadio"
+                  class="checkbox"
+                  id="toHEX"
+                />
+                <label for="toHEX">to HEX</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="main">
         <input type="color" id="color-picker" />
         <select id="menu">
@@ -27,21 +104,9 @@
           <option value="Triad">Triad</option>
         </select>
         <button id="submit-button">Get color scheme</button>
+        <div class="gear"><img class="gearSvg" src="svg/gear-solid.svg" /></div>
       </div>
-      <div class="colors">
-        <div class="colorBox" id="color1"></div>
-        <div class="colorBox" id="color2"></div>
-        <div class="colorBox" id="color3"></div>
-        <div class="colorBox" id="color4"></div>
-        <div class="colorBox" id="color5"></div>
-      </div>
-      <div class="color_values">
-        <div class="valueBox"><p id="value1"></p></div>
-        <div class="valueBox"><p id="value2"></p></div>
-        <div class="valueBox"><p id="value3"></p></div>
-        <div class="valueBox"><p id="value4"></p></div>
-        <div class="valueBox"><p id="value5"></p></div>
-      </div>
+      <div class="colors"></div>
     </div>
     <script src="main.js"></script>
   </body>

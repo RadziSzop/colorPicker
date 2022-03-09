@@ -1,0 +1,370 @@
+{
+    "sourceFile": "index.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 88,
+            "patches": [
+                {
+                    "date": 1645476426732,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1646430768915,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,9 @@\n     />\r\n     <title>Document</title>\r\n   </head>\r\n   <body>\r\n+    <p id=\"test\">ok</p>\r\n     <div class=\"container\">\r\n       <div class=\"main\">\r\n         <input type=\"color\" id=\"color-picker\" />\r\n         <select id=\"menu\">\r\n"
+                },
+                {
+                    "date": 1646432823923,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,8 +27,9 @@\n           <option value=\"Analogic-complement\">Analogic-complement</option>\r\n           <option value=\"Triad\">Triad</option>\r\n         </select>\r\n         <button id=\"submit-button\">Get color scheme</button>\r\n+        <button id=\"Settings\">Settings</button>\r\n       </div>\r\n       <div class=\"colors\">\r\n         <div class=\"colorBox\" id=\"color1\"></div>\r\n         <div class=\"colorBox\" id=\"color2\"></div>\r\n"
+                },
+                {
+                    "date": 1646432972249,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,9 @@\n           <option value=\"Analogic-complement\">Analogic-complement</option>\r\n           <option value=\"Triad\">Triad</option>\r\n         </select>\r\n         <button id=\"submit-button\">Get color scheme</button>\r\n-        <button id=\"Settings\">Settings</button>\r\n+        <button id=\"settings-button\">Settings</button>\r\n       </div>\r\n       <div class=\"colors\">\r\n         <div class=\"colorBox\" id=\"color1\"></div>\r\n         <div class=\"colorBox\" id=\"color2\"></div>\r\n"
+                },
+                {
+                    "date": 1646433568949,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,8 +10,9 @@\n     <link\r\n       href=\"https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap\"\r\n       rel=\"stylesheet\"\r\n     />\r\n+\r\n     <title>Document</title>\r\n   </head>\r\n   <body>\r\n     <p id=\"test\">ok</p>\r\n@@ -45,6 +46,10 @@\n         <div class=\"valueBox\"><p id=\"value5\"></p></div>\r\n       </div>\r\n     </div>\r\n     <script src=\"main.js\"></script>\r\n+    <script\r\n+      src=\"https://kit.fontawesome.com/a66a8c2e0c.js\"\r\n+      crossorigin=\"anonymous\"\r\n+    ></script>\r\n   </body>\r\n </html>\r\n"
+                },
+                {
+                    "date": 1646433592045,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,8 +10,12 @@\n     <link\r\n       href=\"https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap\"\r\n       rel=\"stylesheet\"\r\n     />\r\n+    <script\r\n+      src=\"https://kit.fontawesome.com/a66a8c2e0c.js\"\r\n+      crossorigin=\"anonymous\"\r\n+    ></script>\r\n \r\n     <title>Document</title>\r\n   </head>\r\n   <body>\r\n@@ -46,10 +50,6 @@\n         <div class=\"valueBox\"><p id=\"value5\"></p></div>\r\n       </div>\r\n     </div>\r\n     <script src=\"main.js\"></script>\r\n-    <script\r\n-      src=\"https://kit.fontawesome.com/a66a8c2e0c.js\"\r\n-      crossorigin=\"anonymous\"\r\n-    ></script>\r\n   </body>\r\n </html>\r\n"
+                },
+                {
+                    "date": 1646433707961,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n     <script\r\n       src=\"https://kit.fontawesome.com/a66a8c2e0c.js\"\r\n       crossorigin=\"anonymous\"\r\n     ></script>\r\n-\r\n+    <i class=\"fa-solid fa-gear\"></i>\r\n     <title>Document</title>\r\n   </head>\r\n   <body>\r\n     <p id=\"test\">ok</p>\r\n"
+                },
+                {
+                    "date": 1646433729265,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,15 +14,16 @@\n     <script\r\n       src=\"https://kit.fontawesome.com/a66a8c2e0c.js\"\r\n       crossorigin=\"anonymous\"\r\n     ></script>\r\n-    <i class=\"fa-solid fa-gear\"></i>\r\n+\r\n     <title>Document</title>\r\n   </head>\r\n   <body>\r\n     <p id=\"test\">ok</p>\r\n     <div class=\"container\">\r\n       <div class=\"main\">\r\n+        <i class=\"fa-solid fa-gear\"></i>\r\n         <input type=\"color\" id=\"color-picker\" />\r\n         <select id=\"menu\">\r\n           <option value=\"Monochrome\">Monochrome</option>\r\n           <option value=\"Monochrome-dark\">Monochrome-dark</option>\r\n"
+                },
+                {
+                    "date": 1646433802616,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,8 @@\n   <body>\r\n     <p id=\"test\">ok</p>\r\n     <div class=\"container\">\r\n       <div class=\"main\">\r\n-        <i class=\"fa-solid fa-gear\"></i>\r\n         <input type=\"color\" id=\"color-picker\" />\r\n         <select id=\"menu\">\r\n           <option value=\"Monochrome\">Monochrome</option>\r\n           <option value=\"Monochrome-dark\">Monochrome-dark</option>\r\n@@ -34,8 +33,9 @@\n           <option value=\"Triad\">Triad</option>\r\n         </select>\r\n         <button id=\"submit-button\">Get color scheme</button>\r\n         <button id=\"settings-button\">Settings</button>\r\n+        <i class=\"fa-solid fa-gear\"></i>\r\n       </div>\r\n       <div class=\"colors\">\r\n         <div class=\"colorBox\" id=\"color1\"></div>\r\n         <div class=\"colorBox\" id=\"color2\"></div>\r\n"
+                },
+                {
+                    "date": 1646433811368,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,9 @@\n           <option value=\"Analogic-complement\">Analogic-complement</option>\r\n           <option value=\"Triad\">Triad</option>\r\n         </select>\r\n         <button id=\"submit-button\">Get color scheme</button>\r\n-        <button id=\"settings-button\">Settings</button>\r\n+        <!-- <button id=\"settings-button\">Settings</button> -->\r\n         <i class=\"fa-solid fa-gear\"></i>\r\n       </div>\r\n       <div class=\"colors\">\r\n         <div class=\"colorBox\" id=\"color1\"></div>\r\n"
+                },
+                {
+                    "date": 1646433948160,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,13 +10,8 @@\n     <link\r\n       href=\"https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap\"\r\n       rel=\"stylesheet\"\r\n     />\r\n-    <script\r\n-      src=\"https://kit.fontawesome.com/a66a8c2e0c.js\"\r\n-      crossorigin=\"anonymous\"\r\n-    ></script>\r\n-\r\n     <title>Document</title>\r\n   </head>\r\n   <body>\r\n     <p id=\"test\">ok</p>\r\n@@ -33,9 +28,9 @@\n           <option value=\"Triad\">Triad</option>\r\n         </select>\r\n         <button id=\"submit-button\">Get color scheme</button>\r\n         <!-- <button id=\"settings-button\">Settings</button> -->\r\n-        <i class=\"fa-solid fa-gear\"></i>\r\n+        <img src=\"images/gear-solid.svg\" alt=\"\" />\r\n       </div>\r\n       <div class=\"colors\">\r\n         <div class=\"colorBox\" id=\"color1\"></div>\r\n         <div class=\"colorBox\" id=\"color2\"></div>\r\n"
+                },
+                {
+                    "date": 1646434001779,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n     />\r\n     <title>Document</title>\r\n   </head>\r\n   <body>\r\n-    <p id=\"test\">ok</p>\r\n+    <!-- <p id=\"test\">ok</p> -->\r\n     <div class=\"container\">\r\n       <div class=\"main\">\r\n         <input type=\"color\" id=\"color-picker\" />\r\n         <select id=\"menu\">\r\n"
+                },
+                {
+                    "date": 1646434031305,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,11 @@\n           <option value=\"Triad\">Triad</option>\r\n         </select>\r\n         <button id=\"submit-button\">Get color scheme</button>\r\n         <!-- <button id=\"settings-button\">Settings</button> -->\r\n-        <img src=\"images/gear-solid.svg\" alt=\"\" />\r\n+        <div class=\"gear\">\r\n+          <img src=\"images/gear-solid.svg\" alt=\"\" />\r\n+        </div>\r\n       </div>\r\n       <div class=\"colors\">\r\n         <div class=\"colorBox\" id=\"color1\"></div>\r\n         <div class=\"colorBox\" id=\"color2\"></div>\r\n"
+                },
+                {
+                    "date": 1646434246907,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,7 +47,8 @@\n         <div class=\"valueBox\"><p id=\"value4\"></p></div>\r\n         <div class=\"valueBox\"><p id=\"value5\"></p></div>\r\n       </div>\r\n     </div>\r\n+    <div class=\"modal\"></div>\r\n     <script src=\"main.js\"></script>\r\n   </body>\r\n </html>\r\n"
+                },
+                {
+                    "date": 1646434378289,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,9 +46,10 @@\n         <div class=\"valueBox\"><p id=\"value3\"></p></div>\r\n         <div class=\"valueBox\"><p id=\"value4\"></p></div>\r\n         <div class=\"valueBox\"><p id=\"value5\"></p></div>\r\n       </div>\r\n+      <div class=\"modal\"></div>\r\n     </div>\r\n-    <div class=\"modal\"></div>\r\n+\r\n     <script src=\"main.js\"></script>\r\n   </body>\r\n </html>\r\n"
+                },
+                {
+                    "date": 1646434430983,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,9 +46,8 @@\n         <div class=\"valueBox\"><p id=\"value3\"></p></div>\r\n         <div class=\"valueBox\"><p id=\"value4\"></p></div>\r\n         <div class=\"valueBox\"><p id=\"value5\"></p></div>\r\n       </div>\r\n-      <div class=\"modal\"></div>\r\n     </div>\r\n \r\n     <script src=\"main.js\"></script>\r\n   </body>\r\n"
+                },
+                {
+                    "date": 1646434436657,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,8 +15,9 @@\n   </head>\r\n   <body>\r\n     <!-- <p id=\"test\">ok</p> -->\r\n     <div class=\"container\">\r\n+      <div class=\"modal\"></div>\r\n       <div class=\"main\">\r\n         <input type=\"color\" id=\"color-picker\" />\r\n         <select id=\"menu\">\r\n           <option value=\"Monochrome\">Monochrome</option>\r\n"
+                },
+                {
+                    "date": 1646434480501,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n   </head>\r\n   <body>\r\n     <!-- <p id=\"test\">ok</p> -->\r\n     <div class=\"container\">\r\n-      <div class=\"modal\"></div>\r\n+      <!-- <div class=\"modal\"></div> -->\r\n       <div class=\"main\">\r\n         <input type=\"color\" id=\"color-picker\" />\r\n         <select id=\"menu\">\r\n           <option value=\"Monochrome\">Monochrome</option>\r\n"
+                },
+                {
+                    "date": 1646434544474,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n   </head>\r\n   <body>\r\n     <!-- <p id=\"test\">ok</p> -->\r\n     <div class=\"container\">\r\n-      <!-- <div class=\"modal\"></div> -->\r\n+      <div class=\"modal\"></div>\r\n       <div class=\"main\">\r\n         <input type=\"color\" id=\"color-picker\" />\r\n         <select id=\"menu\">\r\n           <option value=\"Monochrome\">Monochrome</option>\r\n"
+                },
+                {
+                    "date": 1646434721091,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,11 @@\n   </head>\r\n   <body>\r\n     <!-- <p id=\"test\">ok</p> -->\r\n     <div class=\"container\">\r\n-      <div class=\"modal\"></div>\r\n+      <div class=\"modal\">\r\n+        <div class=\"settings\"></div>\r\n+      </div>\r\n       <div class=\"main\">\r\n         <input type=\"color\" id=\"color-picker\" />\r\n         <select id=\"menu\">\r\n           <option value=\"Monochrome\">Monochrome</option>\r\n"
+                },
+                {
+                    "date": 1646435376440,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,8 +16,9 @@\n   <body>\r\n     <!-- <p id=\"test\">ok</p> -->\r\n     <div class=\"container\">\r\n       <div class=\"modal\">\r\n+        <div class=\"closeBtn\"></div>\r\n         <div class=\"settings\"></div>\r\n       </div>\r\n       <div class=\"main\">\r\n         <input type=\"color\" id=\"color-picker\" />\r\n"
+                },
+                {
+                    "date": 1646435890507,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,12 +15,12 @@\n   </head>\r\n   <body>\r\n     <!-- <p id=\"test\">ok</p> -->\r\n     <div class=\"container\">\r\n-      <div class=\"modal\">\r\n+      <!-- <div class=\"modal\">\r\n         <div class=\"closeBtn\"></div>\r\n         <div class=\"settings\"></div>\r\n-      </div>\r\n+      </div> -->\r\n       <div class=\"main\">\r\n         <input type=\"color\" id=\"color-picker\" />\r\n         <select id=\"menu\">\r\n           <option value=\"Monochrome\">Monochrome</option>\r\n"
+                },
+                {
+                    "date": 1646436154338,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,12 +15,12 @@\n   </head>\r\n   <body>\r\n     <!-- <p id=\"test\">ok</p> -->\r\n     <div class=\"container\">\r\n-      <!-- <div class=\"modal\">\r\n+      <div class=\"modal\">\r\n         <div class=\"closeBtn\"></div>\r\n         <div class=\"settings\"></div>\r\n-      </div> -->\r\n+      </div>\r\n       <div class=\"main\">\r\n         <input type=\"color\" id=\"color-picker\" />\r\n         <select id=\"menu\">\r\n           <option value=\"Monochrome\">Monochrome</option>\r\n"
+                },
+                {
+                    "date": 1646436238717,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,12 +15,8 @@\n   </head>\r\n   <body>\r\n     <!-- <p id=\"test\">ok</p> -->\r\n     <div class=\"container\">\r\n-      <div class=\"modal\">\r\n-        <div class=\"closeBtn\"></div>\r\n-        <div class=\"settings\"></div>\r\n-      </div>\r\n       <div class=\"main\">\r\n         <input type=\"color\" id=\"color-picker\" />\r\n         <select id=\"menu\">\r\n           <option value=\"Monochrome\">Monochrome</option>\r\n@@ -50,8 +46,12 @@\n         <div class=\"valueBox\"><p id=\"value3\"></p></div>\r\n         <div class=\"valueBox\"><p id=\"value4\"></p></div>\r\n         <div class=\"valueBox\"><p id=\"value5\"></p></div>\r\n       </div>\r\n+      <div class=\"modal\">\r\n+        <div class=\"closeBtn\"></div>\r\n+        <div class=\"settings\"></div>\r\n+      </div>\r\n     </div>\r\n \r\n     <script src=\"main.js\"></script>\r\n   </body>\r\n"
+                },
+                {
+                    "date": 1646436270449,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,8 +15,12 @@\n   </head>\r\n   <body>\r\n     <!-- <p id=\"test\">ok</p> -->\r\n     <div class=\"container\">\r\n+      <div class=\"modal\">\r\n+        <div class=\"closeBtn\"></div>\r\n+        <div class=\"settings\"></div>\r\n+      </div>\r\n       <div class=\"main\">\r\n         <input type=\"color\" id=\"color-picker\" />\r\n         <select id=\"menu\">\r\n           <option value=\"Monochrome\">Monochrome</option>\r\n@@ -46,12 +50,8 @@\n         <div class=\"valueBox\"><p id=\"value3\"></p></div>\r\n         <div class=\"valueBox\"><p id=\"value4\"></p></div>\r\n         <div class=\"valueBox\"><p id=\"value5\"></p></div>\r\n       </div>\r\n-      <div class=\"modal\">\r\n-        <div class=\"closeBtn\"></div>\r\n-        <div class=\"settings\"></div>\r\n-      </div>\r\n     </div>\r\n \r\n     <script src=\"main.js\"></script>\r\n   </body>\r\n"
+                },
+                {
+                    "date": 1646436289161,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,12 +15,12 @@\n   </head>\r\n   <body>\r\n     <!-- <p id=\"test\">ok</p> -->\r\n     <div class=\"container\">\r\n-      <div class=\"modal\">\r\n+      <!-- <div class=\"modal\">\r\n         <div class=\"closeBtn\"></div>\r\n         <div class=\"settings\"></div>\r\n-      </div>\r\n+      </div> -->\r\n       <div class=\"main\">\r\n         <input type=\"color\" id=\"color-picker\" />\r\n         <select id=\"menu\">\r\n           <option value=\"Monochrome\">Monochrome</option>\r\n"
+                },
+                {
+                    "date": 1646436508016,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,12 +15,12 @@\n   </head>\r\n   <body>\r\n     <!-- <p id=\"test\">ok</p> -->\r\n     <div class=\"container\">\r\n-      <!-- <div class=\"modal\">\r\n+      <div class=\"modal\">\r\n         <div class=\"closeBtn\"></div>\r\n         <div class=\"settings\"></div>\r\n-      </div> -->\r\n+      </div>\r\n       <div class=\"main\">\r\n         <input type=\"color\" id=\"color-picker\" />\r\n         <select id=\"menu\">\r\n           <option value=\"Monochrome\">Monochrome</option>\r\n"
+                },
+                {
+                    "date": 1646488424727,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,14 @@\n     <!-- <p id=\"test\">ok</p> -->\r\n     <div class=\"container\">\r\n       <div class=\"modal\">\r\n         <div class=\"closeBtn\"></div>\r\n-        <div class=\"settings\"></div>\r\n+        <div class=\"settings\">\r\n+          <div class=\"settings-option\"></div>\r\n+          <div class=\"settings-option\"></div>\r\n+          <div class=\"settings-option\"></div>\r\n+          <div class=\"settings-option\"></div>\r\n+        </div>\r\n       </div>\r\n       <div class=\"main\">\r\n         <input type=\"color\" id=\"color-picker\" />\r\n         <select id=\"menu\">\r\n"
+                },
+                {
+                    "date": 1646489328979,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,10 +20,8 @@\n         <div class=\"closeBtn\"></div>\r\n         <div class=\"settings\">\r\n           <div class=\"settings-option\"></div>\r\n           <div class=\"settings-option\"></div>\r\n-          <div class=\"settings-option\"></div>\r\n-          <div class=\"settings-option\"></div>\r\n         </div>\r\n       </div>\r\n       <div class=\"main\">\r\n         <input type=\"color\" id=\"color-picker\" />\r\n"
+                },
+                {
+                    "date": 1646489533259,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,10 +18,12 @@\n     <div class=\"container\">\r\n       <div class=\"modal\">\r\n         <div class=\"closeBtn\"></div>\r\n         <div class=\"settings\">\r\n+          <div class=\"settings-option\">\r\n+            <input type=\"checkbox\" name=\"\" id=\"\" />\r\n+          </div>\r\n           <div class=\"settings-option\"></div>\r\n-          <div class=\"settings-option\"></div>\r\n         </div>\r\n       </div>\r\n       <div class=\"main\">\r\n         <input type=\"color\" id=\"color-picker\" />\r\n"
+                },
+                {
+                    "date": 1646489584268,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,12 +18,10 @@\n     <div class=\"container\">\r\n       <div class=\"modal\">\r\n         <div class=\"closeBtn\"></div>\r\n         <div class=\"settings\">\r\n-          <div class=\"settings-option\">\r\n-            <input type=\"checkbox\" name=\"\" id=\"\" />\r\n-          </div>\r\n           <div class=\"settings-option\"></div>\r\n+          <div class=\"settings-option\"></div>\r\n         </div>\r\n       </div>\r\n       <div class=\"main\">\r\n         <input type=\"color\" id=\"color-picker\" />\r\n"
+                },
+                {
+                    "date": 1646489599874,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,8 +18,9 @@\n     <div class=\"container\">\r\n       <div class=\"modal\">\r\n         <div class=\"closeBtn\"></div>\r\n         <div class=\"settings\">\r\n+          <div class=\"settings-color-count\"></div>\r\n           <div class=\"settings-option\"></div>\r\n           <div class=\"settings-option\"></div>\r\n         </div>\r\n       </div>\r\n"
+                },
+                {
+                    "date": 1646489687385,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,11 @@\n     <div class=\"container\">\r\n       <div class=\"modal\">\r\n         <div class=\"closeBtn\"></div>\r\n         <div class=\"settings\">\r\n-          <div class=\"settings-color-count\"></div>\r\n+          <div class=\"settings-color-count\">\r\n+            <input type=\"range\" />\r\n+          </div>\r\n           <div class=\"settings-option\"></div>\r\n           <div class=\"settings-option\"></div>\r\n         </div>\r\n       </div>\r\n"
+                },
+                {
+                    "date": 1646489750385,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n       <div class=\"modal\">\r\n         <div class=\"closeBtn\"></div>\r\n         <div class=\"settings\">\r\n           <div class=\"settings-color-count\">\r\n-            <input type=\"range\" />\r\n+            <input type=\"range min=\"3\" max=\"10\" value=\"5\" step=\"1\">\" />\r\n           </div>\r\n           <div class=\"settings-option\"></div>\r\n           <div class=\"settings-option\"></div>\r\n         </div>\r\n"
+                },
+                {
+                    "date": 1646489770085,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n       <div class=\"modal\">\r\n         <div class=\"closeBtn\"></div>\r\n         <div class=\"settings\">\r\n           <div class=\"settings-color-count\">\r\n-            <input type=\"range min=\"3\" max=\"10\" value=\"5\" step=\"1\">\" />\r\n+            <input type=\"range\" min=\"3\" max=\"10\" value=\"5\" step=\"1\" />\r\n           </div>\r\n           <div class=\"settings-option\"></div>\r\n           <div class=\"settings-option\"></div>\r\n         </div>\r\n"
+                },
+                {
+                    "date": 1646490231216,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,16 @@\n       <div class=\"modal\">\r\n         <div class=\"closeBtn\"></div>\r\n         <div class=\"settings\">\r\n           <div class=\"settings-color-count\">\r\n-            <input type=\"range\" min=\"3\" max=\"10\" value=\"5\" step=\"1\" />\r\n+            <input\r\n+              id=\"color-count\"\r\n+              type=\"range\"\r\n+              min=\"3\"\r\n+              max=\"10\"\r\n+              value=\"5\"\r\n+              step=\"1\"\r\n+            />\r\n           </div>\r\n           <div class=\"settings-option\"></div>\r\n           <div class=\"settings-option\"></div>\r\n         </div>\r\n"
+                },
+                {
+                    "date": 1646490873806,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,8 +27,9 @@\n               max=\"10\"\r\n               value=\"5\"\r\n               step=\"1\"\r\n             />\r\n+            <p><span id=\"color-count-text\"></span></p>\r\n           </div>\r\n           <div class=\"settings-option\"></div>\r\n           <div class=\"settings-option\"></div>\r\n         </div>\r\n"
+                },
+                {
+                    "date": 1646504971913,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,9 @@\n               max=\"10\"\r\n               value=\"5\"\r\n               step=\"1\"\r\n             />\r\n-            <p><span id=\"color-count-text\"></span></p>\r\n+            <p class=\"abs\"><span id=\"color-count-text\"></span></p>\r\n           </div>\r\n           <div class=\"settings-option\"></div>\r\n           <div class=\"settings-option\"></div>\r\n         </div>\r\n"
+                },
+                {
+                    "date": 1646506408669,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,9 @@\n               max=\"10\"\r\n               value=\"5\"\r\n               step=\"1\"\r\n             />\r\n-            <p class=\"abs\"><span id=\"color-count-text\"></span></p>\r\n+            <div class=\"abs\"><span id=\"color-count-text\"></span></div>\r\n           </div>\r\n           <div class=\"settings-option\"></div>\r\n           <div class=\"settings-option\"></div>\r\n         </div>\r\n"
+                },
+                {
+                    "date": 1646506423895,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,9 @@\n               max=\"10\"\r\n               value=\"5\"\r\n               step=\"1\"\r\n             />\r\n-            <div class=\"abs\"><span id=\"color-count-text\"></span></div>\r\n+            <p class=\"abs\"><span id=\"color-count-text\"></span></p>\r\n           </div>\r\n           <div class=\"settings-option\"></div>\r\n           <div class=\"settings-option\"></div>\r\n         </div>\r\n"
+                },
+                {
+                    "date": 1646507821622,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,8 +19,9 @@\n       <div class=\"modal\">\r\n         <div class=\"closeBtn\"></div>\r\n         <div class=\"settings\">\r\n           <div class=\"settings-color-count\">\r\n+            <p>Color count:</p>\r\n             <input\r\n               id=\"color-count\"\r\n               type=\"range\"\r\n               min=\"3\"\r\n"
+                },
+                {
+                    "date": 1646507831048,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n       <div class=\"modal\">\r\n         <div class=\"closeBtn\"></div>\r\n         <div class=\"settings\">\r\n           <div class=\"settings-color-count\">\r\n-            <p>Color count:</p>\r\n+            <h3>Color count:</h3>\r\n             <input\r\n               id=\"color-count\"\r\n               type=\"range\"\r\n               min=\"3\"\r\n"
+                },
+                {
+                    "date": 1646507844735,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n       <div class=\"modal\">\r\n         <div class=\"closeBtn\"></div>\r\n         <div class=\"settings\">\r\n           <div class=\"settings-color-count\">\r\n-            <h3>Color count:</h3>\r\n+            <h3>Color count</h3>\r\n             <input\r\n               id=\"color-count\"\r\n               type=\"range\"\r\n               min=\"3\"\r\n"
+                },
+                {
+                    "date": 1646508370652,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n       <div class=\"modal\">\r\n         <div class=\"closeBtn\"></div>\r\n         <div class=\"settings\">\r\n           <div class=\"settings-color-count\">\r\n-            <h3>Color count</h3>\r\n+            <p>Color count</p>\r\n             <input\r\n               id=\"color-count\"\r\n               type=\"range\"\r\n               min=\"3\"\r\n"
+                },
+                {
+                    "date": 1646510075365,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,10 +30,15 @@\n               step=\"1\"\r\n             />\r\n             <p class=\"abs\"><span id=\"color-count-text\"></span></p>\r\n           </div>\r\n+          <div class=\"settings-option\">\r\n+            <label for=\"\"> <input type=\"checkbox\" name=\"\" id=\"\" /> </label>\r\n+            <!-- -show rgb\r\n+              -show hex\r\n+              -theme(menu)  -->\r\n+          </div>\r\n           <div class=\"settings-option\"></div>\r\n-          <div class=\"settings-option\"></div>\r\n         </div>\r\n       </div>\r\n       <div class=\"main\">\r\n         <input type=\"color\" id=\"color-picker\" />\r\n"
+                },
+                {
+                    "date": 1646510149122,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,10 @@\n             />\r\n             <p class=\"abs\"><span id=\"color-count-text\"></span></p>\r\n           </div>\r\n           <div class=\"settings-option\">\r\n-            <label for=\"\"> <input type=\"checkbox\" name=\"\" id=\"\" /> </label>\r\n+            <label for=\"rgb\"> </label>\r\n+            <input type=\"checkbox\" name=\"rgb\" id=\"\" />\r\n             <!-- -show rgb\r\n               -show hex\r\n               -theme(menu)  -->\r\n           </div>\r\n"
+                },
+                {
+                    "date": 1646510168119,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n             />\r\n             <p class=\"abs\"><span id=\"color-count-text\"></span></p>\r\n           </div>\r\n           <div class=\"settings-option\">\r\n-            <label for=\"rgb\"> </label>\r\n+            <label for=\"rgb\">show RGB</label>\r\n             <input type=\"checkbox\" name=\"rgb\" id=\"\" />\r\n             <!-- -show rgb\r\n               -show hex\r\n               -theme(menu)  -->\r\n"
+                },
+                {
+                    "date": 1646510199660,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,10 +31,11 @@\n             />\r\n             <p class=\"abs\"><span id=\"color-count-text\"></span></p>\r\n           </div>\r\n           <div class=\"settings-option\">\r\n+            <input type=\"checkbox\" name=\"rgb\" id=\"\" />\r\n             <label for=\"rgb\">show RGB</label>\r\n-            <input type=\"checkbox\" name=\"rgb\" id=\"\" />\r\n+\r\n             <!-- -show rgb\r\n               -show hex\r\n               -theme(menu)  -->\r\n           </div>\r\n"
+                },
+                {
+                    "date": 1646510264570,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,11 @@\n             <p class=\"abs\"><span id=\"color-count-text\"></span></p>\r\n           </div>\r\n           <div class=\"settings-option\">\r\n             <input type=\"checkbox\" name=\"rgb\" id=\"\" />\r\n-            <label for=\"rgb\">show RGB</label>\r\n+            <label for=\"rgb\">show rgb</label>\r\n+            <input type=\"checkbox\" name=\"hex\" id=\"\" />\r\n+            <label for=\"hex\">show hex</label>\r\n \r\n             <!-- -show rgb\r\n               -show hex\r\n               -theme(menu)  -->\r\n"
+                },
+                {
+                    "date": 1646510301706,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,12 +31,17 @@\n             />\r\n             <p class=\"abs\"><span id=\"color-count-text\"></span></p>\r\n           </div>\r\n           <div class=\"settings-option\">\r\n-            <input type=\"checkbox\" name=\"rgb\" id=\"\" />\r\n-            <label for=\"rgb\">show rgb</label>\r\n-            <input type=\"checkbox\" name=\"hex\" id=\"\" />\r\n-            <label for=\"hex\">show hex</label>\r\n+            <div>\r\n+              <input type=\"checkbox\" name=\"rgb\" id=\"\" />\r\n+              <label for=\"rgb\">show rgb</label>\r\n+            </div>\r\n+            <div>\r\n+              <input type=\"checkbox\" name=\"hex\" id=\"\" />\r\n+              <label for=\"hex\">show hex</label>\r\n+            </div>\r\n+            <div></div>\r\n \r\n             <!-- -show rgb\r\n               -show hex\r\n               -theme(menu)  -->\r\n"
+                },
+                {
+                    "date": 1646510342740,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,9 +39,9 @@\n             <div>\r\n               <input type=\"checkbox\" name=\"hex\" id=\"\" />\r\n               <label for=\"hex\">show hex</label>\r\n             </div>\r\n-            <div></div>\r\n+            <div><select name=\"\" id=\"\"></select></div>\r\n \r\n             <!-- -show rgb\r\n               -show hex\r\n               -theme(menu)  -->\r\n"
+                },
+                {
+                    "date": 1646510437365,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,9 +39,9 @@\n             <div>\r\n               <input type=\"checkbox\" name=\"hex\" id=\"\" />\r\n               <label for=\"hex\">show hex</label>\r\n             </div>\r\n-            <div><select name=\"\" id=\"\"></select></div>\r\n+            <div><select name=\"\" id=\"theme-menu\"></select></div>\r\n \r\n             <!-- -show rgb\r\n               -show hex\r\n               -theme(menu)  -->\r\n"
+                },
+                {
+                    "date": 1646510678846,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,9 +39,12 @@\n             <div>\r\n               <input type=\"checkbox\" name=\"hex\" id=\"\" />\r\n               <label for=\"hex\">show hex</label>\r\n             </div>\r\n-            <div><select name=\"\" id=\"theme-menu\"></select></div>\r\n+            <div>\r\n+              <p>Theme:</p>\r\n+              <select name=\"\" id=\"theme-menu\"></select>\r\n+            </div>\r\n \r\n             <!-- -show rgb\r\n               -show hex\r\n               -theme(menu)  -->\r\n"
+                },
+                {
+                    "date": 1646510758879,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,10 +40,10 @@\n               <input type=\"checkbox\" name=\"hex\" id=\"\" />\r\n               <label for=\"hex\">show hex</label>\r\n             </div>\r\n             <div>\r\n-              <p>Theme:</p>\r\n-              <select name=\"\" id=\"theme-menu\"></select>\r\n+              <label for=\"themeMenu\"></label>\r\n+              <select name=\"themeMenu\" id=\"theme-menu\"></select>\r\n             </div>\r\n \r\n             <!-- -show rgb\r\n               -show hex\r\n"
+                },
+                {
+                    "date": 1646510778732,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n               <input type=\"checkbox\" name=\"hex\" id=\"\" />\r\n               <label for=\"hex\">show hex</label>\r\n             </div>\r\n             <div>\r\n-              <label for=\"themeMenu\"></label>\r\n+              <label for=\"themeMenu\">Theme</label>\r\n               <select name=\"themeMenu\" id=\"theme-menu\"></select>\r\n             </div>\r\n \r\n             <!-- -show rgb\r\n"
+                },
+                {
+                    "date": 1646510954918,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,13 +32,13 @@\n             <p class=\"abs\"><span id=\"color-count-text\"></span></p>\r\n           </div>\r\n           <div class=\"settings-option\">\r\n             <div>\r\n-              <input type=\"checkbox\" name=\"rgb\" id=\"\" />\r\n+              <input type=\"checkbox\" name=\"rgb\" class=\"checkbox\" />\r\n               <label for=\"rgb\">show rgb</label>\r\n             </div>\r\n             <div>\r\n-              <input type=\"checkbox\" name=\"hex\" id=\"\" />\r\n+              <input type=\"checkbox\" name=\"hex\" class=\"checkbox\" />\r\n               <label for=\"hex\">show hex</label>\r\n             </div>\r\n             <div>\r\n               <label for=\"themeMenu\">Theme</label>\r\n"
+                },
+                {
+                    "date": 1646511329555,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,8 +41,9 @@\n               <label for=\"hex\">show hex</label>\r\n             </div>\r\n             <div>\r\n               <label for=\"themeMenu\">Theme</label>\r\n+              <br />\r\n               <select name=\"themeMenu\" id=\"theme-menu\"></select>\r\n             </div>\r\n \r\n             <!-- -show rgb\r\n"
+                },
+                {
+                    "date": 1646512510416,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,9 +41,9 @@\n               <label for=\"hex\">show hex</label>\r\n             </div>\r\n             <div>\r\n               <label for=\"themeMenu\">Theme</label>\r\n-              <br />\r\n+\r\n               <select name=\"themeMenu\" id=\"theme-menu\"></select>\r\n             </div>\r\n \r\n             <!-- -show rgb\r\n"
+                },
+                {
+                    "date": 1646512652217,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,9 +39,9 @@\n             <div>\r\n               <input type=\"checkbox\" name=\"hex\" class=\"checkbox\" />\r\n               <label for=\"hex\">show hex</label>\r\n             </div>\r\n-            <div>\r\n+            <div class=\"theme-selector\">\r\n               <label for=\"themeMenu\">Theme</label>\r\n \r\n               <select name=\"themeMenu\" id=\"theme-menu\"></select>\r\n             </div>\r\n"
+                },
+                {
+                    "date": 1646512745710,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,9 +39,9 @@\n             <div>\r\n               <input type=\"checkbox\" name=\"hex\" class=\"checkbox\" />\r\n               <label for=\"hex\">show hex</label>\r\n             </div>\r\n-            <div class=\"theme-selector\">\r\n+            <div id=\"theme-selector\">\r\n               <label for=\"themeMenu\">Theme</label>\r\n \r\n               <select name=\"themeMenu\" id=\"theme-menu\"></select>\r\n             </div>\r\n"
+                },
+                {
+                    "date": 1646513240230,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,13 +32,23 @@\n             <p class=\"abs\"><span id=\"color-count-text\"></span></p>\r\n           </div>\r\n           <div class=\"settings-option\">\r\n             <div>\r\n-              <input type=\"checkbox\" name=\"rgb\" class=\"checkbox\" />\r\n+              <input\r\n+                type=\"checkbox\"\r\n+                name=\"rgb\"\r\n+                class=\"checkbox\"\r\n+                id=\"show-rgb\"\r\n+              />\r\n               <label for=\"rgb\">show rgb</label>\r\n             </div>\r\n             <div>\r\n-              <input type=\"checkbox\" name=\"hex\" class=\"checkbox\" />\r\n+              <input\r\n+                type=\"checkbox\"\r\n+                name=\"hex\"\r\n+                class=\"checkbox\"\r\n+                id=\"show-hex\"\r\n+              />\r\n               <label for=\"hex\">show hex</label>\r\n             </div>\r\n             <div id=\"theme-selector\">\r\n               <label for=\"themeMenu\">Theme</label>\r\n"
+                },
+                {
+                    "date": 1646519301810,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,8 @@\n     />\r\n     <title>Document</title>\r\n   </head>\r\n   <body>\r\n-    <!-- <p id=\"test\">ok</p> -->\r\n     <div class=\"container\">\r\n       <div class=\"modal\">\r\n         <div class=\"closeBtn\"></div>\r\n         <div class=\"settings\">\r\n@@ -51,15 +50,10 @@\n               <label for=\"hex\">show hex</label>\r\n             </div>\r\n             <div id=\"theme-selector\">\r\n               <label for=\"themeMenu\">Theme</label>\r\n-\r\n               <select name=\"themeMenu\" id=\"theme-menu\"></select>\r\n             </div>\r\n-\r\n-            <!-- -show rgb\r\n-              -show hex\r\n-              -theme(menu)  -->\r\n           </div>\r\n           <div class=\"settings-option\"></div>\r\n         </div>\r\n       </div>\r\n@@ -74,9 +68,8 @@\n           <option value=\"Analogic-complement\">Analogic-complement</option>\r\n           <option value=\"Triad\">Triad</option>\r\n         </select>\r\n         <button id=\"submit-button\">Get color scheme</button>\r\n-        <!-- <button id=\"settings-button\">Settings</button> -->\r\n         <div class=\"gear\">\r\n           <img src=\"images/gear-solid.svg\" alt=\"\" />\r\n         </div>\r\n       </div>\r\n@@ -94,8 +87,7 @@\n         <div class=\"valueBox\"><p id=\"value4\"></p></div>\r\n         <div class=\"valueBox\"><p id=\"value5\"></p></div>\r\n       </div>\r\n     </div>\r\n-\r\n     <script src=\"main.js\"></script>\r\n   </body>\r\n </html>\r\n"
+                },
+                {
+                    "date": 1646519485340,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -72,22 +72,9 @@\n         <div class=\"gear\">\r\n           <img src=\"images/gear-solid.svg\" alt=\"\" />\r\n         </div>\r\n       </div>\r\n-      <div class=\"colors\">\r\n-        <div class=\"colorBox\" id=\"color1\"></div>\r\n-        <div class=\"colorBox\" id=\"color2\"></div>\r\n-        <div class=\"colorBox\" id=\"color3\"></div>\r\n-        <div class=\"colorBox\" id=\"color4\"></div>\r\n-        <div class=\"colorBox\" id=\"color5\"></div>\r\n-      </div>\r\n-      <div class=\"color_values\">\r\n-        <div class=\"valueBox\"><p id=\"value1\"></p></div>\r\n-        <div class=\"valueBox\"><p id=\"value2\"></p></div>\r\n-        <div class=\"valueBox\"><p id=\"value3\"></p></div>\r\n-        <div class=\"valueBox\"><p id=\"value4\"></p></div>\r\n-        <div class=\"valueBox\"><p id=\"value5\"></p></div>\r\n-      </div>\r\n+      <div class=\"colors\"></div>\r\n     </div>\r\n     <script src=\"main.js\"></script>\r\n   </body>\r\n </html>\r\n"
+                },
+                {
+                    "date": 1646519806735,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -72,9 +72,14 @@\n         <div class=\"gear\">\r\n           <img src=\"images/gear-solid.svg\" alt=\"\" />\r\n         </div>\r\n       </div>\r\n-      <div class=\"colors\"></div>\r\n+      <div class=\"colors\">\r\n+        <div></div>\r\n+        <div></div>\r\n+        <div></div>\r\n+        <div></div>\r\n+      </div>\r\n     </div>\r\n     <script src=\"main.js\"></script>\r\n   </body>\r\n </html>\r\n"
+                },
+                {
+                    "date": 1646520113769,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -77,8 +77,24 @@\n         <div></div>\r\n         <div></div>\r\n         <div></div>\r\n         <div></div>\r\n+        <div></div>\r\n+        <div></div>\r\n+        <div></div>\r\n+        <div></div>\r\n+        <div></div>\r\n+        <div></div>\r\n+        <div></div>\r\n+        <div></div>\r\n+        <div></div>\r\n+        <div></div>\r\n+        <div></div>\r\n+        <div></div>\r\n+        <div></div>\r\n+        <div></div>\r\n+        <div></div>\r\n+        <div></div>\r\n       </div>\r\n     </div>\r\n     <script src=\"main.js\"></script>\r\n   </body>\r\n"
+                },
+                {
+                    "date": 1646520132957,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -72,30 +72,9 @@\n         <div class=\"gear\">\r\n           <img src=\"images/gear-solid.svg\" alt=\"\" />\r\n         </div>\r\n       </div>\r\n-      <div class=\"colors\">\r\n-        <div></div>\r\n-        <div></div>\r\n-        <div></div>\r\n-        <div></div>\r\n-        <div></div>\r\n-        <div></div>\r\n-        <div></div>\r\n-        <div></div>\r\n-        <div></div>\r\n-        <div></div>\r\n-        <div></div>\r\n-        <div></div>\r\n-        <div></div>\r\n-        <div></div>\r\n-        <div></div>\r\n-        <div></div>\r\n-        <div></div>\r\n-        <div></div>\r\n-        <div></div>\r\n-        <div></div>\r\n-      </div>\r\n+      <div class=\"colors\"></div>\r\n     </div>\r\n     <script src=\"main.js\"></script>\r\n   </body>\r\n </html>\r\n"
+                },
+                {
+                    "date": 1646594612688,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n   </head>\r\n   <body>\r\n     <div class=\"container\">\r\n       <div class=\"modal\">\r\n-        <div class=\"closeBtn\"></div>\r\n+        <div class=\"closeBtn\">x</div>\r\n         <div class=\"settings\">\r\n           <div class=\"settings-color-count\">\r\n             <p>Color count</p>\r\n             <input\r\n"
+                },
+                {
+                    "date": 1646594729562,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -68,11 +68,9 @@\n           <option value=\"Analogic-complement\">Analogic-complement</option>\r\n           <option value=\"Triad\">Triad</option>\r\n         </select>\r\n         <button id=\"submit-button\">Get color scheme</button>\r\n-        <div class=\"gear\">\r\n-          <img src=\"images/gear-solid.svg\" alt=\"\" />\r\n-        </div>\r\n+        <div class=\"gear\"><img src=\"svg/gear-solid.svg alt=\"\" /></div>\r\n       </div>\r\n       <div class=\"colors\"></div>\r\n     </div>\r\n     <script src=\"main.js\"></script>\r\n"
+                },
+                {
+                    "date": 1646594761552,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n   </head>\r\n   <body>\r\n     <div class=\"container\">\r\n       <div class=\"modal\">\r\n-        <div class=\"closeBtn\">x</div>\r\n+        <div class=\"closeBtn\"><img src=\"svg/gear-solid.svg alt=\"\" /></div>\r\n         <div class=\"settings\">\r\n           <div class=\"settings-color-count\">\r\n             <p>Color count</p>\r\n             <input\r\n"
+                },
+                {
+                    "date": 1646594776021,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n   </head>\r\n   <body>\r\n     <div class=\"container\">\r\n       <div class=\"modal\">\r\n-        <div class=\"closeBtn\"><img src=\"svg/gear-solid.svg alt=\"\" /></div>\r\n+        <div class=\"closeBtn\"><img src=\"svg/close-button.svg\" /></div>\r\n         <div class=\"settings\">\r\n           <div class=\"settings-color-count\">\r\n             <p>Color count</p>\r\n             <input\r\n"
+                },
+                {
+                    "date": 1646594883084,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -68,9 +68,9 @@\n           <option value=\"Analogic-complement\">Analogic-complement</option>\r\n           <option value=\"Triad\">Triad</option>\r\n         </select>\r\n         <button id=\"submit-button\">Get color scheme</button>\r\n-        <div class=\"gear\"><img src=\"svg/gear-solid.svg alt=\"\" /></div>\r\n+        <div class=\"gear\"><img src=\"svg/gear-solid.svg\" /></div>\r\n       </div>\r\n       <div class=\"colors\"></div>\r\n     </div>\r\n     <script src=\"main.js\"></script>\r\n"
+                },
+                {
+                    "date": 1646595284302,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,9 +53,19 @@\n               <label for=\"themeMenu\">Theme</label>\r\n               <select name=\"themeMenu\" id=\"theme-menu\"></select>\r\n             </div>\r\n           </div>\r\n-          <div class=\"settings-option\"></div>\r\n+          <div class=\"settings-option\">\r\n+            <div>\r\n+              <input\r\n+                type=\"checkbox\"\r\n+                name=\"rgb\"\r\n+                class=\"checkbox\"\r\n+                id=\"show-rgb\"\r\n+              />\r\n+              <label for=\"rgb\">Click to copy</label>\r\n+            </div>\r\n+          </div>\r\n         </div>\r\n       </div>\r\n       <div class=\"main\">\r\n         <input type=\"color\" id=\"color-picker\" />\r\n"
+                },
+                {
+                    "date": 1646595296560,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,13 +57,13 @@\n           <div class=\"settings-option\">\r\n             <div>\r\n               <input\r\n                 type=\"checkbox\"\r\n-                name=\"rgb\"\r\n+                name=\"ctc\"\r\n                 class=\"checkbox\"\r\n                 id=\"show-rgb\"\r\n               />\r\n-              <label for=\"rgb\">Click to copy</label>\r\n+              <label for=\"ctc\">Click to copy</label>\r\n             </div>\r\n           </div>\r\n         </div>\r\n       </div>\r\n"
+                },
+                {
+                    "date": 1646595546071,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,8 +63,26 @@\n                 id=\"show-rgb\"\r\n               />\r\n               <label for=\"ctc\">Click to copy</label>\r\n             </div>\r\n+            <div>\r\n+              <input\r\n+                type=\"checkbox\"\r\n+                name=\"toRGB\"\r\n+                class=\"checkbox\"\r\n+                id=\"show-rgb\"\r\n+              />\r\n+              <label for=\"toRGB\">to RGB</label>\r\n+            </div>\r\n+            <div>\r\n+              <input\r\n+                type=\"checkbox\"\r\n+                name=\"toHEX\"\r\n+                class=\"checkbox\"\r\n+                id=\"show-rgb\"\r\n+              />\r\n+              <label for=\"toHEX\">to HEX</label>\r\n+            </div>\r\n           </div>\r\n         </div>\r\n       </div>\r\n       <div class=\"main\">\r\n"
+                },
+                {
+                    "date": 1646595837535,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,9 +61,9 @@\n                 name=\"ctc\"\r\n                 class=\"checkbox\"\r\n                 id=\"show-rgb\"\r\n               />\r\n-              <label for=\"ctc\">Click to copy</label>\r\n+              <label for=\"ctc\">Click to copy (nie działa)</label>\r\n             </div>\r\n             <div>\r\n               <input\r\n                 type=\"checkbox\"\r\n"
+                },
+                {
+                    "date": 1646596470992,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -62,27 +62,27 @@\n                 class=\"checkbox\"\r\n                 id=\"show-rgb\"\r\n               />\r\n               <label for=\"ctc\">Click to copy (nie działa)</label>\r\n+              <div>\r\n+                <input\r\n+                  type=\"checkbox\"\r\n+                  name=\"toRGB\"\r\n+                  class=\"checkbox\"\r\n+                  id=\"show-rgb\"\r\n+                />\r\n+                <label for=\"toRGB\">to RGB</label>\r\n+              </div>\r\n+              <div>\r\n+                <input\r\n+                  type=\"checkbox\"\r\n+                  name=\"toHEX\"\r\n+                  class=\"checkbox\"\r\n+                  id=\"show-rgb\"\r\n+                />\r\n+                <label for=\"toHEX\">to HEX</label>\r\n+              </div>\r\n             </div>\r\n-            <div>\r\n-              <input\r\n-                type=\"checkbox\"\r\n-                name=\"toRGB\"\r\n-                class=\"checkbox\"\r\n-                id=\"show-rgb\"\r\n-              />\r\n-              <label for=\"toRGB\">to RGB</label>\r\n-            </div>\r\n-            <div>\r\n-              <input\r\n-                type=\"checkbox\"\r\n-                name=\"toHEX\"\r\n-                class=\"checkbox\"\r\n-                id=\"show-rgb\"\r\n-              />\r\n-              <label for=\"toHEX\">to HEX</label>\r\n-            </div>\r\n           </div>\r\n         </div>\r\n       </div>\r\n       <div class=\"main\">\r\n"
+                },
+                {
+                    "date": 1646596521503,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,9 +54,9 @@\n               <select name=\"themeMenu\" id=\"theme-menu\"></select>\r\n             </div>\r\n           </div>\r\n           <div class=\"settings-option\">\r\n-            <div>\r\n+            <div class=\"ctpDiv\">\r\n               <input\r\n                 type=\"checkbox\"\r\n                 name=\"ctc\"\r\n                 class=\"checkbox\"\r\n"
+                },
+                {
+                    "date": 1646597361978,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,16 +61,17 @@\n                 name=\"ctc\"\r\n                 class=\"checkbox\"\r\n                 id=\"show-rgb\"\r\n               />\r\n-              <label for=\"ctc\">Click to copy (nie działa)</label>\r\n-              <div>\r\n+              <label for=\"ctc\"\r\n+                >Click to copy (nie działa)\r\n                 <input\r\n                   type=\"checkbox\"\r\n                   name=\"toRGB\"\r\n                   class=\"checkbox\"\r\n                   id=\"show-rgb\"\r\n-                />\r\n+              /></label>\r\n+              <div>\r\n                 <label for=\"toRGB\">to RGB</label>\r\n               </div>\r\n               <div>\r\n                 <input\r\n"
+                },
+                {
+                    "date": 1646597389040,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,16 +61,17 @@\n                 name=\"ctc\"\r\n                 class=\"checkbox\"\r\n                 id=\"show-rgb\"\r\n               />\r\n-              <label for=\"ctc\"\r\n-                >Click to copy (nie działa)\r\n+              <label for=\"ctc\">\r\n                 <input\r\n                   type=\"checkbox\"\r\n                   name=\"toRGB\"\r\n                   class=\"checkbox\"\r\n                   id=\"show-rgb\"\r\n-              /></label>\r\n+                />\r\n+                Click to copy (nie działa)</label\r\n+              >\r\n               <div>\r\n                 <label for=\"toRGB\">to RGB</label>\r\n               </div>\r\n               <div>\r\n"
+                },
+                {
+                    "date": 1646597433904,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,24 +55,23 @@\n             </div>\r\n           </div>\r\n           <div class=\"settings-option\">\r\n             <div class=\"ctpDiv\">\r\n-              <input\r\n-                type=\"checkbox\"\r\n-                name=\"ctc\"\r\n-                class=\"checkbox\"\r\n-                id=\"show-rgb\"\r\n-              />\r\n               <label for=\"ctc\">\r\n                 <input\r\n                   type=\"checkbox\"\r\n+                  name=\"ctc\"\r\n+                  class=\"checkbox\"\r\n+                  id=\"show-rgb\"\r\n+                />Click to copy (nie działa)</label\r\n+              >\r\n+              <div>\r\n+                <input\r\n+                  type=\"checkbox\"\r\n                   name=\"toRGB\"\r\n                   class=\"checkbox\"\r\n                   id=\"show-rgb\"\r\n                 />\r\n-                Click to copy (nie działa)</label\r\n-              >\r\n-              <div>\r\n                 <label for=\"toRGB\">to RGB</label>\r\n               </div>\r\n               <div>\r\n                 <input\r\n"
+                },
+                {
+                    "date": 1646597884088,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,9 +54,9 @@\n               <select name=\"themeMenu\" id=\"theme-menu\"></select>\r\n             </div>\r\n           </div>\r\n           <div class=\"settings-option\">\r\n-            <div class=\"ctpDiv\">\r\n+            <div id=\"ctpDiv\">\r\n               <label for=\"ctc\">\r\n                 <input\r\n                   type=\"checkbox\"\r\n                   name=\"ctc\"\r\n"
+                },
+                {
+                    "date": 1646598847612,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,23 +65,23 @@\n                 />Click to copy (nie działa)</label\r\n               >\r\n               <div>\r\n                 <input\r\n-                  type=\"checkbox\"\r\n-                  name=\"toRGB\"\r\n+                  type=\"radio\"\r\n+                  name=\"ctcRadio\"\r\n                   class=\"checkbox\"\r\n                   id=\"show-rgb\"\r\n                 />\r\n-                <label for=\"toRGB\">to RGB</label>\r\n+                <label for=\"show-rgb\">to RGB</label>\r\n               </div>\r\n               <div>\r\n                 <input\r\n-                  type=\"checkbox\"\r\n-                  name=\"toHEX\"\r\n+                  type=\"radio\"\r\n+                  name=\"ctcRadio\"\r\n                   class=\"checkbox\"\r\n-                  id=\"show-rgb\"\r\n+                  id=\"show-hex\"\r\n                 />\r\n-                <label for=\"toHEX\">to HEX</label>\r\n+                <label for=\"show-hex\">to HEX</label>\r\n               </div>\r\n             </div>\r\n           </div>\r\n         </div>\r\n"
+                },
+                {
+                    "date": 1646598922244,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -68,20 +68,20 @@\n                 <input\r\n                   type=\"radio\"\r\n                   name=\"ctcRadio\"\r\n                   class=\"checkbox\"\r\n-                  id=\"show-rgb\"\r\n+                  id=\"toRGB\"\r\n                 />\r\n-                <label for=\"show-rgb\">to RGB</label>\r\n+                <label for=\"toRGB\">to RGB</label>\r\n               </div>\r\n               <div>\r\n                 <input\r\n                   type=\"radio\"\r\n                   name=\"ctcRadio\"\r\n                   class=\"checkbox\"\r\n-                  id=\"show-hex\"\r\n+                  id=\"toHEX\"\r\n                 />\r\n-                <label for=\"show-hex\">to HEX</label>\r\n+                <label for=\"toHEX\">to HEX</label>\r\n               </div>\r\n             </div>\r\n           </div>\r\n         </div>\r\n"
+                },
+                {
+                    "date": 1646599235677,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,9 +60,9 @@\n                 <input\r\n                   type=\"checkbox\"\r\n                   name=\"ctc\"\r\n                   class=\"checkbox\"\r\n-                  id=\"show-rgb\"\r\n+                  id=\"ctc\"\r\n                 />Click to copy (nie działa)</label\r\n               >\r\n               <div>\r\n                 <input\r\n"
+                },
+                {
+                    "date": 1646776383842,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,9 +50,12 @@\n               <label for=\"hex\">show hex</label>\r\n             </div>\r\n             <div id=\"theme-selector\">\r\n               <label for=\"themeMenu\">Theme</label>\r\n-              <select name=\"themeMenu\" id=\"theme-menu\"></select>\r\n+              <select name=\"themeMenu\" id=\"theme-menu\">\r\n+                <option value=\"lightTheme\">Light</option>\r\n+                <option value=\"darkTheme\">Dark</option>\r\n+              </select>\r\n             </div>\r\n           </div>\r\n           <div class=\"settings-option\">\r\n             <div id=\"ctpDiv\">\r\n"
+                },
+                {
+                    "date": 1646863134291,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,8 +53,9 @@\n               <label for=\"themeMenu\">Theme</label>\r\n               <select name=\"themeMenu\" id=\"theme-menu\">\r\n                 <option value=\"lightTheme\">Light</option>\r\n                 <option value=\"darkTheme\">Dark</option>\r\n+                <option value=\"kocperTheme\">Kocper</option>\r\n               </select>\r\n             </div>\r\n           </div>\r\n           <div class=\"settings-option\">\r\n"
+                },
+                {
+                    "date": 1646863654329,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -101,9 +101,9 @@\n           <option value=\"Analogic-complement\">Analogic-complement</option>\r\n           <option value=\"Triad\">Triad</option>\r\n         </select>\r\n         <button id=\"submit-button\">Get color scheme</button>\r\n-        <div class=\"gear\"><img src=\"svg/gear-solid.svg\" /></div>\r\n+        <div class=\"gear\"><img class=\"svg\" src=\"svg/gear-solid.svg\" /></div>\r\n       </div>\r\n       <div class=\"colors\"></div>\r\n     </div>\r\n     <script src=\"main.js\"></script>\r\n"
+                },
+                {
+                    "date": 1646864459895,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -101,9 +101,9 @@\n           <option value=\"Analogic-complement\">Analogic-complement</option>\r\n           <option value=\"Triad\">Triad</option>\r\n         </select>\r\n         <button id=\"submit-button\">Get color scheme</button>\r\n-        <div class=\"gear\"><img class=\"svg\" src=\"svg/gear-solid.svg\" /></div>\r\n+        <div class=\"gear\"><img class=\"gearSvg\" src=\"svg/gear-solid.svg\" /></div>\r\n       </div>\r\n       <div class=\"colors\"></div>\r\n     </div>\r\n     <script src=\"main.js\"></script>\r\n"
+                },
+                {
+                    "date": 1646864470728,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,11 @@\n   </head>\r\n   <body>\r\n     <div class=\"container\">\r\n       <div class=\"modal\">\r\n-        <div class=\"closeBtn\"><img src=\"svg/close-button.svg\" /></div>\r\n+        <div class=\"closeBtn\">\r\n+          <img class=\"exitSvg\" src=\"svg/close-button.svg\" />\r\n+        </div>\r\n         <div class=\"settings\">\r\n           <div class=\"settings-color-count\">\r\n             <p>Color count</p>\r\n             <input\r\n"
+                }
+            ],
+            "date": 1645476426731,
+            "name": "Commit-0",
+            "content": "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n  <head>\r\n    <meta charset=\"UTF-8\" />\r\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" />\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\r\n    <link rel=\"stylesheet\" href=\"style.css\" />\r\n    <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\" />\r\n    <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin />\r\n    <link\r\n      href=\"https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap\"\r\n      rel=\"stylesheet\"\r\n    />\r\n    <title>Document</title>\r\n  </head>\r\n  <body>\r\n    <div class=\"container\">\r\n      <div class=\"main\">\r\n        <input type=\"color\" id=\"color-picker\" />\r\n        <select id=\"menu\">\r\n          <option value=\"Monochrome\">Monochrome</option>\r\n          <option value=\"Monochrome-dark\">Monochrome-dark</option>\r\n          <option value=\"Monochrome-light\">Monochrome-light</option>\r\n          <option value=\"Analogic\">Analogic</option>\r\n          <option value=\"Complement\">Complement</option>\r\n          <option value=\"Analogic-complement\">Analogic-complement</option>\r\n          <option value=\"Triad\">Triad</option>\r\n        </select>\r\n        <button id=\"submit-button\">Get color scheme</button>\r\n      </div>\r\n      <div class=\"colors\">\r\n        <div class=\"colorBox\" id=\"color1\"></div>\r\n        <div class=\"colorBox\" id=\"color2\"></div>\r\n        <div class=\"colorBox\" id=\"color3\"></div>\r\n        <div class=\"colorBox\" id=\"color4\"></div>\r\n        <div class=\"colorBox\" id=\"color5\"></div>\r\n      </div>\r\n      <div class=\"color_values\">\r\n        <div class=\"valueBox\"><p id=\"value1\"></p></div>\r\n        <div class=\"valueBox\"><p id=\"value2\"></p></div>\r\n        <div class=\"valueBox\"><p id=\"value3\"></p></div>\r\n        <div class=\"valueBox\"><p id=\"value4\"></p></div>\r\n        <div class=\"valueBox\"><p id=\"value5\"></p></div>\r\n      </div>\r\n    </div>\r\n    <script src=\"main.js\"></script>\r\n  </body>\r\n</html>\r\n"
+        }
+    ]
+}

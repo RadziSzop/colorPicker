@@ -1,0 +1,30 @@
+{
+    "sourceFile": "manifest.json",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1646430505945,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1646431386630,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,8 @@\n {\r\n-\r\n     \"manifest_version\": 3,\r\n     \"name\": \"Color Scheme\",\r\n     \"version\": \"1.0\",\r\n-  \r\n-    \r\n     \"description\": \"Simple color scheme creator with color picker.\",\r\n     \"permissions\": [\r\n         \"storage\"\r\n       ],\r\n"
+                },
+                {
+                    "date": 1646431813391,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,10 +3,12 @@\n     \"name\": \"Color Scheme\",\r\n     \"version\": \"1.0\",\r\n     \"description\": \"Simple color scheme creator with color picker.\",\r\n     \"permissions\": [\r\n-        \"storage\"\r\n+        \"storage\",\r\n+        \"activeTab\"\r\n       ],\r\n+\r\n     \"author\": \"Radosław Krochmal\",\r\n     \"action\": {\r\n         \"default_popup\": \"index.html\"\r\n     }\r\n"
+                },
+                {
+                    "date": 1646432247921,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,10 @@\n     \"version\": \"1.0\",\r\n     \"description\": \"Simple color scheme creator with color picker.\",\r\n     \"permissions\": [\r\n         \"storage\",\r\n-        \"activeTab\"\r\n+        \"activeTab\",\r\n+        \"tabs\"\r\n       ],\r\n \r\n     \"author\": \"Radosław Krochmal\",\r\n     \"action\": {\r\n"
+                }
+            ],
+            "date": 1646430505945,
+            "name": "Commit-0",
+            "content": "{\r\n\r\n    \"manifest_version\": 3,\r\n    \"name\": \"Color Scheme\",\r\n    \"version\": \"1.0\",\r\n  \r\n    \r\n    \"description\": \"Simple color scheme creator with color picker.\",\r\n    \"permissions\": [\r\n        \"storage\"\r\n      ],\r\n    \"author\": \"Radosław Krochmal\",\r\n    \"action\": {\r\n        \"default_popup\": \"index.html\"\r\n    }\r\n}"
+        }
+    ]
+}

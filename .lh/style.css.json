@@ -1,0 +1,1354 @@
+{
+    "sourceFile": "style.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 334,
+            "patches": [
+                {
+                    "date": 1646433991071,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1646434054650,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,8 +51,12 @@\n   display: flex;\r\n   justify-content: space-evenly;\r\n   align-items: center;\r\n }\r\n+.gear {\r\n+  height: 40px;\r\n+  width: 40px;\r\n+}\r\n \r\n .colors {\r\n   height: 415px;\r\n   display: flex;\r\n"
+                },
+                {
+                    "date": 1646434074723,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,10 +52,10 @@\n   justify-content: space-evenly;\r\n   align-items: center;\r\n }\r\n .gear {\r\n-  height: 40px;\r\n-  width: 40px;\r\n+  height: 20px;\r\n+  width: 20px;\r\n }\r\n \r\n .colors {\r\n   height: 415px;\r\n"
+                },
+                {
+                    "date": 1646434211121,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,10 +52,10 @@\n   justify-content: space-evenly;\r\n   align-items: center;\r\n }\r\n .gear {\r\n-  height: 20px;\r\n-  width: 20px;\r\n+  height: 25px;\r\n+  width: 25px;\r\n }\r\n \r\n .colors {\r\n   height: 415px;\r\n"
+                },
+                {
+                    "date": 1646434321917,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -91,4 +91,11 @@\n   outline: none;\r\n   -webkit-appearance: none;\r\n   background-color: white;\r\n }\r\n+\r\n+/* modal */\r\n+\r\n+.modal {\r\n+  height: 100%;\r\n+  width: 100%;\r\n+}\r\n"
+                },
+                {
+                    "date": 1646434334719,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -97,5 +97,6 @@\n \r\n .modal {\r\n   height: 100%;\r\n   width: 100%;\r\n+  background-color: aqua;\r\n }\r\n"
+                },
+                {
+                    "date": 1646434396014,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -95,8 +95,9 @@\n \r\n /* modal */\r\n \r\n .modal {\r\n+  display: fixed;\r\n   height: 100%;\r\n   width: 100%;\r\n   background-color: aqua;\r\n }\r\n"
+                },
+                {
+                    "date": 1646434466752,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -95,9 +95,9 @@\n \r\n /* modal */\r\n \r\n .modal {\r\n-  display: fixed;\r\n+  position: fixed;\r\n   height: 100%;\r\n   width: 100%;\r\n   background-color: aqua;\r\n }\r\n"
+                },
+                {
+                    "date": 1646434539578,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -96,8 +96,8 @@\n /* modal */\r\n \r\n .modal {\r\n   position: fixed;\r\n-  height: 100%;\r\n-  width: 100%;\r\n+  height: 550px;\r\n+  width: 550px;\r\n   background-color: aqua;\r\n }\r\n"
+                },
+                {
+                    "date": 1646434581735,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -98,6 +98,6 @@\n .modal {\r\n   position: fixed;\r\n   height: 550px;\r\n   width: 550px;\r\n-  background-color: aqua;\r\n+  background-color: rgba(255, 255, 255, 0.3);\r\n }\r\n"
+                },
+                {
+                    "date": 1646434589804,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -98,6 +98,6 @@\n .modal {\r\n   position: fixed;\r\n   height: 550px;\r\n   width: 550px;\r\n-  background-color: rgba(255, 255, 255, 0.3);\r\n+  background-color: rgba(0, 0, 0, 0.3);\r\n }\r\n"
+                },
+                {
+                    "date": 1646434595531,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -98,6 +98,6 @@\n .modal {\r\n   position: fixed;\r\n   height: 550px;\r\n   width: 550px;\r\n-  background-color: rgba(0, 0, 0, 0.3);\r\n+  background-color: rgba(0, 0, 0, 0.4);\r\n }\r\n"
+                },
+                {
+                    "date": 1646434750407,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -95,9 +95,12 @@\n \r\n /* modal */\r\n \r\n .modal {\r\n+  display: flex;\r\n+  justify-content: center;\r\n+  align-items: center;\r\n   position: fixed;\r\n   height: 550px;\r\n   width: 550px;\r\n-  background-color: rgba(0, 0, 0, 0.4);\r\n+  background-color: rgba(0, 0, 0, 0.5);\r\n }\r\n"
+                },
+                {
+                    "date": 1646434788156,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -103,4 +103,9 @@\n   height: 550px;\r\n   width: 550px;\r\n   background-color: rgba(0, 0, 0, 0.5);\r\n }\r\n+\r\n+.settings {\r\n+  height: 300px;\r\n+  width: 400px;\r\n+}\r\n"
+                },
+                {
+                    "date": 1646434802848,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -105,7 +105,8 @@\n   background-color: rgba(0, 0, 0, 0.5);\r\n }\r\n \r\n .settings {\r\n-  height: 300px;\r\n+  height: 200px;\r\n   width: 400px;\r\n+  background-color: red;\r\n }\r\n"
+                },
+                {
+                    "date": 1646434811270,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -106,7 +106,7 @@\n }\r\n \r\n .settings {\r\n   height: 200px;\r\n-  width: 400px;\r\n+  width: 430px;\r\n   background-color: red;\r\n }\r\n"
+                },
+                {
+                    "date": 1646434832654,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -107,6 +107,6 @@\n \r\n .settings {\r\n   height: 200px;\r\n   width: 430px;\r\n-  background-color: red;\r\n+  background-color: white;\r\n }\r\n"
+                },
+                {
+                    "date": 1646434842985,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -105,8 +105,9 @@\n   background-color: rgba(0, 0, 0, 0.5);\r\n }\r\n \r\n .settings {\r\n+  border-radius: 10px;\r\n   height: 200px;\r\n   width: 430px;\r\n   background-color: white;\r\n }\r\n"
+                },
+                {
+                    "date": 1646435137574,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -95,9 +95,9 @@\n \r\n /* modal */\r\n \r\n .modal {\r\n-  display: flex;\r\n+  display: none;\r\n   justify-content: center;\r\n   align-items: center;\r\n   position: fixed;\r\n   height: 550px;\r\n@@ -105,9 +105,9 @@\n   background-color: rgba(0, 0, 0, 0.5);\r\n }\r\n \r\n .settings {\r\n-  border-radius: 10px;\r\n+  border-radius: 6px;\r\n   height: 200px;\r\n   width: 430px;\r\n   background-color: white;\r\n }\r\n"
+                },
+                {
+                    "date": 1646435149475,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -95,8 +95,9 @@\n \r\n /* modal */\r\n \r\n .modal {\r\n+  transition: 1s;\r\n   display: none;\r\n   justify-content: center;\r\n   align-items: center;\r\n   position: fixed;\r\n"
+                },
+                {
+                    "date": 1646435156715,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -95,9 +95,8 @@\n \r\n /* modal */\r\n \r\n .modal {\r\n-  transition: 1s;\r\n   display: none;\r\n   justify-content: center;\r\n   align-items: center;\r\n   position: fixed;\r\n"
+                },
+                {
+                    "date": 1646435400197,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -110,4 +110,9 @@\n   height: 200px;\r\n   width: 430px;\r\n   background-color: white;\r\n }\r\n+.closeBtn {\r\n+  height: 50px;\r\n+  width: 50px;\r\n+  background-color: blueviolet;\r\n+}\r\n"
+                },
+                {
+                    "date": 1646435466090,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -111,8 +111,9 @@\n   width: 430px;\r\n   background-color: white;\r\n }\r\n .closeBtn {\r\n+  position: fixed;\r\n   height: 50px;\r\n   width: 50px;\r\n   background-color: blueviolet;\r\n }\r\n"
+                },
+                {
+                    "date": 1646435475486,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -112,8 +112,9 @@\n   background-color: white;\r\n }\r\n .closeBtn {\r\n   position: fixed;\r\n+  right: 0px;\r\n   height: 50px;\r\n   width: 50px;\r\n   background-color: blueviolet;\r\n }\r\n"
+                },
+                {
+                    "date": 1646435535050,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,11 @@\n body {\r\n   margin: 0;\r\n   padding: 0;\r\n }\r\n+body {\r\n+  position: absolute;\r\n+}\r\n select {\r\n   width: 320px;\r\n   height: 40px;\r\n   border-radius: 6px;\r\n@@ -111,9 +114,9 @@\n   width: 430px;\r\n   background-color: white;\r\n }\r\n .closeBtn {\r\n-  position: fixed;\r\n+  position: absolute;\r\n   right: 0px;\r\n   height: 50px;\r\n   width: 50px;\r\n   background-color: blueviolet;\r\n"
+                },
+                {
+                    "date": 1646435543974,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,14 +34,15 @@\n   font-weight: 700;\r\n   cursor: pointer;\r\n   transition: transform 0.2s;\r\n }\r\n+option {\r\n+  padding-top: 5px;\r\n+}\r\n .buttonClick {\r\n   transform: scale(1.1);\r\n }\r\n-option {\r\n-  padding-top: 5px;\r\n-}\r\n+\r\n .container {\r\n   width: 550px;\r\n   height: 550px;\r\n   display: flex;\r\n"
+                },
+                {
+                    "date": 1646435561586,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -117,8 +117,9 @@\n }\r\n .closeBtn {\r\n   position: absolute;\r\n   right: 0px;\r\n+  top: 0px;\r\n   height: 50px;\r\n   width: 50px;\r\n   background-color: blueviolet;\r\n }\r\n"
+                },
+                {
+                    "date": 1646435583771,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -120,6 +120,7 @@\n   right: 0px;\r\n   top: 0px;\r\n   height: 50px;\r\n   width: 50px;\r\n+  border-radius: 10px;\r\n   background-color: blueviolet;\r\n }\r\n"
+                },
+                {
+                    "date": 1646435590485,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -120,7 +120,7 @@\n   right: 0px;\r\n   top: 0px;\r\n   height: 50px;\r\n   width: 50px;\r\n-  border-radius: 10px;\r\n+  border-radius: 6px;\r\n   background-color: blueviolet;\r\n }\r\n"
+                },
+                {
+                    "date": 1646435600625,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -121,6 +121,6 @@\n   top: 0px;\r\n   height: 50px;\r\n   width: 50px;\r\n   border-radius: 6px;\r\n-  background-color: blueviolet;\r\n+  background-color: rgb(161, 159, 159);\r\n }\r\n"
+                },
+                {
+                    "date": 1646436028130,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -99,9 +99,9 @@\n \r\n /* modal */\r\n \r\n .modal {\r\n-  display: none;\r\n+  display: hidden;\r\n   justify-content: center;\r\n   align-items: center;\r\n   position: fixed;\r\n   height: 550px;\r\n"
+                },
+                {
+                    "date": 1646436143586,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -99,9 +99,9 @@\n \r\n /* modal */\r\n \r\n .modal {\r\n-  display: hidden;\r\n+  display: flex;\r\n   justify-content: center;\r\n   align-items: center;\r\n   position: fixed;\r\n   height: 550px;\r\n"
+                },
+                {
+                    "date": 1646436181486,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -99,9 +99,9 @@\n \r\n /* modal */\r\n \r\n .modal {\r\n-  display: flex;\r\n+  display: hidden;\r\n   justify-content: center;\r\n   align-items: center;\r\n   position: fixed;\r\n   height: 550px;\r\n"
+                },
+                {
+                    "date": 1646436191181,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -99,9 +99,9 @@\n \r\n /* modal */\r\n \r\n .modal {\r\n-  display: hidden;\r\n+  display: none;\r\n   justify-content: center;\r\n   align-items: center;\r\n   position: fixed;\r\n   height: 550px;\r\n"
+                },
+                {
+                    "date": 1646436348107,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n   margin: 0;\r\n   padding: 0;\r\n }\r\n body {\r\n-  position: absolute;\r\n+  /* position: absolute; */\r\n }\r\n select {\r\n   width: 320px;\r\n   height: 40px;\r\n"
+                },
+                {
+                    "date": 1646436355859,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n   margin: 0;\r\n   padding: 0;\r\n }\r\n body {\r\n-  /* position: absolute; */\r\n+  position: absolute;\r\n }\r\n select {\r\n   width: 320px;\r\n   height: 40px;\r\n"
+                },
+                {
+                    "date": 1646436451400,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,11 +13,9 @@\n body {\r\n   margin: 0;\r\n   padding: 0;\r\n }\r\n-body {\r\n-  position: absolute;\r\n-}\r\n+\r\n select {\r\n   width: 320px;\r\n   height: 40px;\r\n   border-radius: 6px;\r\n@@ -45,8 +43,9 @@\n .container {\r\n   width: 550px;\r\n   height: 550px;\r\n   display: flex;\r\n+  position: absolute;\r\n   flex-direction: column;\r\n }\r\n .main {\r\n   height: 90px;\r\n"
+                },
+                {
+                    "date": 1646436468920,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,9 +43,9 @@\n .container {\r\n   width: 550px;\r\n   height: 550px;\r\n   display: flex;\r\n-  position: absolute;\r\n+  /* position: absolute; */\r\n   flex-direction: column;\r\n }\r\n .main {\r\n   height: 90px;\r\n"
+                },
+                {
+                    "date": 1646436479866,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,9 +43,9 @@\n .container {\r\n   width: 550px;\r\n   height: 550px;\r\n   display: flex;\r\n-  /* position: absolute; */\r\n+  position: absolute;\r\n   flex-direction: column;\r\n }\r\n .main {\r\n   height: 90px;\r\n"
+                },
+                {
+                    "date": 1646436492658,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,9 +43,8 @@\n .container {\r\n   width: 550px;\r\n   height: 550px;\r\n   display: flex;\r\n-  position: absolute;\r\n   flex-direction: column;\r\n }\r\n .main {\r\n   height: 90px;\r\n"
+                },
+                {
+                    "date": 1646436741768,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -113,9 +113,9 @@\n   width: 430px;\r\n   background-color: white;\r\n }\r\n .closeBtn {\r\n-  position: absolute;\r\n+  position: fixed;\r\n   right: 0px;\r\n   top: 0px;\r\n   height: 50px;\r\n   width: 50px;\r\n"
+                },
+                {
+                    "date": 1646437164768,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -114,9 +114,9 @@\n   background-color: white;\r\n }\r\n .closeBtn {\r\n   position: fixed;\r\n-  right: 0px;\r\n+  right: 300px;\r\n   top: 0px;\r\n   height: 50px;\r\n   width: 50px;\r\n   border-radius: 6px;\r\n"
+                },
+                {
+                    "date": 1646437172299,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -114,9 +114,9 @@\n   background-color: white;\r\n }\r\n .closeBtn {\r\n   position: fixed;\r\n-  right: 300px;\r\n+  right: 35px;\r\n   top: 0px;\r\n   height: 50px;\r\n   width: 50px;\r\n   border-radius: 6px;\r\n"
+                },
+                {
+                    "date": 1646437178533,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -114,10 +114,10 @@\n   background-color: white;\r\n }\r\n .closeBtn {\r\n   position: fixed;\r\n-  right: 35px;\r\n-  top: 0px;\r\n+  right: 40px;\r\n+  top: 100px;\r\n   height: 50px;\r\n   width: 50px;\r\n   border-radius: 6px;\r\n   background-color: rgb(161, 159, 159);\r\n"
+                },
+                {
+                    "date": 1646437186516,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -115,10 +115,10 @@\n }\r\n .closeBtn {\r\n   position: fixed;\r\n   right: 40px;\r\n-  top: 100px;\r\n-  height: 50px;\r\n-  width: 50px;\r\n+  top: 150px;\r\n+  height: 20px;\r\n+  width: 20px;\r\n   border-radius: 6px;\r\n   background-color: rgb(161, 159, 159);\r\n }\r\n"
+                },
+                {
+                    "date": 1646437193506,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -114,11 +114,11 @@\n   background-color: white;\r\n }\r\n .closeBtn {\r\n   position: fixed;\r\n-  right: 40px;\r\n+  right: 50px;\r\n   top: 150px;\r\n-  height: 20px;\r\n-  width: 20px;\r\n+  height: 30px;\r\n+  width: 30px;\r\n   border-radius: 6px;\r\n   background-color: rgb(161, 159, 159);\r\n }\r\n"
+                },
+                {
+                    "date": 1646437199432,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -115,9 +115,9 @@\n }\r\n .closeBtn {\r\n   position: fixed;\r\n   right: 50px;\r\n-  top: 150px;\r\n+  top: 160px;\r\n   height: 30px;\r\n   width: 30px;\r\n   border-radius: 6px;\r\n   background-color: rgb(161, 159, 159);\r\n"
+                },
+                {
+                    "date": 1646437206894,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -115,9 +115,9 @@\n }\r\n .closeBtn {\r\n   position: fixed;\r\n   right: 50px;\r\n-  top: 160px;\r\n+  top: 165px;\r\n   height: 30px;\r\n   width: 30px;\r\n   border-radius: 6px;\r\n   background-color: rgb(161, 159, 159);\r\n"
+                },
+                {
+                    "date": 1646437313318,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,9 @@\n }\r\n img {\r\n   height: 100%;\r\n   width: 100%;\r\n+  color: blue;\r\n }\r\n \r\n html {\r\n   font-family: \"Roboto\", sans-serif;\r\n"
+                },
+                {
+                    "date": 1646437333455,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,8 @@\n }\r\n img {\r\n   height: 100%;\r\n   width: 100%;\r\n-  color: blue;\r\n }\r\n \r\n html {\r\n   font-family: \"Roboto\", sans-serif;\r\n"
+                },
+                {
+                    "date": 1646437371218,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -97,8 +97,9 @@\n \r\n /* modal */\r\n \r\n .modal {\r\n+  transition: display 1s;\r\n   display: none;\r\n   justify-content: center;\r\n   align-items: center;\r\n   position: fixed;\r\n"
+                },
+                {
+                    "date": 1646437397154,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -97,9 +97,8 @@\n \r\n /* modal */\r\n \r\n .modal {\r\n-  transition: display 1s;\r\n   display: none;\r\n   justify-content: center;\r\n   align-items: center;\r\n   position: fixed;\r\n"
+                },
+                {
+                    "date": 1646441519137,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -97,9 +97,9 @@\n \r\n /* modal */\r\n \r\n .modal {\r\n-  display: none;\r\n+  visibility: hidden;\r\n   justify-content: center;\r\n   align-items: center;\r\n   position: fixed;\r\n   height: 550px;\r\n"
+                },
+                {
+                    "date": 1646441615049,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -97,8 +97,9 @@\n \r\n /* modal */\r\n \r\n .modal {\r\n+  visibility: ;\r\n   visibility: hidden;\r\n   justify-content: center;\r\n   align-items: center;\r\n   position: fixed;\r\n"
+                },
+                {
+                    "date": 1646441638037,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -97,9 +97,8 @@\n \r\n /* modal */\r\n \r\n .modal {\r\n-  visibility: ;\r\n   visibility: hidden;\r\n   justify-content: center;\r\n   align-items: center;\r\n   position: fixed;\r\n"
+                },
+                {
+                    "date": 1646441774506,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -98,8 +98,9 @@\n /* modal */\r\n \r\n .modal {\r\n   visibility: hidden;\r\n+  display: flex;\r\n   justify-content: center;\r\n   align-items: center;\r\n   position: fixed;\r\n   height: 550px;\r\n"
+                },
+                {
+                    "date": 1646441829177,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,8 +57,11 @@\n .gear {\r\n   height: 25px;\r\n   width: 25px;\r\n }\r\n+.gear:hover {\r\n+  visibility: hidden;\r\n+}\r\n \r\n .colors {\r\n   height: 415px;\r\n   display: flex;\r\n"
+                },
+                {
+                    "date": 1646441841086,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,8 +56,9 @@\n }\r\n .gear {\r\n   height: 25px;\r\n   width: 25px;\r\n+  transition: 1s;\r\n }\r\n .gear:hover {\r\n   visibility: hidden;\r\n }\r\n"
+                },
+                {
+                    "date": 1646442152258,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,11 +58,8 @@\n   height: 25px;\r\n   width: 25px;\r\n   transition: 1s;\r\n }\r\n-.gear:hover {\r\n-  visibility: hidden;\r\n-}\r\n \r\n .colors {\r\n   height: 415px;\r\n   display: flex;\r\n@@ -96,9 +93,13 @@\n   border: none;\r\n   outline: none;\r\n   -webkit-appearance: none;\r\n   background-color: white;\r\n+  visibility: visible;\r\n }\r\n+#color-picker:hover {\r\n+  visibility: hidden;\r\n+}\r\n \r\n /* modal */\r\n \r\n .modal {\r\n"
+                },
+                {
+                    "date": 1646442171180,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -94,8 +94,9 @@\n   outline: none;\r\n   -webkit-appearance: none;\r\n   background-color: white;\r\n   visibility: visible;\r\n+  transition: 1s;\r\n }\r\n #color-picker:hover {\r\n   visibility: hidden;\r\n }\r\n"
+                },
+                {
+                    "date": 1646442182795,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -94,13 +94,9 @@\n   outline: none;\r\n   -webkit-appearance: none;\r\n   background-color: white;\r\n   visibility: visible;\r\n-  transition: 1s;\r\n }\r\n-#color-picker:hover {\r\n-  visibility: hidden;\r\n-}\r\n \r\n /* modal */\r\n \r\n .modal {\r\n"
+                },
+                {
+                    "date": 1646442319624,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -77,9 +77,9 @@\n   /* background-color: gray; */\r\n }\r\n .valueBox {\r\n   height: 100%;\r\n-  width: 20%;\r\n+  width: 10%;\r\n   /* border: 1px solid black; */\r\n   display: flex;\r\n   justify-content: center;\r\n   align-items: center;\r\n"
+                },
+                {
+                    "date": 1646442334374,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -77,9 +77,9 @@\n   /* background-color: gray; */\r\n }\r\n .valueBox {\r\n   height: 100%;\r\n-  width: 10%;\r\n+  width: 20%;\r\n   /* border: 1px solid black; */\r\n   display: flex;\r\n   justify-content: center;\r\n   align-items: center;\r\n"
+                },
+                {
+                    "date": 1646442343083,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,9 +64,9 @@\n   height: 415px;\r\n   display: flex;\r\n }\r\n .colorBox {\r\n-  width: 20%;\r\n+  width: 10%;\r\n   height: 100%;\r\n   background-color: rgb(255, 255, 255);\r\n   transition: background 1s;\r\n   /* border: 1px black solid; */\r\n"
+                },
+                {
+                    "date": 1646442354132,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,9 +64,9 @@\n   height: 415px;\r\n   display: flex;\r\n }\r\n .colorBox {\r\n-  width: 10%;\r\n+  width: 7.5%;\r\n   height: 100%;\r\n   background-color: rgb(255, 255, 255);\r\n   transition: background 1s;\r\n   /* border: 1px black solid; */\r\n"
+                },
+                {
+                    "date": 1646442360370,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,9 +64,9 @@\n   height: 415px;\r\n   display: flex;\r\n }\r\n .colorBox {\r\n-  width: 7.5%;\r\n+  width: 10%;\r\n   height: 100%;\r\n   background-color: rgb(255, 255, 255);\r\n   transition: background 1s;\r\n   /* border: 1px black solid; */\r\n"
+                },
+                {
+                    "date": 1646484326438,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,9 +64,9 @@\n   height: 415px;\r\n   display: flex;\r\n }\r\n .colorBox {\r\n-  width: 10%;\r\n+  width: 20%;\r\n   height: 100%;\r\n   background-color: rgb(255, 255, 255);\r\n   transition: background 1s;\r\n   /* border: 1px black solid; */\r\n"
+                },
+                {
+                    "date": 1646488462013,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -115,8 +115,14 @@\n   height: 200px;\r\n   width: 430px;\r\n   background-color: white;\r\n }\r\n+.settings-option {\r\n+  width: 50%;\r\n+  height: 50%;\r\n+  border: 1px black solid;\r\n+  background-color: blanchedalmond;\r\n+}\r\n .closeBtn {\r\n   position: fixed;\r\n   right: 50px;\r\n   top: 165px;\r\n"
+                },
+                {
+                    "date": 1646488476619,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -114,8 +114,9 @@\n   border-radius: 6px;\r\n   height: 200px;\r\n   width: 430px;\r\n   background-color: white;\r\n+  display: flex;\r\n }\r\n .settings-option {\r\n   width: 50%;\r\n   height: 50%;\r\n"
+                },
+                {
+                    "date": 1646488483194,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -115,8 +115,9 @@\n   height: 200px;\r\n   width: 430px;\r\n   background-color: white;\r\n   display: flex;\r\n+  flex-wrap: wrap;\r\n }\r\n .settings-option {\r\n   width: 50%;\r\n   height: 50%;\r\n"
+                },
+                {
+                    "date": 1646488491896,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -118,10 +118,10 @@\n   display: flex;\r\n   flex-wrap: wrap;\r\n }\r\n .settings-option {\r\n-  width: 50%;\r\n-  height: 50%;\r\n+  width: 45%;\r\n+  height: 45%;\r\n   border: 1px black solid;\r\n   background-color: blanchedalmond;\r\n }\r\n .closeBtn {\r\n"
+                },
+                {
+                    "date": 1646488504148,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -116,8 +116,10 @@\n   width: 430px;\r\n   background-color: white;\r\n   display: flex;\r\n   flex-wrap: wrap;\r\n+  justify-content: center;\r\n+  align-items: center;\r\n }\r\n .settings-option {\r\n   width: 45%;\r\n   height: 45%;\r\n"
+                },
+                {
+                    "date": 1646489320008,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -97,9 +97,18 @@\n   visibility: visible;\r\n }\r\n \r\n /* modal */\r\n+/*\r\n+-click to copy (menu)\r\n+/to rgb(html)\r\n+/to hex\r\n \r\n+-color count\r\n+-show rgb\r\n+-show hex\r\n+-theme(menu) \r\n+*/\r\n .modal {\r\n   visibility: hidden;\r\n   display: flex;\r\n   justify-content: center;\r\n"
+                },
+                {
+                    "date": 1646489349206,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -125,9 +125,9 @@\n   width: 430px;\r\n   background-color: white;\r\n   display: flex;\r\n   flex-wrap: wrap;\r\n-  justify-content: center;\r\n+  justify-content: space-evenly;\r\n   align-items: center;\r\n }\r\n .settings-option {\r\n   width: 45%;\r\n"
+                },
+                {
+                    "date": 1646489373502,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -130,11 +130,10 @@\n   align-items: center;\r\n }\r\n .settings-option {\r\n   width: 45%;\r\n-  height: 45%;\r\n+  height: 80%;\r\n   border: 1px black solid;\r\n-  background-color: blanchedalmond;\r\n }\r\n .closeBtn {\r\n   position: fixed;\r\n   right: 50px;\r\n"
+                },
+                {
+                    "date": 1646489380295,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -131,9 +131,9 @@\n }\r\n .settings-option {\r\n   width: 45%;\r\n   height: 80%;\r\n-  border: 1px black solid;\r\n+  border: 1px rgb(156, 156, 156) solid;\r\n }\r\n .closeBtn {\r\n   position: fixed;\r\n   right: 50px;\r\n"
+                },
+                {
+                    "date": 1646489387954,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -131,9 +131,9 @@\n }\r\n .settings-option {\r\n   width: 45%;\r\n   height: 80%;\r\n-  border: 1px rgb(156, 156, 156) solid;\r\n+  border: 1px rgb(224, 224, 224) solid;\r\n }\r\n .closeBtn {\r\n   position: fixed;\r\n   right: 50px;\r\n"
+                },
+                {
+                    "date": 1646489399351,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -131,9 +131,10 @@\n }\r\n .settings-option {\r\n   width: 45%;\r\n   height: 80%;\r\n-  border: 1px rgb(224, 224, 224) solid;\r\n+  border: 1px rgb(167, 167, 167) solid;\r\n+  border-radius: 10px;\r\n }\r\n .closeBtn {\r\n   position: fixed;\r\n   right: 50px;\r\n"
+                },
+                {
+                    "date": 1646489405841,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -132,9 +132,9 @@\n .settings-option {\r\n   width: 45%;\r\n   height: 80%;\r\n   border: 1px rgb(167, 167, 167) solid;\r\n-  border-radius: 10px;\r\n+  border-radius: 5px;\r\n }\r\n .closeBtn {\r\n   position: fixed;\r\n   right: 50px;\r\n"
+                },
+                {
+                    "date": 1646489623240,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -134,8 +134,14 @@\n   height: 80%;\r\n   border: 1px rgb(167, 167, 167) solid;\r\n   border-radius: 5px;\r\n }\r\n+.settings-color-count {\r\n+  height: 80%;\r\n+  width: 80%;\r\n+  border: 1px rgb(167, 167, 167) solid;\r\n+  border-radius: 5px;\r\n+}\r\n .closeBtn {\r\n   position: fixed;\r\n   right: 50px;\r\n   top: 165px;\r\n"
+                },
+                {
+                    "date": 1646489631035,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -135,9 +135,9 @@\n   border: 1px rgb(167, 167, 167) solid;\r\n   border-radius: 5px;\r\n }\r\n .settings-color-count {\r\n-  height: 80%;\r\n+  height: 20%;\r\n   width: 80%;\r\n   border: 1px rgb(167, 167, 167) solid;\r\n   border-radius: 5px;\r\n }\r\n"
+                },
+                {
+                    "date": 1646489636780,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -135,9 +135,9 @@\n   border: 1px rgb(167, 167, 167) solid;\r\n   border-radius: 5px;\r\n }\r\n .settings-color-count {\r\n-  height: 20%;\r\n+  height: 10%;\r\n   width: 80%;\r\n   border: 1px rgb(167, 167, 167) solid;\r\n   border-radius: 5px;\r\n }\r\n"
+                },
+                {
+                    "date": 1646489648207,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -130,14 +130,14 @@\n   align-items: center;\r\n }\r\n .settings-option {\r\n   width: 45%;\r\n-  height: 80%;\r\n+  height: 70%;\r\n   border: 1px rgb(167, 167, 167) solid;\r\n   border-radius: 5px;\r\n }\r\n .settings-color-count {\r\n-  height: 10%;\r\n+  height: 20%;\r\n   width: 80%;\r\n   border: 1px rgb(167, 167, 167) solid;\r\n   border-radius: 5px;\r\n }\r\n"
+                },
+                {
+                    "date": 1646490712261,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -140,8 +140,11 @@\n   width: 80%;\r\n   border: 1px rgb(167, 167, 167) solid;\r\n   border-radius: 5px;\r\n }\r\n+#color-count {\r\n+  width: 70%;\r\n+}\r\n .closeBtn {\r\n   position: fixed;\r\n   right: 50px;\r\n   top: 165px;\r\n"
+                },
+                {
+                    "date": 1646490728475,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -141,9 +141,10 @@\n   border: 1px rgb(167, 167, 167) solid;\r\n   border-radius: 5px;\r\n }\r\n #color-count {\r\n-  width: 70%;\r\n+  width: 80%;\r\n+  height: 100%;\r\n }\r\n .closeBtn {\r\n   position: fixed;\r\n   right: 50px;\r\n"
+                },
+                {
+                    "date": 1646490978374,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -135,16 +135,16 @@\n   border: 1px rgb(167, 167, 167) solid;\r\n   border-radius: 5px;\r\n }\r\n .settings-color-count {\r\n+  display: flex;\r\n   height: 20%;\r\n   width: 80%;\r\n   border: 1px rgb(167, 167, 167) solid;\r\n   border-radius: 5px;\r\n }\r\n #color-count {\r\n   width: 80%;\r\n-  height: 100%;\r\n }\r\n .closeBtn {\r\n   position: fixed;\r\n   right: 50px;\r\n"
+                },
+                {
+                    "date": 1646491168216,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -136,8 +136,10 @@\n   border-radius: 5px;\r\n }\r\n .settings-color-count {\r\n   display: flex;\r\n+  justify-content: center;\r\n+  align-items: center;\r\n   height: 20%;\r\n   width: 80%;\r\n   border: 1px rgb(167, 167, 167) solid;\r\n   border-radius: 5px;\r\n"
+                },
+                {
+                    "date": 1646491756199,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -146,8 +146,11 @@\n }\r\n #color-count {\r\n   width: 80%;\r\n }\r\n+#color-count-text {\r\n+  font-weight: bold;\r\n+}\r\n .closeBtn {\r\n   position: fixed;\r\n   right: 50px;\r\n   top: 165px;\r\n"
+                },
+                {
+                    "date": 1646491768395,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -136,9 +136,9 @@\n   border-radius: 5px;\r\n }\r\n .settings-color-count {\r\n   display: flex;\r\n-  justify-content: center;\r\n+  justify-content: space-evenly;\r\n   align-items: center;\r\n   height: 20%;\r\n   width: 80%;\r\n   border: 1px rgb(167, 167, 167) solid;\r\n"
+                },
+                {
+                    "date": 1646503693569,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -144,8 +144,9 @@\n   border: 1px rgb(167, 167, 167) solid;\r\n   border-radius: 5px;\r\n }\r\n #color-count {\r\n+  height: 2px;\r\n   width: 80%;\r\n }\r\n #color-count-text {\r\n   font-weight: bold;\r\n"
+                },
+                {
+                    "date": 1646503706405,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -144,8 +144,9 @@\n   border: 1px rgb(167, 167, 167) solid;\r\n   border-radius: 5px;\r\n }\r\n #color-count {\r\n+  color: black;\r\n   height: 2px;\r\n   width: 80%;\r\n }\r\n #color-count-text {\r\n"
+                },
+                {
+                    "date": 1646503712187,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -144,9 +144,9 @@\n   border: 1px rgb(167, 167, 167) solid;\r\n   border-radius: 5px;\r\n }\r\n #color-count {\r\n-  color: black;\r\n+  background-color: black;\r\n   height: 2px;\r\n   width: 80%;\r\n }\r\n #color-count-text {\r\n"
+                },
+                {
+                    "date": 1646503721692,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -144,9 +144,9 @@\n   border: 1px rgb(167, 167, 167) solid;\r\n   border-radius: 5px;\r\n }\r\n #color-count {\r\n-  background-color: black;\r\n+  background: black;\r\n   height: 2px;\r\n   width: 80%;\r\n }\r\n #color-count-text {\r\n"
+                },
+                {
+                    "date": 1646503862578,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -148,8 +148,11 @@\n   background: black;\r\n   height: 2px;\r\n   width: 80%;\r\n }\r\n+#color-count::-webkit-slider-thumb {\r\n+  color: red;\r\n+}\r\n #color-count-text {\r\n   font-weight: bold;\r\n }\r\n .closeBtn {\r\n"
+                },
+                {
+                    "date": 1646503869485,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -149,9 +149,9 @@\n   height: 2px;\r\n   width: 80%;\r\n }\r\n #color-count::-webkit-slider-thumb {\r\n-  color: red;\r\n+  background: red;\r\n }\r\n #color-count-text {\r\n   font-weight: bold;\r\n }\r\n"
+                },
+                {
+                    "date": 1646503876306,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -149,9 +149,9 @@\n   height: 2px;\r\n   width: 80%;\r\n }\r\n #color-count::-webkit-slider-thumb {\r\n-  background: red;\r\n+  width: 30px;\r\n }\r\n #color-count-text {\r\n   font-weight: bold;\r\n }\r\n"
+                },
+                {
+                    "date": 1646503917374,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -149,8 +149,9 @@\n   height: 2px;\r\n   width: 80%;\r\n }\r\n #color-count::-webkit-slider-thumb {\r\n+  -webkit-appearance: none;\r\n   width: 30px;\r\n }\r\n #color-count-text {\r\n   font-weight: bold;\r\n"
+                },
+                {
+                    "date": 1646503926951,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -148,12 +148,9 @@\n   background: black;\r\n   height: 2px;\r\n   width: 80%;\r\n }\r\n-#color-count::-webkit-slider-thumb {\r\n-  -webkit-appearance: none;\r\n-  width: 30px;\r\n-}\r\n+\r\n #color-count-text {\r\n   font-weight: bold;\r\n }\r\n .closeBtn {\r\n"
+                },
+                {
+                    "date": 1646503933643,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -145,9 +145,9 @@\n   border-radius: 5px;\r\n }\r\n #color-count {\r\n   background: black;\r\n-  height: 2px;\r\n+  height: 1px;\r\n   width: 80%;\r\n }\r\n \r\n #color-count-text {\r\n"
+                },
+                {
+                    "date": 1646503947261,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -145,9 +145,10 @@\n   border-radius: 5px;\r\n }\r\n #color-count {\r\n   background: black;\r\n-  height: 1px;\r\n+  color: red;\r\n+  height: 2px;\r\n   width: 80%;\r\n }\r\n \r\n #color-count-text {\r\n"
+                },
+                {
+                    "date": 1646503976563,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -148,8 +148,10 @@\n   background: black;\r\n   color: red;\r\n   height: 2px;\r\n   width: 80%;\r\n+  outline: none;\r\n+  border: none;\r\n }\r\n \r\n #color-count-text {\r\n   font-weight: bold;\r\n"
+                },
+                {
+                    "date": 1646504027872,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -151,9 +151,11 @@\n   width: 80%;\r\n   outline: none;\r\n   border: none;\r\n }\r\n-\r\n+input[type=\"range\"]::-webkit-slider-thumb {\r\n+  width: 40px;\r\n+}\r\n #color-count-text {\r\n   font-weight: bold;\r\n }\r\n .closeBtn {\r\n"
+                },
+                {
+                    "date": 1646504047799,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -152,9 +152,9 @@\n   outline: none;\r\n   border: none;\r\n }\r\n input[type=\"range\"]::-webkit-slider-thumb {\r\n-  width: 40px;\r\n+  background: red;\r\n }\r\n #color-count-text {\r\n   font-weight: bold;\r\n }\r\n"
+                },
+                {
+                    "date": 1646504168095,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -145,8 +145,9 @@\n   border-radius: 5px;\r\n }\r\n #color-count {\r\n   background: black;\r\n+  -webkit-appearance: none;\r\n   color: red;\r\n   height: 2px;\r\n   width: 80%;\r\n   outline: none;\r\n"
+                },
+                {
+                    "date": 1646504173564,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -145,9 +145,9 @@\n   border-radius: 5px;\r\n }\r\n #color-count {\r\n   background: black;\r\n-  -webkit-appearance: none;\r\n+  /* -webkit-appearance: none; */\r\n   color: red;\r\n   height: 2px;\r\n   width: 80%;\r\n   outline: none;\r\n"
+                },
+                {
+                    "date": 1646504188449,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -145,16 +145,18 @@\n   border-radius: 5px;\r\n }\r\n #color-count {\r\n   background: black;\r\n-  /* -webkit-appearance: none; */\r\n+  -webkit-appearance: none;\r\n   color: red;\r\n   height: 2px;\r\n   width: 80%;\r\n   outline: none;\r\n   border: none;\r\n }\r\n input[type=\"range\"]::-webkit-slider-thumb {\r\n+  -webkit-appearance: none;\r\n+\r\n   background: red;\r\n }\r\n #color-count-text {\r\n   font-weight: bold;\r\n"
+                },
+                {
+                    "date": 1646504193871,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -154,9 +154,9 @@\n   border: none;\r\n }\r\n input[type=\"range\"]::-webkit-slider-thumb {\r\n   -webkit-appearance: none;\r\n-\r\n+  width: 10px;\r\n   background: red;\r\n }\r\n #color-count-text {\r\n   font-weight: bold;\r\n"
+                },
+                {
+                    "date": 1646504246170,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -145,18 +145,19 @@\n   border-radius: 5px;\r\n }\r\n #color-count {\r\n   background: black;\r\n-  -webkit-appearance: none;\r\n+  appearance: none;\r\n   color: red;\r\n   height: 2px;\r\n   width: 80%;\r\n   outline: none;\r\n   border: none;\r\n }\r\n input[type=\"range\"]::-webkit-slider-thumb {\r\n-  -webkit-appearance: none;\r\n+  appearance: none;\r\n   width: 10px;\r\n+  height: 10px;\r\n   background: red;\r\n }\r\n #color-count-text {\r\n   font-weight: bold;\r\n"
+                },
+                {
+                    "date": 1646504258734,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -146,9 +146,8 @@\n }\r\n #color-count {\r\n   background: black;\r\n   appearance: none;\r\n-  color: red;\r\n   height: 2px;\r\n   width: 80%;\r\n   outline: none;\r\n   border: none;\r\n"
+                },
+                {
+                    "date": 1646504265600,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -155,9 +155,9 @@\n input[type=\"range\"]::-webkit-slider-thumb {\r\n   appearance: none;\r\n   width: 10px;\r\n   height: 10px;\r\n-  background: red;\r\n+  background: blue;\r\n }\r\n #color-count-text {\r\n   font-weight: bold;\r\n }\r\n"
+                },
+                {
+                    "date": 1646504282555,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -155,9 +155,9 @@\n input[type=\"range\"]::-webkit-slider-thumb {\r\n   appearance: none;\r\n   width: 10px;\r\n   height: 10px;\r\n-  background: blue;\r\n+  background: black;\r\n }\r\n #color-count-text {\r\n   font-weight: bold;\r\n }\r\n"
+                },
+                {
+                    "date": 1646504288859,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -154,9 +154,9 @@\n }\r\n input[type=\"range\"]::-webkit-slider-thumb {\r\n   appearance: none;\r\n   width: 10px;\r\n-  height: 10px;\r\n+  height: 20px;\r\n   background: black;\r\n }\r\n #color-count-text {\r\n   font-weight: bold;\r\n"
+                },
+                {
+                    "date": 1646504297584,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -156,8 +156,9 @@\n   appearance: none;\r\n   width: 10px;\r\n   height: 20px;\r\n   background: black;\r\n+  border-radius: 10px;\r\n }\r\n #color-count-text {\r\n   font-weight: bold;\r\n }\r\n"
+                },
+                {
+                    "date": 1646504303922,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -156,9 +156,9 @@\n   appearance: none;\r\n   width: 10px;\r\n   height: 20px;\r\n   background: black;\r\n-  border-radius: 10px;\r\n+  border-radius: 5px;\r\n }\r\n #color-count-text {\r\n   font-weight: bold;\r\n }\r\n"
+                },
+                {
+                    "date": 1646504311808,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -153,9 +153,9 @@\n   border: none;\r\n }\r\n input[type=\"range\"]::-webkit-slider-thumb {\r\n   appearance: none;\r\n-  width: 10px;\r\n+  width: 8px;\r\n   height: 20px;\r\n   background: black;\r\n   border-radius: 5px;\r\n }\r\n"
+                },
+                {
+                    "date": 1646504331088,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -148,10 +148,10 @@\n   background: black;\r\n   appearance: none;\r\n   height: 2px;\r\n   width: 80%;\r\n-  outline: none;\r\n-  border: none;\r\n+  /* outline: none;\r\n+  border: none; */\r\n }\r\n input[type=\"range\"]::-webkit-slider-thumb {\r\n   appearance: none;\r\n   width: 8px;\r\n"
+                },
+                {
+                    "date": 1646504339528,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -148,10 +148,9 @@\n   background: black;\r\n   appearance: none;\r\n   height: 2px;\r\n   width: 80%;\r\n-  /* outline: none;\r\n-  border: none; */\r\n+  border-radius: 5px;\r\n }\r\n input[type=\"range\"]::-webkit-slider-thumb {\r\n   appearance: none;\r\n   width: 8px;\r\n"
+                },
+                {
+                    "date": 1646504346249,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -148,9 +148,9 @@\n   background: black;\r\n   appearance: none;\r\n   height: 2px;\r\n   width: 80%;\r\n-  border-radius: 5px;\r\n+  border-radius: 100%;\r\n }\r\n input[type=\"range\"]::-webkit-slider-thumb {\r\n   appearance: none;\r\n   width: 8px;\r\n"
+                },
+                {
+                    "date": 1646504353304,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -148,9 +148,9 @@\n   background: black;\r\n   appearance: none;\r\n   height: 2px;\r\n   width: 80%;\r\n-  border-radius: 100%;\r\n+  border-radius: 10px;\r\n }\r\n input[type=\"range\"]::-webkit-slider-thumb {\r\n   appearance: none;\r\n   width: 8px;\r\n"
+                },
+                {
+                    "date": 1646504364615,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -148,9 +148,9 @@\n   background: black;\r\n   appearance: none;\r\n   height: 2px;\r\n   width: 80%;\r\n-  border-radius: 10px;\r\n+  border-radius: 2px;\r\n }\r\n input[type=\"range\"]::-webkit-slider-thumb {\r\n   appearance: none;\r\n   width: 8px;\r\n"
+                },
+                {
+                    "date": 1646504397967,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -144,9 +144,9 @@\n   border: 1px rgb(167, 167, 167) solid;\r\n   border-radius: 5px;\r\n }\r\n #color-count {\r\n-  background: black;\r\n+  background: rgb(100, 100, 100);\r\n   appearance: none;\r\n   height: 2px;\r\n   width: 80%;\r\n   border-radius: 2px;\r\n@@ -154,9 +154,9 @@\n input[type=\"range\"]::-webkit-slider-thumb {\r\n   appearance: none;\r\n   width: 8px;\r\n   height: 20px;\r\n-  background: black;\r\n+  background: rgb(100, 100, 100);\r\n   border-radius: 5px;\r\n }\r\n #color-count-text {\r\n   font-weight: bold;\r\n"
+                },
+                {
+                    "date": 1646504429606,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -154,9 +154,9 @@\n input[type=\"range\"]::-webkit-slider-thumb {\r\n   appearance: none;\r\n   width: 8px;\r\n   height: 20px;\r\n-  background: rgb(100, 100, 100);\r\n+  background: rgb(50, 50, 50);\r\n   border-radius: 5px;\r\n }\r\n #color-count-text {\r\n   font-weight: bold;\r\n"
+                },
+                {
+                    "date": 1646504480666,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -151,8 +151,9 @@\n   width: 80%;\r\n   border-radius: 2px;\r\n }\r\n input[type=\"range\"]::-webkit-slider-thumb {\r\n+  position: absolute;\r\n   appearance: none;\r\n   width: 8px;\r\n   height: 20px;\r\n   background: rgb(50, 50, 50);\r\n"
+                },
+                {
+                    "date": 1646504488785,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -151,9 +151,9 @@\n   width: 80%;\r\n   border-radius: 2px;\r\n }\r\n input[type=\"range\"]::-webkit-slider-thumb {\r\n-  position: absolute;\r\n+  /* position: absolute; */\r\n   appearance: none;\r\n   width: 8px;\r\n   height: 20px;\r\n   background: rgb(50, 50, 50);\r\n"
+                },
+                {
+                    "date": 1646504651275,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -151,9 +151,9 @@\n   width: 80%;\r\n   border-radius: 2px;\r\n }\r\n input[type=\"range\"]::-webkit-slider-thumb {\r\n-  /* position: absolute; */\r\n+  position: relative;\r\n   appearance: none;\r\n   width: 8px;\r\n   height: 20px;\r\n   background: rgb(50, 50, 50);\r\n"
+                },
+                {
+                    "date": 1646504689573,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -160,8 +160,9 @@\n   border-radius: 5px;\r\n }\r\n #color-count-text {\r\n   font-weight: bold;\r\n+  position: absolute;\r\n }\r\n .closeBtn {\r\n   position: fixed;\r\n   right: 50px;\r\n"
+                },
+                {
+                    "date": 1646504711395,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -151,18 +151,16 @@\n   width: 80%;\r\n   border-radius: 2px;\r\n }\r\n input[type=\"range\"]::-webkit-slider-thumb {\r\n-  position: relative;\r\n   appearance: none;\r\n   width: 8px;\r\n   height: 20px;\r\n   background: rgb(50, 50, 50);\r\n   border-radius: 5px;\r\n }\r\n #color-count-text {\r\n   font-weight: bold;\r\n-  position: absolute;\r\n }\r\n .closeBtn {\r\n   position: fixed;\r\n   right: 50px;\r\n"
+                },
+                {
+                    "date": 1646504988571,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -157,8 +157,11 @@\n   height: 20px;\r\n   background: rgb(50, 50, 50);\r\n   border-radius: 5px;\r\n }\r\n+.abs {\r\n+  position: relative;\r\n+}\r\n #color-count-text {\r\n   font-weight: bold;\r\n }\r\n .closeBtn {\r\n"
+                },
+                {
+                    "date": 1646505005347,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -135,8 +135,9 @@\n   border: 1px rgb(167, 167, 167) solid;\r\n   border-radius: 5px;\r\n }\r\n .settings-color-count {\r\n+  position: absolute;\r\n   display: flex;\r\n   justify-content: space-evenly;\r\n   align-items: center;\r\n   height: 20%;\r\n"
+                },
+                {
+                    "date": 1646505015067,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -159,9 +159,9 @@\n   background: rgb(50, 50, 50);\r\n   border-radius: 5px;\r\n }\r\n .abs {\r\n-  position: relative;\r\n+  /* position: relative; */\r\n }\r\n #color-count-text {\r\n   font-weight: bold;\r\n }\r\n"
+                },
+                {
+                    "date": 1646505022132,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -159,9 +159,9 @@\n   background: rgb(50, 50, 50);\r\n   border-radius: 5px;\r\n }\r\n .abs {\r\n-  /* position: relative; */\r\n+  position: relative;\r\n }\r\n #color-count-text {\r\n   font-weight: bold;\r\n }\r\n"
+                },
+                {
+                    "date": 1646505318581,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -135,9 +135,9 @@\n   border: 1px rgb(167, 167, 167) solid;\r\n   border-radius: 5px;\r\n }\r\n .settings-color-count {\r\n-  position: absolute;\r\n+  position: relative;\r\n   display: flex;\r\n   justify-content: space-evenly;\r\n   align-items: center;\r\n   height: 20%;\r\n@@ -159,9 +159,9 @@\n   background: rgb(50, 50, 50);\r\n   border-radius: 5px;\r\n }\r\n .abs {\r\n-  position: relative;\r\n+  position: absolute;\r\n }\r\n #color-count-text {\r\n   font-weight: bold;\r\n }\r\n"
+                },
+                {
+                    "date": 1646505332307,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -160,8 +160,9 @@\n   border-radius: 5px;\r\n }\r\n .abs {\r\n   position: absolute;\r\n+  top: 10px;\r\n }\r\n #color-count-text {\r\n   font-weight: bold;\r\n }\r\n"
+                },
+                {
+                    "date": 1646505341001,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -161,8 +161,9 @@\n }\r\n .abs {\r\n   position: absolute;\r\n   top: 10px;\r\n+  left: 0px;\r\n }\r\n #color-count-text {\r\n   font-weight: bold;\r\n }\r\n"
+                },
+                {
+                    "date": 1646505349557,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -161,9 +161,9 @@\n }\r\n .abs {\r\n   position: absolute;\r\n   top: 10px;\r\n-  left: 0px;\r\n+  left: 35px;\r\n }\r\n #color-count-text {\r\n   font-weight: bold;\r\n }\r\n"
+                },
+                {
+                    "date": 1646505355978,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -160,10 +160,10 @@\n   border-radius: 5px;\r\n }\r\n .abs {\r\n   position: absolute;\r\n-  top: 10px;\r\n-  left: 35px;\r\n+  top: 12px;\r\n+  left: 33px;\r\n }\r\n #color-count-text {\r\n   font-weight: bold;\r\n }\r\n"
+                },
+                {
+                    "date": 1646505902409,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -165,8 +165,9 @@\n   left: 33px;\r\n }\r\n #color-count-text {\r\n   font-weight: bold;\r\n+  text-align: center;\r\n }\r\n .closeBtn {\r\n   position: fixed;\r\n   right: 50px;\r\n"
+                },
+                {
+                    "date": 1646506145206,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -160,10 +160,10 @@\n   border-radius: 5px;\r\n }\r\n .abs {\r\n   position: absolute;\r\n-  top: 12px;\r\n-  left: 33px;\r\n+  /* top: 12px;\r\n+  left: 33px; */\r\n }\r\n #color-count-text {\r\n   font-weight: bold;\r\n   text-align: center;\r\n"
+                },
+                {
+                    "date": 1646506151377,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -160,9 +160,9 @@\n   border-radius: 5px;\r\n }\r\n .abs {\r\n   position: absolute;\r\n-  /* top: 12px;\r\n+  /* /* top: 12px; */\r\n   left: 33px; */\r\n }\r\n #color-count-text {\r\n   font-weight: bold;\r\n"
+                },
+                {
+                    "date": 1646506157429,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -160,10 +160,10 @@\n   border-radius: 5px;\r\n }\r\n .abs {\r\n   position: absolute;\r\n-  /* /* top: 12px; */\r\n-  left: 33px; */\r\n+  top: 12px;\r\n+  left: 33px;\r\n }\r\n #color-count-text {\r\n   font-weight: bold;\r\n   text-align: center;\r\n"
+                },
+                {
+                    "date": 1646506164531,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -160,10 +160,9 @@\n   border-radius: 5px;\r\n }\r\n .abs {\r\n   position: absolute;\r\n-  top: 12px;\r\n-  left: 33px;\r\n+  top: 20px;\r\n }\r\n #color-count-text {\r\n   font-weight: bold;\r\n   text-align: center;\r\n"
+                },
+                {
+                    "date": 1646506171228,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -160,9 +160,9 @@\n   border-radius: 5px;\r\n }\r\n .abs {\r\n   position: absolute;\r\n-  top: 20px;\r\n+  top: 15px;\r\n }\r\n #color-count-text {\r\n   font-weight: bold;\r\n   text-align: center;\r\n"
+                },
+                {
+                    "date": 1646506202016,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -161,8 +161,9 @@\n }\r\n .abs {\r\n   position: absolute;\r\n   top: 15px;\r\n+  background-color: red;\r\n }\r\n #color-count-text {\r\n   font-weight: bold;\r\n   text-align: center;\r\n"
+                },
+                {
+                    "date": 1646506212006,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -161,9 +161,9 @@\n }\r\n .abs {\r\n   position: absolute;\r\n   top: 15px;\r\n-  background-color: red;\r\n+  background-color: black;\r\n }\r\n #color-count-text {\r\n   font-weight: bold;\r\n   text-align: center;\r\n"
+                },
+                {
+                    "date": 1646506218199,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -166,8 +166,9 @@\n }\r\n #color-count-text {\r\n   font-weight: bold;\r\n   text-align: center;\r\n+  color: white;\r\n }\r\n .closeBtn {\r\n   position: fixed;\r\n   right: 50px;\r\n"
+                },
+                {
+                    "date": 1646506228688,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -161,9 +161,9 @@\n }\r\n .abs {\r\n   position: absolute;\r\n   top: 15px;\r\n-  background-color: black;\r\n+  background-color: rgb(58, 58, 58);\r\n }\r\n #color-count-text {\r\n   font-weight: bold;\r\n   text-align: center;\r\n"
+                },
+                {
+                    "date": 1646506237535,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -162,8 +162,9 @@\n .abs {\r\n   position: absolute;\r\n   top: 15px;\r\n   background-color: rgb(58, 58, 58);\r\n+  padding: 3px;\r\n }\r\n #color-count-text {\r\n   font-weight: bold;\r\n   text-align: center;\r\n"
+                },
+                {
+                    "date": 1646506248565,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -162,9 +162,9 @@\n .abs {\r\n   position: absolute;\r\n   top: 15px;\r\n   background-color: rgb(58, 58, 58);\r\n-  padding: 3px;\r\n+  border-radius: 5px;\r\n }\r\n #color-count-text {\r\n   font-weight: bold;\r\n   text-align: center;\r\n"
+                },
+                {
+                    "date": 1646506256387,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -162,8 +162,9 @@\n .abs {\r\n   position: absolute;\r\n   top: 15px;\r\n   background-color: rgb(58, 58, 58);\r\n+  padding: 2px;\r\n   border-radius: 5px;\r\n }\r\n #color-count-text {\r\n   font-weight: bold;\r\n"
+                },
+                {
+                    "date": 1646506272518,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -162,9 +162,9 @@\n .abs {\r\n   position: absolute;\r\n   top: 15px;\r\n   background-color: rgb(58, 58, 58);\r\n-  padding: 2px;\r\n+  padding: 30px;\r\n   border-radius: 5px;\r\n }\r\n #color-count-text {\r\n   font-weight: bold;\r\n"
+                },
+                {
+                    "date": 1646506304922,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -162,9 +162,9 @@\n .abs {\r\n   position: absolute;\r\n   top: 15px;\r\n   background-color: rgb(58, 58, 58);\r\n-  padding: 30px;\r\n+  padding: 3px 2px;\r\n   border-radius: 5px;\r\n }\r\n #color-count-text {\r\n   font-weight: bold;\r\n"
+                },
+                {
+                    "date": 1646506314372,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -162,9 +162,9 @@\n .abs {\r\n   position: absolute;\r\n   top: 15px;\r\n   background-color: rgb(58, 58, 58);\r\n-  padding: 3px 2px;\r\n+  padding: 4px 3px;\r\n   border-radius: 5px;\r\n }\r\n #color-count-text {\r\n   font-weight: bold;\r\n"
+                },
+                {
+                    "date": 1646506324212,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -162,9 +162,9 @@\n .abs {\r\n   position: absolute;\r\n   top: 15px;\r\n   background-color: rgb(58, 58, 58);\r\n-  padding: 4px 3px;\r\n+  padding: 6px 10px;\r\n   border-radius: 5px;\r\n }\r\n #color-count-text {\r\n   font-weight: bold;\r\n"
+                },
+                {
+                    "date": 1646506330095,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -162,9 +162,9 @@\n .abs {\r\n   position: absolute;\r\n   top: 15px;\r\n   background-color: rgb(58, 58, 58);\r\n-  padding: 6px 10px;\r\n+  padding: 8px 8px;\r\n   border-radius: 5px;\r\n }\r\n #color-count-text {\r\n   font-weight: bold;\r\n"
+                },
+                {
+                    "date": 1646506336682,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -162,9 +162,9 @@\n .abs {\r\n   position: absolute;\r\n   top: 15px;\r\n   background-color: rgb(58, 58, 58);\r\n-  padding: 8px 8px;\r\n+  padding: 6px 12px;\r\n   border-radius: 5px;\r\n }\r\n #color-count-text {\r\n   font-weight: bold;\r\n"
+                },
+                {
+                    "date": 1646506346455,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -163,9 +163,9 @@\n   position: absolute;\r\n   top: 15px;\r\n   background-color: rgb(58, 58, 58);\r\n   padding: 6px 12px;\r\n-  border-radius: 5px;\r\n+  border-radius: 50%;\r\n }\r\n #color-count-text {\r\n   font-weight: bold;\r\n   text-align: center;\r\n"
+                },
+                {
+                    "date": 1646506354463,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -162,9 +162,9 @@\n .abs {\r\n   position: absolute;\r\n   top: 15px;\r\n   background-color: rgb(58, 58, 58);\r\n-  padding: 6px 12px;\r\n+  padding: 4px 8px;\r\n   border-radius: 50%;\r\n }\r\n #color-count-text {\r\n   font-weight: bold;\r\n"
+                },
+                {
+                    "date": 1646506359981,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -162,9 +162,9 @@\n .abs {\r\n   position: absolute;\r\n   top: 15px;\r\n   background-color: rgb(58, 58, 58);\r\n-  padding: 4px 8px;\r\n+  padding: 5px 10px;\r\n   border-radius: 50%;\r\n }\r\n #color-count-text {\r\n   font-weight: bold;\r\n"
+                },
+                {
+                    "date": 1646506441282,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -160,11 +160,13 @@\n   border-radius: 5px;\r\n }\r\n .abs {\r\n   position: absolute;\r\n+  width: 10px;\r\n+  height: 10px;\r\n   top: 15px;\r\n   background-color: rgb(58, 58, 58);\r\n-  padding: 5px 10px;\r\n+\r\n   border-radius: 50%;\r\n }\r\n #color-count-text {\r\n   font-weight: bold;\r\n"
+                },
+                {
+                    "date": 1646506446840,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -160,10 +160,10 @@\n   border-radius: 5px;\r\n }\r\n .abs {\r\n   position: absolute;\r\n-  width: 10px;\r\n-  height: 10px;\r\n+  width: 30px;\r\n+  height: 30px;\r\n   top: 15px;\r\n   background-color: rgb(58, 58, 58);\r\n \r\n   border-radius: 50%;\r\n"
+                },
+                {
+                    "date": 1646506462931,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -162,9 +162,9 @@\n .abs {\r\n   position: absolute;\r\n   width: 30px;\r\n   height: 30px;\r\n-  top: 15px;\r\n+  /* top: 15px; */\r\n   background-color: rgb(58, 58, 58);\r\n \r\n   border-radius: 50%;\r\n }\r\n"
+                },
+                {
+                    "date": 1646506477254,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -160,11 +160,12 @@\n   border-radius: 5px;\r\n }\r\n .abs {\r\n   position: absolute;\r\n+  text-align: center;\r\n   width: 30px;\r\n   height: 30px;\r\n-  /* top: 15px; */\r\n+  top: 15px;\r\n   background-color: rgb(58, 58, 58);\r\n \r\n   border-radius: 50%;\r\n }\r\n"
+                },
+                {
+                    "date": 1646506493280,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -160,14 +160,11 @@\n   border-radius: 5px;\r\n }\r\n .abs {\r\n   position: absolute;\r\n-  text-align: center;\r\n-  width: 30px;\r\n-  height: 30px;\r\n   top: 15px;\r\n   background-color: rgb(58, 58, 58);\r\n-\r\n+  padding: 5px 10px;\r\n   border-radius: 50%;\r\n }\r\n #color-count-text {\r\n   font-weight: bold;\r\n"
+                },
+                {
+                    "date": 1646506500639,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -163,9 +163,9 @@\n   position: absolute;\r\n   top: 15px;\r\n   background-color: rgb(58, 58, 58);\r\n   padding: 5px 10px;\r\n-  border-radius: 50%;\r\n+  border-radius: 10px;\r\n }\r\n #color-count-text {\r\n   font-weight: bold;\r\n   text-align: center;\r\n"
+                },
+                {
+                    "date": 1646506506831,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -163,9 +163,9 @@\n   position: absolute;\r\n   top: 15px;\r\n   background-color: rgb(58, 58, 58);\r\n   padding: 5px 10px;\r\n-  border-radius: 10px;\r\n+  border-radius: 30px;\r\n }\r\n #color-count-text {\r\n   font-weight: bold;\r\n   text-align: center;\r\n"
+                },
+                {
+                    "date": 1646507057489,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -130,9 +130,9 @@\n   align-items: center;\r\n }\r\n .settings-option {\r\n   width: 45%;\r\n-  height: 70%;\r\n+  height: 60%;\r\n   border: 1px rgb(167, 167, 167) solid;\r\n   border-radius: 5px;\r\n }\r\n .settings-color-count {\r\n"
+                },
+                {
+                    "date": 1646507067693,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -125,9 +125,9 @@\n   width: 430px;\r\n   background-color: white;\r\n   display: flex;\r\n   flex-wrap: wrap;\r\n-  justify-content: space-evenly;\r\n+  justify-content: space-between;\r\n   align-items: center;\r\n }\r\n .settings-option {\r\n   width: 45%;\r\n"
+                },
+                {
+                    "date": 1646507087346,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -125,14 +125,14 @@\n   width: 430px;\r\n   background-color: white;\r\n   display: flex;\r\n   flex-wrap: wrap;\r\n-  justify-content: space-between;\r\n+  justify-content: space-evenly;\r\n   align-items: center;\r\n }\r\n .settings-option {\r\n   width: 45%;\r\n-  height: 60%;\r\n+  height: 55%;\r\n   border: 1px rgb(167, 167, 167) solid;\r\n   border-radius: 5px;\r\n }\r\n .settings-color-count {\r\n"
+                },
+                {
+                    "date": 1646507098674,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -141,9 +141,9 @@\n   justify-content: space-evenly;\r\n   align-items: center;\r\n   height: 20%;\r\n   width: 80%;\r\n-  border: 1px rgb(167, 167, 167) solid;\r\n+  /* border: 1px rgb(167, 167, 167) solid; */\r\n   border-radius: 5px;\r\n }\r\n #color-count {\r\n   background: rgb(100, 100, 100);\r\n"
+                },
+                {
+                    "date": 1646507556320,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -140,9 +140,9 @@\n   display: flex;\r\n   justify-content: space-evenly;\r\n   align-items: center;\r\n   height: 20%;\r\n-  width: 80%;\r\n+  width: 90%;\r\n   /* border: 1px rgb(167, 167, 167) solid; */\r\n   border-radius: 5px;\r\n }\r\n #color-count {\r\n"
+                },
+                {
+                    "date": 1646507581734,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -148,9 +148,9 @@\n #color-count {\r\n   background: rgb(100, 100, 100);\r\n   appearance: none;\r\n   height: 2px;\r\n-  width: 80%;\r\n+  width: 60%;\r\n   border-radius: 2px;\r\n }\r\n input[type=\"range\"]::-webkit-slider-thumb {\r\n   appearance: none;\r\n"
+                },
+                {
+                    "date": 1646507895180,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -137,9 +137,9 @@\n }\r\n .settings-color-count {\r\n   position: relative;\r\n   display: flex;\r\n-  justify-content: space-evenly;\r\n+  justify-content: space-around;\r\n   align-items: center;\r\n   height: 20%;\r\n   width: 90%;\r\n   /* border: 1px rgb(167, 167, 167) solid; */\r\n"
+                },
+                {
+                    "date": 1646507914717,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -137,9 +137,9 @@\n }\r\n .settings-color-count {\r\n   position: relative;\r\n   display: flex;\r\n-  justify-content: space-around;\r\n+  justify-content: start;\r\n   align-items: center;\r\n   height: 20%;\r\n   width: 90%;\r\n   /* border: 1px rgb(167, 167, 167) solid; */\r\n"
+                },
+                {
+                    "date": 1646507925470,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -137,9 +137,9 @@\n }\r\n .settings-color-count {\r\n   position: relative;\r\n   display: flex;\r\n-  justify-content: start;\r\n+  justify-content: space-between;\r\n   align-items: center;\r\n   height: 20%;\r\n   width: 90%;\r\n   /* border: 1px rgb(167, 167, 167) solid; */\r\n"
+                },
+                {
+                    "date": 1646508381407,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -125,9 +125,9 @@\n   width: 430px;\r\n   background-color: white;\r\n   display: flex;\r\n   flex-wrap: wrap;\r\n-  justify-content: space-evenly;\r\n+  justify-content: space-around;\r\n   align-items: center;\r\n }\r\n .settings-option {\r\n   width: 45%;\r\n"
+                },
+                {
+                    "date": 1646508400506,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -125,9 +125,9 @@\n   width: 430px;\r\n   background-color: white;\r\n   display: flex;\r\n   flex-wrap: wrap;\r\n-  justify-content: space-around;\r\n+  justify-content: space-evenly;\r\n   align-items: center;\r\n }\r\n .settings-option {\r\n   width: 45%;\r\n"
+                },
+                {
+                    "date": 1646508408461,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -137,9 +137,9 @@\n }\r\n .settings-color-count {\r\n   position: relative;\r\n   display: flex;\r\n-  justify-content: space-between;\r\n+  justify-content: space-around;\r\n   align-items: center;\r\n   height: 20%;\r\n   width: 90%;\r\n   /* border: 1px rgb(167, 167, 167) solid; */\r\n"
+                },
+                {
+                    "date": 1646508424761,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -137,9 +137,9 @@\n }\r\n .settings-color-count {\r\n   position: relative;\r\n   display: flex;\r\n-  justify-content: space-around;\r\n+  justify-content: start;\r\n   align-items: center;\r\n   height: 20%;\r\n   width: 90%;\r\n   /* border: 1px rgb(167, 167, 167) solid; */\r\n"
+                },
+                {
+                    "date": 1646508442431,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -148,9 +148,9 @@\n #color-count {\r\n   background: rgb(100, 100, 100);\r\n   appearance: none;\r\n   height: 2px;\r\n-  width: 60%;\r\n+  width: 80%;\r\n   border-radius: 2px;\r\n }\r\n input[type=\"range\"]::-webkit-slider-thumb {\r\n   appearance: none;\r\n"
+                },
+                {
+                    "date": 1646508453056,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -137,9 +137,9 @@\n }\r\n .settings-color-count {\r\n   position: relative;\r\n   display: flex;\r\n-  justify-content: start;\r\n+  justify-content: space-between;\r\n   align-items: center;\r\n   height: 20%;\r\n   width: 90%;\r\n   /* border: 1px rgb(167, 167, 167) solid; */\r\n@@ -148,9 +148,9 @@\n #color-count {\r\n   background: rgb(100, 100, 100);\r\n   appearance: none;\r\n   height: 2px;\r\n-  width: 80%;\r\n+  width: 70%;\r\n   border-radius: 2px;\r\n }\r\n input[type=\"range\"]::-webkit-slider-thumb {\r\n   appearance: none;\r\n"
+                },
+                {
+                    "date": 1646508732072,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -159,8 +159,9 @@\n   background: rgb(50, 50, 50);\r\n   border-radius: 5px;\r\n }\r\n .abs {\r\n+  transition: 0.3;\r\n   position: absolute;\r\n   top: 15px;\r\n   background-color: rgb(58, 58, 58);\r\n   padding: 5px 10px;\r\n"
+                },
+                {
+                    "date": 1646508740199,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -159,9 +159,9 @@\n   background: rgb(50, 50, 50);\r\n   border-radius: 5px;\r\n }\r\n .abs {\r\n-  transition: 0.3;\r\n+  transition: 0.1s;\r\n   position: absolute;\r\n   top: 15px;\r\n   background-color: rgb(58, 58, 58);\r\n   padding: 5px 10px;\r\n"
+                },
+                {
+                    "date": 1646508755310,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -159,9 +159,9 @@\n   background: rgb(50, 50, 50);\r\n   border-radius: 5px;\r\n }\r\n .abs {\r\n-  transition: 0.1s;\r\n+  transition: 0.03s;\r\n   position: absolute;\r\n   top: 15px;\r\n   background-color: rgb(58, 58, 58);\r\n   padding: 5px 10px;\r\n"
+                },
+                {
+                    "date": 1646508761753,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -159,9 +159,9 @@\n   background: rgb(50, 50, 50);\r\n   border-radius: 5px;\r\n }\r\n .abs {\r\n-  transition: 0.03s;\r\n+  /* transition: 0.03s; */\r\n   position: absolute;\r\n   top: 15px;\r\n   background-color: rgb(58, 58, 58);\r\n   padding: 5px 10px;\r\n"
+                },
+                {
+                    "date": 1646508767558,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -159,9 +159,9 @@\n   background: rgb(50, 50, 50);\r\n   border-radius: 5px;\r\n }\r\n .abs {\r\n-  /* transition: 0.03s; */\r\n+  transition: 0.03s;\r\n   position: absolute;\r\n   top: 15px;\r\n   background-color: rgb(58, 58, 58);\r\n   padding: 5px 10px;\r\n"
+                },
+                {
+                    "date": 1646508774004,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -159,9 +159,8 @@\n   background: rgb(50, 50, 50);\r\n   border-radius: 5px;\r\n }\r\n .abs {\r\n-  transition: 0.03s;\r\n   position: absolute;\r\n   top: 15px;\r\n   background-color: rgb(58, 58, 58);\r\n   padding: 5px 10px;\r\n"
+                },
+                {
+                    "date": 1646510368442,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n   margin: 0;\r\n   padding: 0;\r\n }\r\n \r\n-select {\r\n+.menu {\r\n   width: 320px;\r\n   height: 40px;\r\n   border-radius: 6px;\r\n   font-weight: 700;\r\n"
+                },
+                {
+                    "date": 1646510379402,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n   margin: 0;\r\n   padding: 0;\r\n }\r\n \r\n-.menu {\r\n+.select {\r\n   width: 320px;\r\n   height: 40px;\r\n   border-radius: 6px;\r\n   font-weight: 700;\r\n"
+                },
+                {
+                    "date": 1646510465036,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n   margin: 0;\r\n   padding: 0;\r\n }\r\n \r\n-.select {\r\n+select {\r\n   width: 320px;\r\n   height: 40px;\r\n   border-radius: 6px;\r\n   font-weight: 700;\r\n@@ -158,8 +158,10 @@\n   height: 20px;\r\n   background: rgb(50, 50, 50);\r\n   border-radius: 5px;\r\n }\r\n+#theme-menu {\r\n+}\r\n .abs {\r\n   position: absolute;\r\n   top: 15px;\r\n   background-color: rgb(58, 58, 58);\r\n"
+                },
+                {
+                    "date": 1646510475479,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -159,8 +159,13 @@\n   background: rgb(50, 50, 50);\r\n   border-radius: 5px;\r\n }\r\n #theme-menu {\r\n+  width: 80%;\r\n+  height: 40px;\r\n+  border-radius: 6px;\r\n+  font-weight: 700;\r\n+  border: 1px rgb(160, 160, 160) solid;\r\n }\r\n .abs {\r\n   position: absolute;\r\n   top: 15px;\r\n"
+                },
+                {
+                    "date": 1646510484517,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -160,9 +160,9 @@\n   border-radius: 5px;\r\n }\r\n #theme-menu {\r\n   width: 80%;\r\n-  height: 40px;\r\n+  height: 20px;\r\n   border-radius: 6px;\r\n   font-weight: 700;\r\n   border: 1px rgb(160, 160, 160) solid;\r\n }\r\n"
+                },
+                {
+                    "date": 1646510491488,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -161,9 +161,9 @@\n }\r\n #theme-menu {\r\n   width: 80%;\r\n   height: 20px;\r\n-  border-radius: 6px;\r\n+  border-radius: 4px;\r\n   font-weight: 700;\r\n   border: 1px rgb(160, 160, 160) solid;\r\n }\r\n .abs {\r\n"
+                },
+                {
+                    "date": 1646510506597,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -161,10 +161,10 @@\n }\r\n #theme-menu {\r\n   width: 80%;\r\n   height: 20px;\r\n-  border-radius: 4px;\r\n-  font-weight: 700;\r\n+  border-radius: 3px;\r\n+  font-weight: 400;\r\n   border: 1px rgb(160, 160, 160) solid;\r\n }\r\n .abs {\r\n   position: absolute;\r\n"
+                },
+                {
+                    "date": 1646510534715,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -129,8 +129,9 @@\n   justify-content: space-evenly;\r\n   align-items: center;\r\n }\r\n .settings-option {\r\n+  display:flex\r\n   width: 45%;\r\n   height: 55%;\r\n   border: 1px rgb(167, 167, 167) solid;\r\n   border-radius: 5px;\r\n"
+                },
+                {
+                    "date": 1646510544848,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -129,9 +129,10 @@\n   justify-content: space-evenly;\r\n   align-items: center;\r\n }\r\n .settings-option {\r\n-  display:flex\r\n+  display: flex;\r\n+  flex-direction: column;\r\n   width: 45%;\r\n   height: 55%;\r\n   border: 1px rgb(167, 167, 167) solid;\r\n   border-radius: 5px;\r\n"
+                },
+                {
+                    "date": 1646510567108,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -131,8 +131,10 @@\n }\r\n .settings-option {\r\n   display: flex;\r\n   flex-direction: column;\r\n+  align-items: center;\r\n+  justify-content: space-evenly;\r\n   width: 45%;\r\n   height: 55%;\r\n   border: 1px rgb(167, 167, 167) solid;\r\n   border-radius: 5px;\r\n"
+                },
+                {
+                    "date": 1646510578497,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -131,9 +131,9 @@\n }\r\n .settings-option {\r\n   display: flex;\r\n   flex-direction: column;\r\n-  align-items: center;\r\n+  align-items: stretch;\r\n   justify-content: space-evenly;\r\n   width: 45%;\r\n   height: 55%;\r\n   border: 1px rgb(167, 167, 167) solid;\r\n"
+                },
+                {
+                    "date": 1646510613731,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -129,8 +129,9 @@\n   justify-content: space-evenly;\r\n   align-items: center;\r\n }\r\n .settings-option {\r\n+  margin-left: 10px;\r\n   display: flex;\r\n   flex-direction: column;\r\n   align-items: stretch;\r\n   justify-content: space-evenly;\r\n"
+                },
+                {
+                    "date": 1646510626046,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -129,9 +129,8 @@\n   justify-content: space-evenly;\r\n   align-items: center;\r\n }\r\n .settings-option {\r\n-  margin-left: 10px;\r\n   display: flex;\r\n   flex-direction: column;\r\n   align-items: stretch;\r\n   justify-content: space-evenly;\r\n"
+                },
+                {
+                    "date": 1646510651658,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -138,8 +138,11 @@\n   height: 55%;\r\n   border: 1px rgb(167, 167, 167) solid;\r\n   border-radius: 5px;\r\n }\r\n+.settings-option div {\r\n+  margin-left: 10px;\r\n+}\r\n .settings-color-count {\r\n   position: relative;\r\n   display: flex;\r\n   justify-content: space-between;\r\n"
+                },
+                {
+                    "date": 1646510708013,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -131,9 +131,9 @@\n }\r\n .settings-option {\r\n   display: flex;\r\n   flex-direction: column;\r\n-  align-items: stretch;\r\n+  /* align-items: stretch; */\r\n   justify-content: space-evenly;\r\n   width: 45%;\r\n   height: 55%;\r\n   border: 1px rgb(167, 167, 167) solid;\r\n"
+                },
+                {
+                    "date": 1646510717244,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -131,10 +131,10 @@\n }\r\n .settings-option {\r\n   display: flex;\r\n   flex-direction: column;\r\n-  /* align-items: stretch; */\r\n-  justify-content: space-evenly;\r\n+  align-items: stretch;\r\n+  /* justify-content: space-evenly; */\r\n   width: 45%;\r\n   height: 55%;\r\n   border: 1px rgb(167, 167, 167) solid;\r\n   border-radius: 5px;\r\n"
+                },
+                {
+                    "date": 1646510872955,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -132,17 +132,20 @@\n .settings-option {\r\n   display: flex;\r\n   flex-direction: column;\r\n   align-items: stretch;\r\n-  /* justify-content: space-evenly; */\r\n+  justify-content: space-evenly;\r\n   width: 45%;\r\n   height: 55%;\r\n   border: 1px rgb(167, 167, 167) solid;\r\n   border-radius: 5px;\r\n }\r\n .settings-option div {\r\n   margin-left: 10px;\r\n }\r\n+.container input:checked ~ .checkmark {\r\n+  background-color: #2196f3;\r\n+}\r\n .settings-color-count {\r\n   position: relative;\r\n   display: flex;\r\n   justify-content: space-between;\r\n"
+                },
+                {
+                    "date": 1646510897532,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -141,10 +141,10 @@\n }\r\n .settings-option div {\r\n   margin-left: 10px;\r\n }\r\n-.container input:checked ~ .checkmark {\r\n-  background-color: #2196f3;\r\n+input:checked ~ .checkmark {\r\n+  background-color: red;\r\n }\r\n .settings-color-count {\r\n   position: relative;\r\n   display: flex;\r\n"
+                },
+                {
+                    "date": 1646510976559,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -141,9 +141,12 @@\n }\r\n .settings-option div {\r\n   margin-left: 10px;\r\n }\r\n-input:checked ~ .checkmark {\r\n+/* input:checked ~ .checkmark {\r\n+  \r\n+} */\r\n+.checkbox:checked {\r\n   background-color: red;\r\n }\r\n .settings-color-count {\r\n   position: relative;\r\n"
+                },
+                {
+                    "date": 1646510987546,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -145,8 +145,9 @@\n /* input:checked ~ .checkmark {\r\n   \r\n } */\r\n .checkbox:checked {\r\n+  appearance: none;\r\n   background-color: red;\r\n }\r\n .settings-color-count {\r\n   position: relative;\r\n"
+                },
+                {
+                    "date": 1646511028286,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -144,10 +144,12 @@\n }\r\n /* input:checked ~ .checkmark {\r\n   \r\n } */\r\n+.checkbox {\r\n+  background-color: red;\r\n+}\r\n .checkbox:checked {\r\n-  appearance: none;\r\n   background-color: red;\r\n }\r\n .settings-color-count {\r\n   position: relative;\r\n"
+                },
+                {
+                    "date": 1646511041607,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -145,8 +145,9 @@\n /* input:checked ~ .checkmark {\r\n   \r\n } */\r\n .checkbox {\r\n+  height: 300px;\r\n   background-color: red;\r\n }\r\n .checkbox:checked {\r\n   background-color: red;\r\n"
+                },
+                {
+                    "date": 1646511054974,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -145,9 +145,9 @@\n /* input:checked ~ .checkmark {\r\n   \r\n } */\r\n .checkbox {\r\n-  height: 300px;\r\n+  padding: 5px;\r\n   background-color: red;\r\n }\r\n .checkbox:checked {\r\n   background-color: red;\r\n"
+                },
+                {
+                    "date": 1646511108809,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -145,9 +145,10 @@\n /* input:checked ~ .checkmark {\r\n   \r\n } */\r\n .checkbox {\r\n-  padding: 5px;\r\n+  appearance: none;\r\n+  padding: 500px;\r\n   background-color: red;\r\n }\r\n .checkbox:checked {\r\n   background-color: red;\r\n"
+                },
+                {
+                    "date": 1646511115577,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -146,9 +146,9 @@\n   \r\n } */\r\n .checkbox {\r\n   appearance: none;\r\n-  padding: 500px;\r\n+  padding: 5px;\r\n   background-color: red;\r\n }\r\n .checkbox:checked {\r\n   background-color: red;\r\n"
+                },
+                {
+                    "date": 1646511121220,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -146,9 +146,9 @@\n   \r\n } */\r\n .checkbox {\r\n   appearance: none;\r\n-  padding: 5px;\r\n+  /* padding: px; */\r\n   background-color: red;\r\n }\r\n .checkbox:checked {\r\n   background-color: red;\r\n"
+                },
+                {
+                    "date": 1646511130408,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -146,9 +146,9 @@\n   \r\n } */\r\n .checkbox {\r\n   appearance: none;\r\n-  /* padding: px; */\r\n+  padding: 5px;\r\n   background-color: red;\r\n }\r\n .checkbox:checked {\r\n   background-color: red;\r\n"
+                },
+                {
+                    "date": 1646511136785,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -147,9 +147,8 @@\n } */\r\n .checkbox {\r\n   appearance: none;\r\n   padding: 5px;\r\n-  background-color: red;\r\n }\r\n .checkbox:checked {\r\n   background-color: red;\r\n }\r\n"
+                },
+                {
+                    "date": 1646511142655,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -147,8 +147,9 @@\n } */\r\n .checkbox {\r\n   appearance: none;\r\n   padding: 5px;\r\n+  background-color: red;\r\n }\r\n .checkbox:checked {\r\n   background-color: red;\r\n }\r\n"
+                },
+                {
+                    "date": 1646511162337,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -147,12 +147,12 @@\n } */\r\n .checkbox {\r\n   appearance: none;\r\n   padding: 5px;\r\n-  background-color: red;\r\n+  background-color: white;\r\n }\r\n .checkbox:checked {\r\n-  background-color: red;\r\n+  background-color: blue;\r\n }\r\n .settings-color-count {\r\n   position: relative;\r\n   display: flex;\r\n"
+                },
+                {
+                    "date": 1646511177729,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -148,8 +148,9 @@\n .checkbox {\r\n   appearance: none;\r\n   padding: 5px;\r\n   background-color: white;\r\n+  margin: 1px gray solid;\r\n }\r\n .checkbox:checked {\r\n   background-color: blue;\r\n }\r\n"
+                },
+                {
+                    "date": 1646511184575,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -147,9 +147,9 @@\n } */\r\n .checkbox {\r\n   appearance: none;\r\n   padding: 5px;\r\n-  background-color: white;\r\n+  background-color: gray;\r\n   margin: 1px gray solid;\r\n }\r\n .checkbox:checked {\r\n   background-color: blue;\r\n"
+                },
+                {
+                    "date": 1646511191202,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -148,9 +148,9 @@\n .checkbox {\r\n   appearance: none;\r\n   padding: 5px;\r\n   background-color: gray;\r\n-  margin: 1px gray solid;\r\n+  margin: 1px rgb(0, 0, 0) solid;\r\n }\r\n .checkbox:checked {\r\n   background-color: blue;\r\n }\r\n"
+                },
+                {
+                    "date": 1646511210838,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -146,9 +146,10 @@\n   \r\n } */\r\n .checkbox {\r\n   appearance: none;\r\n-  padding: 5px;\r\n+  height: 25px;\r\n+  width: 25px;\r\n   background-color: gray;\r\n   margin: 1px rgb(0, 0, 0) solid;\r\n }\r\n .checkbox:checked {\r\n"
+                },
+                {
+                    "date": 1646511220807,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -146,10 +146,10 @@\n   \r\n } */\r\n .checkbox {\r\n   appearance: none;\r\n-  height: 25px;\r\n-  width: 25px;\r\n+  height: 10px;\r\n+  width: 10px;\r\n   background-color: gray;\r\n   margin: 1px rgb(0, 0, 0) solid;\r\n }\r\n .checkbox:checked {\r\n"
+                },
+                {
+                    "date": 1646511240391,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -146,12 +146,12 @@\n   \r\n } */\r\n .checkbox {\r\n   appearance: none;\r\n-  height: 10px;\r\n-  width: 10px;\r\n+  height: 15px;\r\n+  width: 15px;\r\n   background-color: gray;\r\n-  margin: 1px rgb(0, 0, 0) solid;\r\n+  border: 1px rgb(0, 0, 0) solid;\r\n }\r\n .checkbox:checked {\r\n   background-color: blue;\r\n }\r\n"
+                },
+                {
+                    "date": 1646511268650,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -139,8 +139,9 @@\n   border: 1px rgb(167, 167, 167) solid;\r\n   border-radius: 5px;\r\n }\r\n .settings-option div {\r\n+  display: flex;\r\n   margin-left: 10px;\r\n }\r\n /* input:checked ~ .checkmark {\r\n   \r\n@@ -148,9 +149,8 @@\n .checkbox {\r\n   appearance: none;\r\n   height: 15px;\r\n   width: 15px;\r\n-  background-color: gray;\r\n   border: 1px rgb(0, 0, 0) solid;\r\n }\r\n .checkbox:checked {\r\n   background-color: blue;\r\n"
+                },
+                {
+                    "date": 1646511277321,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -140,8 +140,9 @@\n   border-radius: 5px;\r\n }\r\n .settings-option div {\r\n   display: flex;\r\n+  justify-content: center;\r\n   margin-left: 10px;\r\n }\r\n /* input:checked ~ .checkmark {\r\n   \r\n"
+                },
+                {
+                    "date": 1646511290702,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -140,9 +140,9 @@\n   border-radius: 5px;\r\n }\r\n .settings-option div {\r\n   display: flex;\r\n-  justify-content: center;\r\n+  align-items: center;\r\n   margin-left: 10px;\r\n }\r\n /* input:checked ~ .checkmark {\r\n   \r\n"
+                },
+                {
+                    "date": 1646511422617,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -147,9 +147,9 @@\n /* input:checked ~ .checkmark {\r\n   \r\n } */\r\n .checkbox {\r\n-  appearance: none;\r\n+  /* appearance: none; */\r\n   height: 15px;\r\n   width: 15px;\r\n   border: 1px rgb(0, 0, 0) solid;\r\n }\r\n"
+                },
+                {
+                    "date": 1646511435722,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -153,9 +153,9 @@\n   width: 15px;\r\n   border: 1px rgb(0, 0, 0) solid;\r\n }\r\n .checkbox:checked {\r\n-  background-color: blue;\r\n+  background-color: red;\r\n }\r\n .settings-color-count {\r\n   position: relative;\r\n   display: flex;\r\n"
+                },
+                {
+                    "date": 1646511507550,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -143,8 +143,14 @@\n   display: flex;\r\n   align-items: center;\r\n   margin-left: 10px;\r\n }\r\n+.settings-option div input {\r\n+  opacity: 0;\r\n+  cursor: pointer;\r\n+  height: 0;\r\n+  width: 0;\r\n+}\r\n /* input:checked ~ .checkmark {\r\n   \r\n } */\r\n .checkbox {\r\n"
+                },
+                {
+                    "date": 1646511543845,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -143,14 +143,8 @@\n   display: flex;\r\n   align-items: center;\r\n   margin-left: 10px;\r\n }\r\n-.settings-option div input {\r\n-  opacity: 0;\r\n-  cursor: pointer;\r\n-  height: 0;\r\n-  width: 0;\r\n-}\r\n /* input:checked ~ .checkmark {\r\n   \r\n } */\r\n .checkbox {\r\n"
+                },
+                {
+                    "date": 1646511552964,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -142,8 +142,9 @@\n .settings-option div {\r\n   display: flex;\r\n   align-items: center;\r\n   margin-left: 10px;\r\n+  accent-color: #9d3039;\r\n }\r\n /* input:checked ~ .checkmark {\r\n   \r\n } */\r\n"
+                },
+                {
+                    "date": 1646511567318,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -142,9 +142,8 @@\n .settings-option div {\r\n   display: flex;\r\n   align-items: center;\r\n   margin-left: 10px;\r\n-  accent-color: #9d3039;\r\n }\r\n /* input:checked ~ .checkmark {\r\n   \r\n } */\r\n@@ -154,9 +153,9 @@\n   width: 15px;\r\n   border: 1px rgb(0, 0, 0) solid;\r\n }\r\n .checkbox:checked {\r\n-  background-color: red;\r\n+  accent-color: #9d3039;\r\n }\r\n .settings-color-count {\r\n   position: relative;\r\n   display: flex;\r\n"
+                },
+                {
+                    "date": 1646511575873,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -151,11 +151,11 @@\n   /* appearance: none; */\r\n   height: 15px;\r\n   width: 15px;\r\n   border: 1px rgb(0, 0, 0) solid;\r\n+  accent-color: #9d3039;\r\n }\r\n .checkbox:checked {\r\n-  accent-color: #9d3039;\r\n }\r\n .settings-color-count {\r\n   position: relative;\r\n   display: flex;\r\n"
+                },
+                {
+                    "date": 1646511591669,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -151,9 +151,9 @@\n   /* appearance: none; */\r\n   height: 15px;\r\n   width: 15px;\r\n   border: 1px rgb(0, 0, 0) solid;\r\n-  accent-color: #9d3039;\r\n+  accent-color: black;\r\n }\r\n .checkbox:checked {\r\n }\r\n .settings-color-count {\r\n"
+                },
+                {
+                    "date": 1646511597500,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -151,9 +151,9 @@\n   /* appearance: none; */\r\n   height: 15px;\r\n   width: 15px;\r\n   border: 1px rgb(0, 0, 0) solid;\r\n-  accent-color: black;\r\n+  accent-color: gray;\r\n }\r\n .checkbox:checked {\r\n }\r\n .settings-color-count {\r\n"
+                },
+                {
+                    "date": 1646511624732,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -143,20 +143,16 @@\n   display: flex;\r\n   align-items: center;\r\n   margin-left: 10px;\r\n }\r\n-/* input:checked ~ .checkmark {\r\n-  \r\n-} */\r\n+\r\n .checkbox {\r\n   /* appearance: none; */\r\n   height: 15px;\r\n   width: 15px;\r\n   border: 1px rgb(0, 0, 0) solid;\r\n   accent-color: gray;\r\n }\r\n-.checkbox:checked {\r\n-}\r\n .settings-color-count {\r\n   position: relative;\r\n   display: flex;\r\n   justify-content: space-between;\r\n"
+                },
+                {
+                    "date": 1646511637971,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -147,8 +147,9 @@\n \r\n .checkbox {\r\n   /* appearance: none; */\r\n   height: 15px;\r\n+  border-radius: 0px;\r\n   width: 15px;\r\n   border: 1px rgb(0, 0, 0) solid;\r\n   accent-color: gray;\r\n }\r\n"
+                },
+                {
+                    "date": 1646511646602,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -147,9 +147,9 @@\n \r\n .checkbox {\r\n   /* appearance: none; */\r\n   height: 15px;\r\n-  border-radius: 0px;\r\n+  border-radius: none;\r\n   width: 15px;\r\n   border: 1px rgb(0, 0, 0) solid;\r\n   accent-color: gray;\r\n }\r\n"
+                },
+                {
+                    "date": 1646511668333,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -147,9 +147,9 @@\n \r\n .checkbox {\r\n   /* appearance: none; */\r\n   height: 15px;\r\n-  border-radius: none;\r\n+  border-radius: 0px;\r\n   width: 15px;\r\n   border: 1px rgb(0, 0, 0) solid;\r\n   accent-color: gray;\r\n }\r\n"
+                },
+                {
+                    "date": 1646511673829,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -147,9 +147,9 @@\n \r\n .checkbox {\r\n   /* appearance: none; */\r\n   height: 15px;\r\n-  border-radius: 0px;\r\n+  border-radius: 50%;\r\n   width: 15px;\r\n   border: 1px rgb(0, 0, 0) solid;\r\n   accent-color: gray;\r\n }\r\n"
+                },
+                {
+                    "date": 1646511777776,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -143,10 +143,16 @@\n   display: flex;\r\n   align-items: center;\r\n   margin-left: 10px;\r\n }\r\n-\r\n .checkbox {\r\n+  position: absolute;\r\n+  opacity: 0;\r\n+  cursor: pointer;\r\n+  height: 0;\r\n+  width: 0;\r\n+}\r\n+.checkbox {\r\n   /* appearance: none; */\r\n   height: 15px;\r\n   border-radius: 50%;\r\n   width: 15px;\r\n"
+                },
+                {
+                    "date": 1646511801997,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -151,14 +151,11 @@\n   height: 0;\r\n   width: 0;\r\n }\r\n .checkbox {\r\n-  /* appearance: none; */\r\n-  height: 15px;\r\n-  border-radius: 50%;\r\n-  width: 15px;\r\n-  border: 1px rgb(0, 0, 0) solid;\r\n-  accent-color: gray;\r\n+  height: 25px;\r\n+  width: 25px;\r\n+  background-color: #eee;\r\n }\r\n .settings-color-count {\r\n   position: relative;\r\n   display: flex;\r\n"
+                },
+                {
+                    "date": 1646511840937,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -143,20 +143,17 @@\n   display: flex;\r\n   align-items: center;\r\n   margin-left: 10px;\r\n }\r\n+\r\n .checkbox {\r\n-  position: absolute;\r\n-  opacity: 0;\r\n-  cursor: pointer;\r\n-  height: 0;\r\n-  width: 0;\r\n+  /* appearance: none; */\r\n+  height: 15px;\r\n+  border-radius: 50%;\r\n+  width: 15px;\r\n+  border: 1px rgb(0, 0, 0) solid;\r\n+  accent-color: gray;\r\n }\r\n-.checkbox {\r\n-  height: 25px;\r\n-  width: 25px;\r\n-  background-color: #eee;\r\n-}\r\n .settings-color-count {\r\n   position: relative;\r\n   display: flex;\r\n   justify-content: space-between;\r\n"
+                },
+                {
+                    "date": 1646512185929,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -145,13 +145,8 @@\n   margin-left: 10px;\r\n }\r\n \r\n .checkbox {\r\n-  /* appearance: none; */\r\n-  height: 15px;\r\n-  border-radius: 50%;\r\n-  width: 15px;\r\n-  border: 1px rgb(0, 0, 0) solid;\r\n   accent-color: gray;\r\n }\r\n .settings-color-count {\r\n   position: relative;\r\n"
+                },
+                {
+                    "date": 1646512191259,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -145,8 +145,13 @@\n   margin-left: 10px;\r\n }\r\n \r\n .checkbox {\r\n+  /* appearance: none; */\r\n+  height: 15px;\r\n+  border-radius: 50%;\r\n+  width: 15px;\r\n+  border: 1px rgb(0, 0, 0) solid;\r\n   accent-color: gray;\r\n }\r\n .settings-color-count {\r\n   position: relative;\r\n"
+                },
+                {
+                    "date": 1646512202027,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -147,9 +147,8 @@\n \r\n .checkbox {\r\n   /* appearance: none; */\r\n   height: 15px;\r\n-  border-radius: 50%;\r\n   width: 15px;\r\n   border: 1px rgb(0, 0, 0) solid;\r\n   accent-color: gray;\r\n }\r\n"
+                },
+                {
+                    "date": 1646512208930,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -147,9 +147,9 @@\n \r\n .checkbox {\r\n   /* appearance: none; */\r\n   height: 15px;\r\n-  width: 15px;\r\n+  /* width: 15px; */\r\n   border: 1px rgb(0, 0, 0) solid;\r\n   accent-color: gray;\r\n }\r\n .settings-color-count {\r\n"
+                },
+                {
+                    "date": 1646512217117,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -146,10 +146,10 @@\n }\r\n \r\n .checkbox {\r\n   /* appearance: none; */\r\n-  height: 15px;\r\n-  /* width: 15px; */\r\n+  /* height: 15px; */\r\n+  width: 15px;\r\n   border: 1px rgb(0, 0, 0) solid;\r\n   accent-color: gray;\r\n }\r\n .settings-color-count {\r\n"
+                },
+                {
+                    "date": 1646512225530,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -146,10 +146,10 @@\n }\r\n \r\n .checkbox {\r\n   /* appearance: none; */\r\n-  /* height: 15px; */\r\n-  width: 15px;\r\n+  height: 20px;\r\n+  width: 20px;\r\n   border: 1px rgb(0, 0, 0) solid;\r\n   accent-color: gray;\r\n }\r\n .settings-color-count {\r\n"
+                },
+                {
+                    "date": 1646512253428,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -146,10 +146,10 @@\n }\r\n \r\n .checkbox {\r\n   /* appearance: none; */\r\n-  height: 20px;\r\n-  width: 20px;\r\n+  height: 17.5px;\r\n+  width: 17.5px;\r\n   border: 1px rgb(0, 0, 0) solid;\r\n   accent-color: gray;\r\n }\r\n .settings-color-count {\r\n"
+                },
+                {
+                    "date": 1646512259225,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -148,9 +148,9 @@\n .checkbox {\r\n   /* appearance: none; */\r\n   height: 17.5px;\r\n   width: 17.5px;\r\n-  border: 1px rgb(0, 0, 0) solid;\r\n+  /* border: 1px rgb(0, 0, 0) solid; */\r\n   accent-color: gray;\r\n }\r\n .settings-color-count {\r\n   position: relative;\r\n"
+                },
+                {
+                    "date": 1646512272153,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -148,10 +148,9 @@\n .checkbox {\r\n   /* appearance: none; */\r\n   height: 17.5px;\r\n   width: 17.5px;\r\n-  /* border: 1px rgb(0, 0, 0) solid; */\r\n-  accent-color: gray;\r\n+  /* accent-color: gray; */\r\n }\r\n .settings-color-count {\r\n   position: relative;\r\n   display: flex;\r\n"
+                },
+                {
+                    "date": 1646512277399,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -148,9 +148,9 @@\n .checkbox {\r\n   /* appearance: none; */\r\n   height: 17.5px;\r\n   width: 17.5px;\r\n-  /* accent-color: gray; */\r\n+  accent-color: gray;\r\n }\r\n .settings-color-count {\r\n   position: relative;\r\n   display: flex;\r\n"
+                },
+                {
+                    "date": 1646512333992,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -120,9 +120,9 @@\n }\r\n \r\n .settings {\r\n   border-radius: 6px;\r\n-  height: 200px;\r\n+  height: 250px;\r\n   width: 430px;\r\n   background-color: white;\r\n   display: flex;\r\n   flex-wrap: wrap;\r\n@@ -145,9 +145,8 @@\n   margin-left: 10px;\r\n }\r\n \r\n .checkbox {\r\n-  /* appearance: none; */\r\n   height: 17.5px;\r\n   width: 17.5px;\r\n   accent-color: gray;\r\n }\r\n"
+                },
+                {
+                    "date": 1646512339808,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -120,9 +120,9 @@\n }\r\n \r\n .settings {\r\n   border-radius: 6px;\r\n-  height: 250px;\r\n+  height: 275px;\r\n   width: 430px;\r\n   background-color: white;\r\n   display: flex;\r\n   flex-wrap: wrap;\r\n"
+                },
+                {
+                    "date": 1646512364806,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -182,9 +182,9 @@\n   border: 1px rgb(160, 160, 160) solid;\r\n }\r\n .abs {\r\n   position: absolute;\r\n-  top: 15px;\r\n+  top: 25px;\r\n   background-color: rgb(58, 58, 58);\r\n   padding: 5px 10px;\r\n   border-radius: 30px;\r\n }\r\n"
+                },
+                {
+                    "date": 1646512524620,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -174,9 +174,9 @@\n   background: rgb(50, 50, 50);\r\n   border-radius: 5px;\r\n }\r\n #theme-menu {\r\n-  width: 80%;\r\n+  width: 90%;\r\n   height: 20px;\r\n   border-radius: 3px;\r\n   font-weight: 400;\r\n   border: 1px rgb(160, 160, 160) solid;\r\n"
+                },
+                {
+                    "date": 1646512531722,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -174,9 +174,9 @@\n   background: rgb(50, 50, 50);\r\n   border-radius: 5px;\r\n }\r\n #theme-menu {\r\n-  width: 90%;\r\n+  width: 40px;\r\n   height: 20px;\r\n   border-radius: 3px;\r\n   font-weight: 400;\r\n   border: 1px rgb(160, 160, 160) solid;\r\n"
+                },
+                {
+                    "date": 1646512537754,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -174,9 +174,9 @@\n   background: rgb(50, 50, 50);\r\n   border-radius: 5px;\r\n }\r\n #theme-menu {\r\n-  width: 40px;\r\n+  width: 180px;\r\n   height: 20px;\r\n   border-radius: 3px;\r\n   font-weight: 400;\r\n   border: 1px rgb(160, 160, 160) solid;\r\n"
+                },
+                {
+                    "date": 1646512553121,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -174,9 +174,9 @@\n   background: rgb(50, 50, 50);\r\n   border-radius: 5px;\r\n }\r\n #theme-menu {\r\n-  width: 180px;\r\n+  width: 80%;\r\n   height: 20px;\r\n   border-radius: 3px;\r\n   font-weight: 400;\r\n   border: 1px rgb(160, 160, 160) solid;\r\n"
+                },
+                {
+                    "date": 1646512670166,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -180,8 +180,11 @@\n   border-radius: 3px;\r\n   font-weight: 400;\r\n   border: 1px rgb(160, 160, 160) solid;\r\n }\r\n+.theme-selector {\r\n+  flex-direction: column;\r\n+}\r\n .abs {\r\n   position: absolute;\r\n   top: 25px;\r\n   background-color: rgb(58, 58, 58);\r\n"
+                },
+                {
+                    "date": 1646512689300,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -182,8 +182,9 @@\n   border: 1px rgb(160, 160, 160) solid;\r\n }\r\n .theme-selector {\r\n   flex-direction: column;\r\n+  justify-content: start;\r\n }\r\n .abs {\r\n   position: absolute;\r\n   top: 25px;\r\n"
+                },
+                {
+                    "date": 1646512705111,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -182,9 +182,9 @@\n   border: 1px rgb(160, 160, 160) solid;\r\n }\r\n .theme-selector {\r\n   flex-direction: column;\r\n-  justify-content: start;\r\n+  align-items: flex-start;\r\n }\r\n .abs {\r\n   position: absolute;\r\n   top: 25px;\r\n"
+                },
+                {
+                    "date": 1646512752660,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -180,9 +180,9 @@\n   border-radius: 3px;\r\n   font-weight: 400;\r\n   border: 1px rgb(160, 160, 160) solid;\r\n }\r\n-.theme-selector {\r\n+#theme-selector {\r\n   flex-direction: column;\r\n   align-items: flex-start;\r\n }\r\n .abs {\r\n"
+                },
+                {
+                    "date": 1646519574024,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,9 +60,9 @@\n   transition: 1s;\r\n }\r\n \r\n .colors {\r\n-  height: 415px;\r\n+  height: 550px;\r\n   display: flex;\r\n }\r\n .colorBox {\r\n   width: 20%;\r\n"
+                },
+                {
+                    "date": 1646519596628,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,9 +60,9 @@\n   transition: 1s;\r\n }\r\n \r\n .colors {\r\n-  height: 550px;\r\n+  height: 100%;\r\n   display: flex;\r\n }\r\n .colorBox {\r\n   width: 20%;\r\n"
+                },
+                {
+                    "date": 1646519604184,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,9 +60,9 @@\n   transition: 1s;\r\n }\r\n \r\n .colors {\r\n-  height: 100%;\r\n+  height: 550px;\r\n   display: flex;\r\n }\r\n .colorBox {\r\n   width: 20%;\r\n"
+                },
+                {
+                    "date": 1646519780494,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,10 +60,11 @@\n   transition: 1s;\r\n }\r\n \r\n .colors {\r\n-  height: 550px;\r\n-  display: flex;\r\n+  height: 100%;\r\n+  display: grid;\r\n+  grid-template-rows: 80% 20%;\r\n }\r\n .colorBox {\r\n   width: 20%;\r\n   height: 100%;\r\n"
+                },
+                {
+                    "date": 1646519887286,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,8 +63,9 @@\n .colors {\r\n   height: 100%;\r\n   display: grid;\r\n   grid-template-rows: 80% 20%;\r\n+  grid-auto-columns: 1fr;\r\n }\r\n .colorBox {\r\n   width: 20%;\r\n   height: 100%;\r\n"
+                },
+                {
+                    "date": 1646520064880,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,8 +63,9 @@\n .colors {\r\n   height: 100%;\r\n   display: grid;\r\n   grid-template-rows: 80% 20%;\r\n+  grid-auto-flow: column;\r\n   grid-auto-columns: 1fr;\r\n }\r\n .colorBox {\r\n   width: 20%;\r\n"
+                },
+                {
+                    "date": 1646520098642,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -66,8 +66,12 @@\n   grid-template-rows: 80% 20%;\r\n   grid-auto-flow: column;\r\n   grid-auto-columns: 1fr;\r\n }\r\n+.colors div {\r\n+  background-color: red;\r\n+  border: 1px solid black;\r\n+}\r\n .colorBox {\r\n   width: 20%;\r\n   height: 100%;\r\n   background-color: rgb(255, 255, 255);\r\n"
+                },
+                {
+                    "date": 1646520104932,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -69,8 +69,9 @@\n }\r\n .colors div {\r\n   background-color: red;\r\n   border: 1px solid black;\r\n+  border-radius: 10px;\r\n }\r\n .colorBox {\r\n   width: 20%;\r\n   height: 100%;\r\n"
+                },
+                {
+                    "date": 1646522177068,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -66,13 +66,9 @@\n   grid-template-rows: 80% 20%;\r\n   grid-auto-flow: column;\r\n   grid-auto-columns: 1fr;\r\n }\r\n-.colors div {\r\n-  background-color: red;\r\n-  border: 1px solid black;\r\n-  border-radius: 10px;\r\n-}\r\n+\r\n .colorBox {\r\n   width: 20%;\r\n   height: 100%;\r\n   background-color: rgb(255, 255, 255);\r\n"
+                },
+                {
+                    "date": 1646522630712,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -66,9 +66,11 @@\n   grid-template-rows: 80% 20%;\r\n   grid-auto-flow: column;\r\n   grid-auto-columns: 1fr;\r\n }\r\n-\r\n+.colors div {\r\n+  transition: 1s;\r\n+}\r\n .colorBox {\r\n   width: 20%;\r\n   height: 100%;\r\n   background-color: rgb(255, 255, 255);\r\n"
+                },
+                {
+                    "date": 1646522777520,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -69,8 +69,16 @@\n }\r\n .colors div {\r\n   transition: 1s;\r\n }\r\n+@keyframes test {\r\n+  from {\r\n+    opacity: 0;\r\n+  }\r\n+  to {\r\n+    opacity: 100;\r\n+  }\r\n+}\r\n .colorBox {\r\n   width: 20%;\r\n   height: 100%;\r\n   background-color: rgb(255, 255, 255);\r\n"
+                },
+                {
+                    "date": 1646522813394,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -67,9 +67,10 @@\n   grid-auto-flow: column;\r\n   grid-auto-columns: 1fr;\r\n }\r\n .colors div {\r\n-  transition: 1s;\r\n+  animation-name: test;\r\n+  animation-duration: 2s;\r\n }\r\n @keyframes test {\r\n   from {\r\n     opacity: 0;\r\n"
+                },
+                {
+                    "date": 1646586074066,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -62,9 +62,9 @@\n \r\n .colors {\r\n   height: 100%;\r\n   display: grid;\r\n-  grid-template-rows: 80% 20%;\r\n+  grid-template-rows: 90% 10%;\r\n   grid-auto-flow: column;\r\n   grid-auto-columns: 1fr;\r\n }\r\n .colors div {\r\n"
+                },
+                {
+                    "date": 1646586094833,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -62,9 +62,9 @@\n \r\n .colors {\r\n   height: 100%;\r\n   display: grid;\r\n-  grid-template-rows: 90% 10%;\r\n+  grid-template-rows: 85% 15%;\r\n   grid-auto-flow: column;\r\n   grid-auto-columns: 1fr;\r\n }\r\n .colors div {\r\n"
+                },
+                {
+                    "date": 1646586112951,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -62,9 +62,9 @@\n \r\n .colors {\r\n   height: 100%;\r\n   display: grid;\r\n-  grid-template-rows: 85% 15%;\r\n+  grid-template-rows: 87.5% 12.5%;\r\n   grid-auto-flow: column;\r\n   grid-auto-columns: 1fr;\r\n }\r\n .colors div {\r\n"
+                },
+                {
+                    "date": 1646587523885,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -201,9 +201,9 @@\n   align-items: flex-start;\r\n }\r\n .abs {\r\n   position: absolute;\r\n-  top: 25px;\r\n+  top: 30px;\r\n   background-color: rgb(58, 58, 58);\r\n   padding: 5px 10px;\r\n   border-radius: 30px;\r\n }\r\n"
+                },
+                {
+                    "date": 1646587533872,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -201,9 +201,9 @@\n   align-items: flex-start;\r\n }\r\n .abs {\r\n   position: absolute;\r\n-  top: 30px;\r\n+  top: 27.5px;\r\n   background-color: rgb(58, 58, 58);\r\n   padding: 5px 10px;\r\n   border-radius: 30px;\r\n }\r\n"
+                },
+                {
+                    "date": 1646587556507,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -112,18 +112,9 @@\n   visibility: visible;\r\n }\r\n \r\n /* modal */\r\n-/*\r\n--click to copy (menu)\r\n-/to rgb(html)\r\n-/to hex\r\n \r\n--color count\r\n--show rgb\r\n--show hex\r\n--theme(menu) \r\n-*/\r\n .modal {\r\n   visibility: hidden;\r\n   display: flex;\r\n   justify-content: center;\r\n"
+                },
+                {
+                    "date": 1646590731758,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -67,10 +67,11 @@\n   grid-auto-flow: column;\r\n   grid-auto-columns: 1fr;\r\n }\r\n .colors div {\r\n-  animation-name: test;\r\n-  animation-duration: 2s;\r\n+  border: 1px black solid;\r\n+  /* animation-name: test;\r\n+  animation-duration: 2s; */\r\n }\r\n @keyframes test {\r\n   from {\r\n     opacity: 0;\r\n"
+                },
+                {
+                    "date": 1646590760341,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -71,8 +71,13 @@\n   border: 1px black solid;\r\n   /* animation-name: test;\r\n   animation-duration: 2s; */\r\n }\r\n+.colors div p {\r\n+  border: 1px black solid;\r\n+  /* animation-name: test;\r\n+  animation-duration: 2s; */\r\n+}\r\n @keyframes test {\r\n   from {\r\n     opacity: 0;\r\n   }\r\n"
+                },
+                {
+                    "date": 1646591618980,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -76,23 +76,12 @@\n   border: 1px black solid;\r\n   /* animation-name: test;\r\n   animation-duration: 2s; */\r\n }\r\n-@keyframes test {\r\n-  from {\r\n-    opacity: 0;\r\n-  }\r\n-  to {\r\n-    opacity: 100;\r\n-  }\r\n-}\r\n-.colorBox {\r\n-  width: 20%;\r\n-  height: 100%;\r\n-  background-color: rgb(255, 255, 255);\r\n+.colorEl {\r\n   transition: background 1s;\r\n-  /* border: 1px black solid; */\r\n }\r\n+\r\n .color_values {\r\n   height: 45px;\r\n   display: flex;\r\n   /* background-color: gray; */\r\n"
+                },
+                {
+                    "date": 1646591965419,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -66,18 +66,18 @@\n   grid-template-rows: 87.5% 12.5%;\r\n   grid-auto-flow: column;\r\n   grid-auto-columns: 1fr;\r\n }\r\n-.colors div {\r\n+/* .colors div {\r\n   border: 1px black solid;\r\n-  /* animation-name: test;\r\n-  animation-duration: 2s; */\r\n+  animation-name: test;\r\n+  animation-duration: 2s;\r\n }\r\n .colors div p {\r\n   border: 1px black solid;\r\n-  /* animation-name: test;\r\n-  animation-duration: 2s; */\r\n-}\r\n+  animation-name: test;\r\n+  animation-duration: 2s;\r\n+} */\r\n .colorEl {\r\n   transition: background 1s;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1646592794143,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -79,9 +79,13 @@\n } */\r\n .colorEl {\r\n   transition: background 1s;\r\n }\r\n-\r\n+.par-small {\r\n+  background-color: aquamarine;\r\n+}\r\n+.par-big {\r\n+}\r\n .color_values {\r\n   height: 45px;\r\n   display: flex;\r\n   /* background-color: gray; */\r\n"
+                },
+                {
+                    "date": 1646592800027,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -83,8 +83,9 @@\n .par-small {\r\n   background-color: aquamarine;\r\n }\r\n .par-big {\r\n+  background-color: blueviolet;\r\n }\r\n .color_values {\r\n   height: 45px;\r\n   display: flex;\r\n"
+                },
+                {
+                    "date": 1646593171041,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -80,12 +80,18 @@\n .colorEl {\r\n   transition: background 1s;\r\n }\r\n .par-small {\r\n-  background-color: aquamarine;\r\n+  text-align: center;\r\n+  font-weight: 700;\r\n+  margin: 3px 0px;\r\n+  font-size: 0.75rem;\r\n }\r\n .par-big {\r\n-  background-color: blueviolet;\r\n+  text-align: center;\r\n+  font-weight: 700;\r\n+  margin: 3px 0px;\r\n+  font-size: 1rem;\r\n }\r\n .color_values {\r\n   height: 45px;\r\n   display: flex;\r\n"
+                },
+                {
+                    "date": 1646593299263,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -89,9 +89,9 @@\n .par-big {\r\n   text-align: center;\r\n   font-weight: 700;\r\n   margin: 3px 0px;\r\n-  font-size: 1rem;\r\n+  font-size: 0.85rem;\r\n }\r\n .color_values {\r\n   height: 45px;\r\n   display: flex;\r\n"
+                },
+                {
+                    "date": 1646593322657,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -83,9 +83,9 @@\n .par-small {\r\n   text-align: center;\r\n   font-weight: 700;\r\n   margin: 3px 0px;\r\n-  font-size: 0.75rem;\r\n+  font-size: 0.65rem;\r\n }\r\n .par-big {\r\n   text-align: center;\r\n   font-weight: 700;\r\n"
+                },
+                {
+                    "date": 1646593352903,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -83,9 +83,9 @@\n .par-small {\r\n   text-align: center;\r\n   font-weight: 700;\r\n   margin: 3px 0px;\r\n-  font-size: 0.65rem;\r\n+  font-size: 0.6rem;\r\n }\r\n .par-big {\r\n   text-align: center;\r\n   font-weight: 700;\r\n"
+                },
+                {
+                    "date": 1646593370895,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -79,8 +79,14 @@\n } */\r\n .colorEl {\r\n   transition: background 1s;\r\n }\r\n+.par-tiny {\r\n+  text-align: center;\r\n+  font-weight: 700;\r\n+  margin: 3px 0px;\r\n+  font-size: 0.475rem;\r\n+}\r\n .par-small {\r\n   text-align: center;\r\n   font-weight: 700;\r\n   margin: 3px 0px;\r\n"
+                },
+                {
+                    "date": 1646593625260,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -79,14 +79,9 @@\n } */\r\n .colorEl {\r\n   transition: background 1s;\r\n }\r\n-.par-tiny {\r\n-  text-align: center;\r\n-  font-weight: 700;\r\n-  margin: 3px 0px;\r\n-  font-size: 0.475rem;\r\n-}\r\n+\r\n .par-small {\r\n   text-align: center;\r\n   font-weight: 700;\r\n   margin: 3px 0px;\r\n"
+                },
+                {
+                    "date": 1646593760578,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -92,22 +92,9 @@\n   font-weight: 700;\r\n   margin: 3px 0px;\r\n   font-size: 0.85rem;\r\n }\r\n-.color_values {\r\n-  height: 45px;\r\n-  display: flex;\r\n-  /* background-color: gray; */\r\n-}\r\n-.valueBox {\r\n-  height: 100%;\r\n-  width: 20%;\r\n-  /* border: 1px solid black; */\r\n-  display: flex;\r\n-  justify-content: center;\r\n-  align-items: center;\r\n-  font-weight: 700;\r\n-}\r\n+\r\n #color-picker {\r\n   padding: 0;\r\n   margin: 0;\r\n   height: 47px;\r\n"
+                },
+                {
+                    "date": 1646593914609,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -92,8 +92,11 @@\n   font-weight: 700;\r\n   margin: 3px 0px;\r\n   font-size: 0.85rem;\r\n }\r\n+.value-div {\r\n+  display: flex;\r\n+}\r\n \r\n #color-picker {\r\n   padding: 0;\r\n   margin: 0;\r\n"
+                },
+                {
+                    "date": 1646593942124,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -94,8 +94,11 @@\n   font-size: 0.85rem;\r\n }\r\n .value-div {\r\n   display: flex;\r\n+  flex-direction: column;\r\n+  justify-content: space-evenly;\r\n+  align-items: center;\r\n }\r\n \r\n #color-picker {\r\n   padding: 0;\r\n"
+                },
+                {
+                    "date": 1646593982826,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -95,9 +95,9 @@\n }\r\n .value-div {\r\n   display: flex;\r\n   flex-direction: column;\r\n-  justify-content: space-evenly;\r\n+  justify-content: space-between;\r\n   align-items: center;\r\n }\r\n \r\n #color-picker {\r\n"
+                },
+                {
+                    "date": 1646594572930,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -204,10 +204,10 @@\n   color: white;\r\n }\r\n .closeBtn {\r\n   position: fixed;\r\n-  right: 50px;\r\n-  top: 165px;\r\n+  right: 47.5px;\r\n+  top: 125px;\r\n   height: 30px;\r\n   width: 30px;\r\n   border-radius: 6px;\r\n   background-color: rgb(161, 159, 159);\r\n"
+                },
+                {
+                    "date": 1646594587770,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -209,6 +209,6 @@\n   top: 125px;\r\n   height: 30px;\r\n   width: 30px;\r\n   border-radius: 6px;\r\n-  background-color: rgb(161, 159, 159);\r\n+  background-color: white);\r\n }\r\n"
+                },
+                {
+                    "date": 1646594624176,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -204,11 +204,14 @@\n   color: white;\r\n }\r\n .closeBtn {\r\n   position: fixed;\r\n+  display: flex;\r\n+  justify-content: center;\r\n+  align-items: center;\r\n   right: 47.5px;\r\n   top: 125px;\r\n   height: 30px;\r\n   width: 30px;\r\n   border-radius: 6px;\r\n-  background-color: white);\r\n+  background-color: white;\r\n }\r\n"
+                },
+                {
+                    "date": 1646594811101,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -207,10 +207,10 @@\n   position: fixed;\r\n   display: flex;\r\n   justify-content: center;\r\n   align-items: center;\r\n-  right: 47.5px;\r\n-  top: 125px;\r\n+  right: 42.5px;\r\n+  top: 127.5px;\r\n   height: 30px;\r\n   width: 30px;\r\n   border-radius: 6px;\r\n   background-color: white;\r\n"
+                },
+                {
+                    "date": 1646594836882,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -207,9 +207,9 @@\n   position: fixed;\r\n   display: flex;\r\n   justify-content: center;\r\n   align-items: center;\r\n-  right: 42.5px;\r\n+  right: 50px;\r\n   top: 127.5px;\r\n   height: 30px;\r\n   width: 30px;\r\n   border-radius: 6px;\r\n"
+                },
+                {
+                    "date": 1646596542996,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -190,8 +190,12 @@\n #theme-selector {\r\n   flex-direction: column;\r\n   align-items: flex-start;\r\n }\r\n+.ctpDiv {\r\n+  display: flex;\r\n+  flex-direction: column;\r\n+}\r\n .abs {\r\n   position: absolute;\r\n   top: 27.5px;\r\n   background-color: rgb(58, 58, 58);\r\n"
+                },
+                {
+                    "date": 1646596688135,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -193,8 +193,9 @@\n }\r\n .ctpDiv {\r\n   display: flex;\r\n   flex-direction: column;\r\n+  justify-content: start;\r\n }\r\n .abs {\r\n   position: absolute;\r\n   top: 27.5px;\r\n"
+                },
+                {
+                    "date": 1646597741903,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -193,9 +193,9 @@\n }\r\n .ctpDiv {\r\n   display: flex;\r\n   flex-direction: column;\r\n-  justify-content: start;\r\n+  align-items: flex-start;\r\n }\r\n .abs {\r\n   position: absolute;\r\n   top: 27.5px;\r\n"
+                },
+                {
+                    "date": 1646597808491,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -190,12 +190,12 @@\n #theme-selector {\r\n   flex-direction: column;\r\n   align-items: flex-start;\r\n }\r\n-.ctpDiv {\r\n+#ctpDiv {\r\n   display: flex;\r\n   flex-direction: column;\r\n-  align-items: flex-start;\r\n+  align-items: flex-start; !important\r\n }\r\n .abs {\r\n   position: absolute;\r\n   top: 27.5px;\r\n"
+                },
+                {
+                    "date": 1646597846274,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -192,10 +192,10 @@\n   align-items: flex-start;\r\n }\r\n #ctpDiv {\r\n   display: flex;\r\n-  flex-direction: column;\r\n-  align-items: flex-start; !important\r\n+  flex-direction: row;\r\n+  align-items: flex-start !important;\r\n }\r\n .abs {\r\n   position: absolute;\r\n   top: 27.5px;\r\n"
+                },
+                {
+                    "date": 1646597906050,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -192,9 +192,9 @@\n   align-items: flex-start;\r\n }\r\n #ctpDiv {\r\n   display: flex;\r\n-  flex-direction: row;\r\n+  flex-direction: column;\r\n   align-items: flex-start !important;\r\n }\r\n .abs {\r\n   position: absolute;\r\n"
+                },
+                {
+                    "date": 1646677834206,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,8 @@\n+:root {\r\n+  --main-color: rgb(255, 255, 255);\r\n+  --secondary-color: rgb(160, 160, 160);\r\n+}\r\n * {\r\n   box-sizing: border-box;\r\n }\r\n img {\r\n@@ -19,16 +23,16 @@\n   width: 320px;\r\n   height: 40px;\r\n   border-radius: 6px;\r\n   font-weight: 700;\r\n-  border: 1px rgb(160, 160, 160) solid;\r\n+  border: 1px solid var(--secondary-color);\r\n }\r\n button {\r\n   width: 120px;\r\n   height: 40px;\r\n   font-size: 12px;\r\n-  background-color: white;\r\n-  border: 1px rgb(160, 160, 160) solid;\r\n+  background-color: var(--main-color);\r\n+  border: 1px var(--secondary-color) solid;\r\n   border-radius: 4px;\r\n   font-weight: 700;\r\n   cursor: pointer;\r\n   transition: transform 0.2s;\r\n@@ -48,9 +52,9 @@\n }\r\n .main {\r\n   height: 90px;\r\n   width: 100%;\r\n-  background-color: rgb(255, 255, 255);\r\n+  background-color: var(--main-color);\r\n   display: flex;\r\n   justify-content: space-evenly;\r\n   align-items: center;\r\n }\r\n@@ -107,9 +111,9 @@\n   width: 55px;\r\n   border: none;\r\n   outline: none;\r\n   -webkit-appearance: none;\r\n-  background-color: white;\r\n+  background-color: var(--main-color);\r\n   visibility: visible;\r\n }\r\n \r\n /* modal */\r\n@@ -128,9 +132,9 @@\n .settings {\r\n   border-radius: 6px;\r\n   height: 275px;\r\n   width: 430px;\r\n-  background-color: white;\r\n+  background-color: var(--main-color);\r\n   display: flex;\r\n   flex-wrap: wrap;\r\n   justify-content: space-evenly;\r\n   align-items: center;\r\n@@ -141,9 +145,9 @@\n   align-items: stretch;\r\n   justify-content: space-evenly;\r\n   width: 45%;\r\n   height: 55%;\r\n-  border: 1px rgb(167, 167, 167) solid;\r\n+  border: 1px --secondary-color solid;\r\n   border-radius: 5px;\r\n }\r\n .settings-option div {\r\n   display: flex;\r\n@@ -153,9 +157,9 @@\n \r\n .checkbox {\r\n   height: 17.5px;\r\n   width: 17.5px;\r\n-  accent-color: gray;\r\n+  accent-color: var(--secondary-color);\r\n }\r\n .settings-color-count {\r\n   position: relative;\r\n   display: flex;\r\n@@ -184,9 +188,9 @@\n   width: 80%;\r\n   height: 20px;\r\n   border-radius: 3px;\r\n   font-weight: 400;\r\n-  border: 1px rgb(160, 160, 160) solid;\r\n+  border: 1px --secondary-color solid;\r\n }\r\n #theme-selector {\r\n   flex-direction: column;\r\n   align-items: flex-start;\r\n"
+                },
+                {
+                    "date": 1646677944643,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n :root {\r\n   --main-color: rgb(255, 255, 255);\r\n   --secondary-color: rgb(160, 160, 160);\r\n+  --slider: rgb(50, 50, 50);\r\n }\r\n * {\r\n   box-sizing: border-box;\r\n }\r\n@@ -145,9 +146,9 @@\n   align-items: stretch;\r\n   justify-content: space-evenly;\r\n   width: 45%;\r\n   height: 55%;\r\n-  border: 1px --secondary-color solid;\r\n+  border: 1px var(--secondary-color) solid;\r\n   border-radius: 5px;\r\n }\r\n .settings-option div {\r\n   display: flex;\r\n@@ -180,17 +181,17 @@\n input[type=\"range\"]::-webkit-slider-thumb {\r\n   appearance: none;\r\n   width: 8px;\r\n   height: 20px;\r\n-  background: rgb(50, 50, 50);\r\n+  background: var(--slider);\r\n   border-radius: 5px;\r\n }\r\n #theme-menu {\r\n   width: 80%;\r\n   height: 20px;\r\n   border-radius: 3px;\r\n   font-weight: 400;\r\n-  border: 1px --secondary-color solid;\r\n+  border: 1px var(--secondary-color) solid;\r\n }\r\n #theme-selector {\r\n   flex-direction: column;\r\n   align-items: flex-start;\r\n@@ -202,16 +203,16 @@\n }\r\n .abs {\r\n   position: absolute;\r\n   top: 27.5px;\r\n-  background-color: rgb(58, 58, 58);\r\n+  background-color: var(--slider);\r\n   padding: 5px 10px;\r\n   border-radius: 30px;\r\n }\r\n #color-count-text {\r\n   font-weight: bold;\r\n   text-align: center;\r\n-  color: white;\r\n+  color: var(--main-color);\r\n }\r\n .closeBtn {\r\n   position: fixed;\r\n   display: flex;\r\n@@ -221,6 +222,6 @@\n   top: 127.5px;\r\n   height: 30px;\r\n   width: 30px;\r\n   border-radius: 6px;\r\n-  background-color: white;\r\n+  background-color: var(--main-color);\r\n }\r\n"
+                },
+                {
+                    "date": 1646678273997,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n :root {\r\n   --main-color: rgb(255, 255, 255);\r\n   --secondary-color: rgb(160, 160, 160);\r\n+  --accent-color: rgb(100, 100, 100);\r\n   --slider: rgb(50, 50, 50);\r\n }\r\n * {\r\n   box-sizing: border-box;\r\n"
+                },
+                {
+                    "date": 1646678884764,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -159,9 +159,9 @@\n \r\n .checkbox {\r\n   height: 17.5px;\r\n   width: 17.5px;\r\n-  accent-color: var(--secondary-color);\r\n+  accent-color: var(--accent-color);\r\n }\r\n .settings-color-count {\r\n   position: relative;\r\n   display: flex;\r\n"
+                },
+                {
+                    "date": 1646774684588,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,9 @@\n }\r\n \r\n html {\r\n   font-family: \"Roboto\", sans-serif;\r\n+  color: rgb(0, 0, 0);\r\n }\r\n html,\r\n body {\r\n   margin: 0;\r\n"
+                },
+                {
+                    "date": 1646774697546,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,9 @@\n   --main-color: rgb(255, 255, 255);\r\n   --secondary-color: rgb(160, 160, 160);\r\n   --accent-color: rgb(100, 100, 100);\r\n   --slider: rgb(50, 50, 50);\r\n+  --fontColor: rgb(0, 0, 0);\r\n }\r\n * {\r\n   box-sizing: border-box;\r\n }\r\n@@ -13,9 +14,9 @@\n }\r\n \r\n html {\r\n   font-family: \"Roboto\", sans-serif;\r\n-  color: rgb(0, 0, 0);\r\n+  color: ;\r\n }\r\n html,\r\n body {\r\n   margin: 0;\r\n"
+                },
+                {
+                    "date": 1646774888172,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n :root {\r\n-  --main-color: rgb(255, 255, 255);\r\n-  --secondary-color: rgb(160, 160, 160);\r\n-  --accent-color: rgb(100, 100, 100);\r\n-  --slider: rgb(50, 50, 50);\r\n+  --mainColor: rgb(255, 255, 255);\r\n+  --secondaryColor: rgb(160, 160, 160);\r\n+  --accentColor: rgb(100, 100, 100);\r\n+  --sliderColor: rgb(50, 50, 50);\r\n   --fontColor: rgb(0, 0, 0);\r\n }\r\n * {\r\n   box-sizing: border-box;\r\n@@ -14,9 +14,9 @@\n }\r\n \r\n html {\r\n   font-family: \"Roboto\", sans-serif;\r\n-  color: ;\r\n+  color: var(--fontColor);\r\n }\r\n html,\r\n body {\r\n   margin: 0;\r\n"
+                },
+                {
+                    "date": 1646774952863,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,16 +27,16 @@\n   width: 320px;\r\n   height: 40px;\r\n   border-radius: 6px;\r\n   font-weight: 700;\r\n-  border: 1px solid var(--secondary-color);\r\n+  border: 1px solid var(--secondaryColor);\r\n }\r\n button {\r\n   width: 120px;\r\n   height: 40px;\r\n   font-size: 12px;\r\n-  background-color: var(--main-color);\r\n-  border: 1px var(--secondary-color) solid;\r\n+  background-color: var(--mainColor);\r\n+  border: 1px var(--secondaryColor) solid;\r\n   border-radius: 4px;\r\n   font-weight: 700;\r\n   cursor: pointer;\r\n   transition: transform 0.2s;\r\n@@ -56,9 +56,9 @@\n }\r\n .main {\r\n   height: 90px;\r\n   width: 100%;\r\n-  background-color: var(--main-color);\r\n+  background-color: var(--mainColor);\r\n   display: flex;\r\n   justify-content: space-evenly;\r\n   align-items: center;\r\n }\r\n@@ -115,9 +115,9 @@\n   width: 55px;\r\n   border: none;\r\n   outline: none;\r\n   -webkit-appearance: none;\r\n-  background-color: var(--main-color);\r\n+  background-color: var(--mainColor);\r\n   visibility: visible;\r\n }\r\n \r\n /* modal */\r\n@@ -136,9 +136,9 @@\n .settings {\r\n   border-radius: 6px;\r\n   height: 275px;\r\n   width: 430px;\r\n-  background-color: var(--main-color);\r\n+  background-color: var(--mainColor);\r\n   display: flex;\r\n   flex-wrap: wrap;\r\n   justify-content: space-evenly;\r\n   align-items: center;\r\n@@ -149,9 +149,9 @@\n   align-items: stretch;\r\n   justify-content: space-evenly;\r\n   width: 45%;\r\n   height: 55%;\r\n-  border: 1px var(--secondary-color) solid;\r\n+  border: 1px var(--secondaryColor) solid;\r\n   border-radius: 5px;\r\n }\r\n .settings-option div {\r\n   display: flex;\r\n@@ -161,9 +161,9 @@\n \r\n .checkbox {\r\n   height: 17.5px;\r\n   width: 17.5px;\r\n-  accent-color: var(--accent-color);\r\n+  accent-color: var(--accentColor);\r\n }\r\n .settings-color-count {\r\n   position: relative;\r\n   display: flex;\r\n@@ -174,9 +174,9 @@\n   /* border: 1px rgb(167, 167, 167) solid; */\r\n   border-radius: 5px;\r\n }\r\n #color-count {\r\n-  background: rgb(100, 100, 100);\r\n+  background: var(--accentColor);\r\n   appearance: none;\r\n   height: 2px;\r\n   width: 70%;\r\n   border-radius: 2px;\r\n@@ -184,17 +184,17 @@\n input[type=\"range\"]::-webkit-slider-thumb {\r\n   appearance: none;\r\n   width: 8px;\r\n   height: 20px;\r\n-  background: var(--slider);\r\n+  background: var(--sliderColor);\r\n   border-radius: 5px;\r\n }\r\n #theme-menu {\r\n   width: 80%;\r\n   height: 20px;\r\n   border-radius: 3px;\r\n   font-weight: 400;\r\n-  border: 1px var(--secondary-color) solid;\r\n+  border: 1px var(--secondaryColor) solid;\r\n }\r\n #theme-selector {\r\n   flex-direction: column;\r\n   align-items: flex-start;\r\n@@ -206,16 +206,16 @@\n }\r\n .abs {\r\n   position: absolute;\r\n   top: 27.5px;\r\n-  background-color: var(--slider);\r\n+  background-color: var(--sliderColor);\r\n   padding: 5px 10px;\r\n   border-radius: 30px;\r\n }\r\n #color-count-text {\r\n   font-weight: bold;\r\n   text-align: center;\r\n-  color: var(--main-color);\r\n+  color: var(--mainColor);\r\n }\r\n .closeBtn {\r\n   position: fixed;\r\n   display: flex;\r\n@@ -225,6 +225,6 @@\n   top: 127.5px;\r\n   height: 30px;\r\n   width: 30px;\r\n   border-radius: 6px;\r\n-  background-color: var(--main-color);\r\n+  background-color: var(--mainColor);\r\n }\r\n"
+                },
+                {
+                    "date": 1646775227416,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n :root {\r\n-  --mainColor: rgb(255, 255, 255);\r\n-  --secondaryColor: rgb(160, 160, 160);\r\n-  --accentColor: rgb(100, 100, 100);\r\n-  --sliderColor: rgb(50, 50, 50);\r\n-  --fontColor: rgb(0, 0, 0);\r\n+  --mainColor: rgb(31, 31, 31);\r\n+  --secondaryColor: rgb(88, 88, 88);\r\n+  --accentColor: rgb(209, 209, 209);\r\n+  --sliderColor: rgb(255, 255, 255);\r\n+  --fontColor: rgb(255, 255, 255);\r\n }\r\n * {\r\n   box-sizing: border-box;\r\n }\r\n"
+                },
+                {
+                    "date": 1646775399389,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,8 +28,9 @@\n   height: 40px;\r\n   border-radius: 6px;\r\n   font-weight: 700;\r\n   border: 1px solid var(--secondaryColor);\r\n+  color: var(--fontColor);\r\n }\r\n button {\r\n   width: 120px;\r\n   height: 40px;\r\n"
+                },
+                {
+                    "date": 1646775406411,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,8 +31,9 @@\n   border: 1px solid var(--secondaryColor);\r\n   color: var(--fontColor);\r\n }\r\n button {\r\n+  color: var(--fontColor);\r\n   width: 120px;\r\n   height: 40px;\r\n   font-size: 12px;\r\n   background-color: var(--mainColor);\r\n"
+                },
+                {
+                    "date": 1646775439863,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,9 @@\n   height: 40px;\r\n   border-radius: 6px;\r\n   font-weight: 700;\r\n   border: 1px solid var(--secondaryColor);\r\n-  color: var(--fontColor);\r\n+  /* color: var(--fontColor); */\r\n }\r\n button {\r\n   color: var(--fontColor);\r\n   width: 120px;\r\n"
+                },
+                {
+                    "date": 1646775449928,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,8 +29,9 @@\n   border-radius: 6px;\r\n   font-weight: 700;\r\n   border: 1px solid var(--secondaryColor);\r\n   /* color: var(--fontColor); */\r\n+  background-color: blue;\r\n }\r\n button {\r\n   color: var(--fontColor);\r\n   width: 120px;\r\n"
+                },
+                {
+                    "date": 1646775472046,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,10 +28,10 @@\n   height: 40px;\r\n   border-radius: 6px;\r\n   font-weight: 700;\r\n   border: 1px solid var(--secondaryColor);\r\n-  /* color: var(--fontColor); */\r\n-  background-color: blue;\r\n+  color: var(--fontColor);\r\n+  background-color: var(--mainColor);\r\n }\r\n button {\r\n   color: var(--fontColor);\r\n   width: 120px;\r\n"
+                },
+                {
+                    "date": 1646775640823,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -88,8 +88,9 @@\n   animation-name: test;\r\n   animation-duration: 2s;\r\n } */\r\n .colorEl {\r\n+  background-color: var(--mainColor);\r\n   transition: background 1s;\r\n }\r\n \r\n .par-small {\r\n"
+                },
+                {
+                    "date": 1646775664348,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -105,8 +105,9 @@\n   margin: 3px 0px;\r\n   font-size: 0.85rem;\r\n }\r\n .value-div {\r\n+  background-color: var(--mainColor);\r\n   display: flex;\r\n   flex-direction: column;\r\n   justify-content: space-between;\r\n   align-items: center;\r\n"
+                },
+                {
+                    "date": 1646776093434,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n :root {\r\n-  --mainColor: rgb(31, 31, 31);\r\n-  --secondaryColor: rgb(88, 88, 88);\r\n-  --accentColor: rgb(209, 209, 209);\r\n-  --sliderColor: rgb(255, 255, 255);\r\n-  --fontColor: rgb(255, 255, 255);\r\n+  --mainColor: rgb(30, 30, 30);\r\n+  --secondaryColor: rgb(90, 90, 90);\r\n+  --accentColor: rgb(170, 170, 170);\r\n+  --sliderColor: rgb(220, 220, 220);\r\n+  --fontColor: rgb(220, 220, 220);\r\n }\r\n * {\r\n   box-sizing: border-box;\r\n }\r\n"
+                },
+                {
+                    "date": 1646780284367,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -67,9 +67,9 @@\n }\r\n .gear {\r\n   height: 25px;\r\n   width: 25px;\r\n-  transition: 1s;\r\n+  transition: 0.7s;\r\n }\r\n \r\n .colors {\r\n   height: 100%;\r\n@@ -89,9 +89,9 @@\n   animation-duration: 2s;\r\n } */\r\n .colorEl {\r\n   background-color: var(--mainColor);\r\n-  transition: background 1s;\r\n+  transition: background 0.7s;\r\n }\r\n \r\n .par-small {\r\n   text-align: center;\r\n@@ -106,8 +106,9 @@\n   font-size: 0.85rem;\r\n }\r\n .value-div {\r\n   background-color: var(--mainColor);\r\n+  transition: background 1s;\r\n   display: flex;\r\n   flex-direction: column;\r\n   justify-content: space-between;\r\n   align-items: center;\r\n"
+                },
+                {
+                    "date": 1646780448727,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -67,9 +67,9 @@\n }\r\n .gear {\r\n   height: 25px;\r\n   width: 25px;\r\n-  transition: 0.7s;\r\n+  transition: 1s;\r\n }\r\n \r\n .colors {\r\n   height: 100%;\r\n@@ -89,10 +89,19 @@\n   animation-duration: 2s;\r\n } */\r\n .colorEl {\r\n   background-color: var(--mainColor);\r\n-  transition: background 0.7s;\r\n }\r\n+.colorEl,\r\n+.main,\r\n+.value-div,\r\n+select,\r\n+button,\r\n+.settings,\r\n+input,\r\n+label {\r\n+  transition: background 1s;\r\n+}\r\n \r\n .par-small {\r\n   text-align: center;\r\n   font-weight: 700;\r\n@@ -106,9 +115,8 @@\n   font-size: 0.85rem;\r\n }\r\n .value-div {\r\n   background-color: var(--mainColor);\r\n-  transition: background 1s;\r\n   display: flex;\r\n   flex-direction: column;\r\n   justify-content: space-between;\r\n   align-items: center;\r\n"
+                },
+                {
+                    "date": 1646780831651,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n :root {\r\n-  --mainColor: rgb(30, 30, 30);\r\n-  --secondaryColor: rgb(90, 90, 90);\r\n-  --accentColor: rgb(170, 170, 170);\r\n-  --sliderColor: rgb(220, 220, 220);\r\n-  --fontColor: rgb(220, 220, 220);\r\n+  --mainColor: rgb(255, 255, 255);\r\n+  --secondaryColor: rgb(160, 160, 160);\r\n+  --accentColor: rgb(100, 100, 100);\r\n+  --sliderColor: rgb(50, 50, 50);\r\n+  --fontColor: rgb(0, 0, 0);\r\n }\r\n * {\r\n   box-sizing: border-box;\r\n }\r\n@@ -98,9 +98,9 @@\n button,\r\n .settings,\r\n input,\r\n label {\r\n-  transition: background 1s;\r\n+  transition: background 0.7s;\r\n }\r\n \r\n .par-small {\r\n   text-align: center;\r\n"
+                },
+                {
+                    "date": 1646863667034,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,8 +11,11 @@\n img {\r\n   height: 100%;\r\n   width: 100%;\r\n }\r\n+.svg {\r\n+  fill: blueviolet;\r\n+}\r\n \r\n html {\r\n   font-family: \"Roboto\", sans-serif;\r\n   color: var(--fontColor);\r\n"
+                },
+                {
+                    "date": 1646864201696,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,10 @@\n   --secondaryColor: rgb(160, 160, 160);\r\n   --accentColor: rgb(100, 100, 100);\r\n   --sliderColor: rgb(50, 50, 50);\r\n   --fontColor: rgb(0, 0, 0);\r\n+  --filter: invert(0%) sepia(0%) saturate(4492%) hue-rotate(119deg)\r\n+    brightness(81%) contrast(104%);\r\n }\r\n * {\r\n   box-sizing: border-box;\r\n }\r\n@@ -12,9 +14,9 @@\n   height: 100%;\r\n   width: 100%;\r\n }\r\n .svg {\r\n-  fill: blueviolet;\r\n+  filter: var(--filter);\r\n }\r\n \r\n html {\r\n   font-family: \"Roboto\", sans-serif;\r\n"
+                },
+                {
+                    "date": 1646864216619,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,10 +3,10 @@\n   --secondaryColor: rgb(160, 160, 160);\r\n   --accentColor: rgb(100, 100, 100);\r\n   --sliderColor: rgb(50, 50, 50);\r\n   --fontColor: rgb(0, 0, 0);\r\n-  --filter: invert(0%) sepia(0%) saturate(4492%) hue-rotate(119deg)\r\n-    brightness(81%) contrast(104%);\r\n+  --filter: invert(35%) sepia(49%) saturate(402%) hue-rotate(24deg)\r\n+    brightness(94%) contrast(90%);\r\n }\r\n * {\r\n   box-sizing: border-box;\r\n }\r\n"
+                },
+                {
+                    "date": 1646864420389,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,10 +3,12 @@\n   --secondaryColor: rgb(160, 160, 160);\r\n   --accentColor: rgb(100, 100, 100);\r\n   --sliderColor: rgb(50, 50, 50);\r\n   --fontColor: rgb(0, 0, 0);\r\n-  --filter: invert(35%) sepia(49%) saturate(402%) hue-rotate(24deg)\r\n-    brightness(94%) contrast(90%);\r\n+  --gearFilter: invert(0%) sepia(100%) saturate(26%) hue-rotate(32deg)\r\n+    brightness(101%) contrast(106%);\r\n+  --exitFilter: invert(0%) sepia(100%) saturate(26%) hue-rotate(32deg)\r\n+    brightness(101%) contrast(106%);\r\n }\r\n * {\r\n   box-sizing: border-box;\r\n }\r\n"
+                },
+                {
+                    "date": 1646864445310,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n img {\r\n   height: 100%;\r\n   width: 100%;\r\n }\r\n-.svg {\r\n+.gearSvg {\r\n   filter: var(--filter);\r\n }\r\n \r\n html {\r\n"
+                },
+                {
+                    "date": 1646864457413,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n   height: 100%;\r\n   width: 100%;\r\n }\r\n .gearSvg {\r\n-  filter: var(--filter);\r\n+  filter: var(--gearFilter);\r\n }\r\n \r\n html {\r\n   font-family: \"Roboto\", sans-serif;\r\n"
+                },
+                {
+                    "date": 1646864484984,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,8 +18,11 @@\n }\r\n .gearSvg {\r\n   filter: var(--gearFilter);\r\n }\r\n+.exitSvg {\r\n+  filter: var(--exitFilter);\r\n+}\r\n \r\n html {\r\n   font-family: \"Roboto\", sans-serif;\r\n   color: var(--fontColor);\r\n"
+                }
+            ],
+            "date": 1646433991071,
+            "name": "Commit-0",
+            "content": "* {\r\n  box-sizing: border-box;\r\n}\r\nimg {\r\n  height: 100%;\r\n  width: 100%;\r\n}\r\n\r\nhtml {\r\n  font-family: \"Roboto\", sans-serif;\r\n}\r\nhtml,\r\nbody {\r\n  margin: 0;\r\n  padding: 0;\r\n}\r\nselect {\r\n  width: 320px;\r\n  height: 40px;\r\n  border-radius: 6px;\r\n  font-weight: 700;\r\n  border: 1px rgb(160, 160, 160) solid;\r\n}\r\nbutton {\r\n  width: 120px;\r\n  height: 40px;\r\n  font-size: 12px;\r\n  background-color: white;\r\n  border: 1px rgb(160, 160, 160) solid;\r\n  border-radius: 4px;\r\n  font-weight: 700;\r\n  cursor: pointer;\r\n  transition: transform 0.2s;\r\n}\r\n.buttonClick {\r\n  transform: scale(1.1);\r\n}\r\noption {\r\n  padding-top: 5px;\r\n}\r\n.container {\r\n  width: 550px;\r\n  height: 550px;\r\n  display: flex;\r\n  flex-direction: column;\r\n}\r\n.main {\r\n  height: 90px;\r\n  width: 100%;\r\n  background-color: rgb(255, 255, 255);\r\n  display: flex;\r\n  justify-content: space-evenly;\r\n  align-items: center;\r\n}\r\n\r\n.colors {\r\n  height: 415px;\r\n  display: flex;\r\n}\r\n.colorBox {\r\n  width: 20%;\r\n  height: 100%;\r\n  background-color: rgb(255, 255, 255);\r\n  transition: background 1s;\r\n  /* border: 1px black solid; */\r\n}\r\n.color_values {\r\n  height: 45px;\r\n  display: flex;\r\n  /* background-color: gray; */\r\n}\r\n.valueBox {\r\n  height: 100%;\r\n  width: 20%;\r\n  /* border: 1px solid black; */\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n  font-weight: 700;\r\n}\r\n#color-picker {\r\n  padding: 0;\r\n  margin: 0;\r\n  height: 47px;\r\n  width: 55px;\r\n  border: none;\r\n  outline: none;\r\n  -webkit-appearance: none;\r\n  background-color: white;\r\n}\r\n"
+        }
+    ]
+}
